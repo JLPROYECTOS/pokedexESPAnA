@@ -84,6 +84,12 @@
   "license": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Northern_Goshawk_ad_M2.jpg"
  },
+ "barbo_comun": {
+  "author": "(c) IHUNTA, some rights reserved (CC BY-NC), uploaded by IHUNTA",
+  "license": "CC-BY-NC",
+  "origin": "iNaturalist",
+  "source": "https://www.inaturalist.org/photos/431888520"
+ },
  "barbo_gitano": {
   "author": "Javier Vázquez Rodríguez",
   "license": "CC BY-SA 4.0",
@@ -128,6 +134,12 @@
   "author": "Alfredo Rodríguez",
   "license": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Squalius_pyrenaicus_%28ingl%C3%A9s%29.png"
+ },
+ "calandino": {
+  "author": "(c) Cesar Pollo, some rights reserved (CC BY-NC), uploaded by Cesar Pollo",
+  "license": "CC-BY-NC",
+  "origin": "iNaturalist",
+  "source": "https://www.inaturalist.org/photos/9687098"
  },
  "camaleon_comun": {
   "author": "Benny Trapp",
