@@ -23,7 +23,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANIMALS = os.path.join(ROOT, "assets", "data", "animals.json")
 PHOTOS = os.path.join(ROOT, "assets", "data", "photos.json")
 IMAGES = os.path.join(ROOT, "assets", "images")
-SKIP_WORDS = ("map", "mapa", "distribution", "distribucion", "range", "area", "status")
+SKIP_WORDS = {"map", "mapa", "distribution", "distribucion", "range", "status"}
+LANGS = ("es", "en", "pt", "fr", "de", "ca")
+
+# Articulos concretos para especies cuya imagen principal no sirve
+# (otra especie, una infografia...) o cuyo nombre cientifico no resuelve.
+OVERRIDES = {
+    "salmon_atlantico": [("en", "Atlantic salmon"), ("fr", "Saumon atlantique")],
+    "sabalo": [("en", "Allis shad"), ("fr", "Grande alose"), ("de", "Maifisch")],
+    "gallineta_comun": [("en", "Common moorhen"), ("de", "Teichhuhn")],
+    "somormujo_lavanco": [("en", "Great crested grebe"), ("de", "Haubentaucher")],
+}
 
 
 def get(url, binary=False, tries=4):
@@ -64,7 +74,8 @@ def page_image(lang, title):
         if not thumb or not name:
             continue
         low = name.lower()
-        if low.endswith(".svg") or any(w in low for w in SKIP_WORDS):
+        words = set(re.split(r"[^a-z]+", low))
+        if low.endswith((".svg", ".pdf", ".djvu")) or words & SKIP_WORDS:
             continue
         return thumb, name
     return None
@@ -116,11 +127,10 @@ def main():
             continue
         print(f"{aid}: {animal['scientificName']}", flush=True)
         found = None
-        for lang, title in (
-            ("es", animal["scientificName"]),
-            ("en", animal["scientificName"]),
-            ("es", animal["commonName"]),
-        ):
+        candidates = list(OVERRIDES.get(aid, []))
+        candidates += [(lang, animal["scientificName"]) for lang in LANGS]
+        candidates.append(("es", animal["commonName"]))
+        for lang, title in candidates:
             found = page_image(lang, title)
             if found:
                 break
