@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../models/animal.dart';
@@ -91,9 +92,89 @@ class ProgressScreen extends StatelessWidget {
                           ],
                         ),
                 ),
+                DexPanel(
+                  title: 'Copia de seguridad',
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Copia tus registros como texto para guardarlos o '
+                        'pasarlos a otro dispositivo.',
+                        style: TextStyle(color: DexColors.textDim),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: OutlinedButton.icon(
+                              onPressed: () => _export(context, state),
+                              icon: const Icon(Icons.copy, size: 18),
+                              label: const Text('COPIAR'),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: OutlinedButton.icon(
+                              onPressed: () => _import(context, state),
+                              icon: const Icon(Icons.restore, size: 18),
+                              label: const Text('RESTAURAR'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
     );
+  }
+
+  Future<void> _export(BuildContext context, DexState state) async {
+    await Clipboard.setData(ClipboardData(text: state.exportJson()));
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Registros copiados al portapapeles')),
+    );
+  }
+
+  Future<void> _import(BuildContext context, DexState state) async {
+    final controller = TextEditingController();
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Restaurar registros'),
+        content: TextField(
+          controller: controller,
+          minLines: 3,
+          maxLines: 6,
+          decoration: const InputDecoration(
+            hintText: 'Pega aquí el texto de la copia',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancelar'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Restaurar'),
+          ),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    String message;
+    try {
+      final added = await state.importJson(controller.text);
+      message = 'Registros añadidos: $added';
+    } catch (_) {
+      message = 'El texto no es una copia válida';
+    }
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(message)));
   }
 
   Widget _categoryRow(AnimalCategory c, int seen, int total) {

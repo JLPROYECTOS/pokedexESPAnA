@@ -25,7 +25,7 @@ hace referencia a una clase `MyApp` que aquí no existe.
 ibericodex/
 ├── pubspec.yaml
 ├── assets/
-│   ├── data/animals.json        # catálogo (157 especies)
+│   ├── data/catalog.json        # catálogo generado por scripts/build_catalog.py
 │   ├── data/photos.json         # autor y licencia de cada foto
 │   └── images/<id>.jpg          # fotos, descargadas por scripts/fetch_photos.py
 └── lib/

@@ -138,8 +138,10 @@ class DetailScreen extends StatelessWidget {
                     title: 'Datos',
                     child: Column(
                       children: [
-                        _row('Familia', animal.family),
-                        _row('Hábitat', animal.habitat),
+                        if (animal.family.isNotEmpty)
+                          _row('Familia', animal.family),
+                        if (animal.habitat.isNotEmpty)
+                          _row('Hábitat', animal.habitat),
                         _row('Estado', animal.conservationLabel),
                       ],
                     ),
@@ -154,33 +156,34 @@ class DetailScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  DexPanel(
-                    title: 'Curiosidades',
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        for (final fact in animal.facts)
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 6),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('▸ ', style: TextStyle(color: catColor)),
-                                Expanded(
-                                  child: Text(
-                                    fact,
-                                    style: const TextStyle(
-                                      color: DexColors.text,
-                                      height: 1.4,
+                  if (animal.facts.isNotEmpty)
+                    DexPanel(
+                      title: 'Curiosidades',
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          for (final fact in animal.facts)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 6),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('▸ ', style: TextStyle(color: catColor)),
+                                  Expanded(
+                                    child: Text(
+                                      fact,
+                                      style: const TextStyle(
+                                        color: DexColors.text,
+                                        height: 1.4,
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
                   SizedBox(
                     width: double.infinity,
                     height: 50,
@@ -197,17 +200,24 @@ class DetailScreen extends StatelessWidget {
                             label: const Text('¡LO HE VISTO!'),
                           ),
                   ),
-                  if (credit != null) ...[
-                    const SizedBox(height: 14),
+                  const SizedBox(height: 14),
+                  if (credit != null)
                     Text(
                       'Foto: ${credit.author} · ${credit.license} · '
-                      'Wikimedia Commons',
+                      '${credit.origin}',
                       style: const TextStyle(
                         color: DexColors.textDim,
                         fontSize: 11,
                       ),
                     ),
-                  ],
+                  if (animal.textSource.isNotEmpty)
+                    Text(
+                      'Texto: ${animal.textSource}',
+                      style: const TextStyle(
+                        color: DexColors.textDim,
+                        fontSize: 11,
+                      ),
+                    ),
                   const SizedBox(height: 16),
                 ],
               ),

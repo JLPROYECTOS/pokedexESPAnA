@@ -96,7 +96,8 @@ class CounterPill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String pad(int v) => v.toString().padLeft(3, '0');
+    final width = total.toString().length < 3 ? 3 : total.toString().length;
+    String pad(int v) => v.toString().padLeft(width, '0');
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(

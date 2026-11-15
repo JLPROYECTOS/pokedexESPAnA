@@ -29,7 +29,8 @@ class IdentifierService {
     'a', 'al', 'con', 'como', 'de', 'del', 'el', 'en', 'era', 'es', 'he',
     'la', 'las', 'lo', 'los', 'muy', 'o', 'para', 'parece', 'por', 'que',
     'se', 'su', 'tiene', 'tenia', 'un', 'una', 'unos', 'unas', 'vi', 'visto',
-    'vive', 'y', 'cerca', 'animal', 'bicho', 'creo', 'algo', 'bastante',
+    'vive', 'y', 'cerca', 'animal', 'creo', 'algo', 'bastante', 'especie',
+    'son', 'sus', 'mas', 'entre', 'tambien', 'familia', 'genero', 'orden',
   };
 
   /// Sinonimos y variantes -> termino usado en los rasgos del catalogo.
@@ -86,6 +87,20 @@ class IdentifierService {
     'rana': AnimalCategory.anfibio,
     'sapo': AnimalCategory.anfibio,
     'pez': AnimalCategory.pez,
+    'tiburon': AnimalCategory.pez,
+    'insecto': AnimalCategory.invertebrado,
+    'mariposa': AnimalCategory.invertebrado,
+    'polilla': AnimalCategory.invertebrado,
+    'escarabajo': AnimalCategory.invertebrado,
+    'arana': AnimalCategory.invertebrado,
+    'libelula': AnimalCategory.invertebrado,
+    'abeja': AnimalCategory.invertebrado,
+    'avispa': AnimalCategory.invertebrado,
+    'mosca': AnimalCategory.invertebrado,
+    'saltamontes': AnimalCategory.invertebrado,
+    'caracol': AnimalCategory.invertebrado,
+    'cangrejo': AnimalCategory.invertebrado,
+    'bicho': AnimalCategory.invertebrado,
   };
 
   static final Map<String, AnimalCategory> _categoryHints = {
@@ -122,9 +137,15 @@ class IdentifierService {
         .toSet();
   }
 
+  // Las fichas escritas a mano tienen rasgos de campo; en el resto se usa
+  // el texto de la descripcion.
   static Set<String> _animalTokens(Animal a) => _tokens(
-        '${a.commonName} ${a.category.key} ${a.habitat} ${a.keywords.join(' ')}',
+        '${a.commonName} ${a.category.key} ${a.habitat} '
+        '${a.keywords.isEmpty ? a.description : a.keywords.join(' ')}',
       );
+
+  List<Animal>? _indexedFor;
+  Map<Animal, Set<String>> _index = const {};
 
   List<Suggestion> identify(
     String description,
@@ -134,7 +155,11 @@ class IdentifierService {
     final query = _tokens(description);
     if (query.isEmpty || animals.isEmpty) return const [];
 
-    final index = {for (final a in animals) a: _animalTokens(a)};
+    if (!identical(_indexedFor, animals)) {
+      _index = {for (final a in animals) a: _animalTokens(a)};
+      _indexedFor = animals;
+    }
+    final index = _index;
 
     // Peso de cada palabra: cuanto menos animales la comparten, mas discrimina.
     double weight(String token) {

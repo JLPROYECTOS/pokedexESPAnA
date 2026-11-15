@@ -14,13 +14,15 @@ concurrency:
 
 jobs:
   photos:
-    name: Fotos de especies
+    name: Catálogo y fotos
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Descargar las fotos que falten
-        run: python3 scripts/fetch_photos.py
+      - name: Generar catálogo y fotos
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 scripts/build_catalog.py
 
       - name: Guardar las fotos en el repositorio
         run: |
@@ -28,9 +30,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets
           if git diff --cached --quiet; then
-            echo "Sin fotos nuevas"
+            echo "Sin cambios"
           else
-            git commit -m "Añadir fotos de especies"
+            git commit -q -m "Actualizar catálogo y fotos"
             git push
           fi
 
@@ -87,6 +89,11 @@ jobs:
           flutter create . --project-name ibericodex --platforms android
           rm -f test/widget_test.dart
           sed -i 's/android:label="[^"]*"/android:label="IbéricoDex"/' android/app/src/main/AndroidManifest.xml
+
+      - name: Firma estable (permite actualizar sin desinstalar)
+        run: |
+          mkdir -p ~/.android
+          cp signing/debug.keystore ~/.android/debug.keystore
 
       - run: flutter pub get
 

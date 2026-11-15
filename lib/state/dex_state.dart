@@ -73,6 +73,26 @@ class DexState extends ChangeNotifier {
     await _save();
   }
 
+  /// Copia de seguridad de los avistamientos, como texto.
+  String exportJson() =>
+      jsonEncode(_sightings.values.map((s) => s.toJson()).toList());
+
+  /// Restaura una copia. No pisa lo ya registrado. Devuelve cuantos anade.
+  Future<int> importJson(String raw) async {
+    final list = (jsonDecode(raw.trim()) as List).cast<Map<String, dynamic>>();
+    var added = 0;
+    for (final item in list) {
+      final sighting = Sighting.fromJson(item);
+      if (!_sightings.containsKey(sighting.animalId)) {
+        _sightings[sighting.animalId] = sighting;
+        added++;
+      }
+    }
+    notifyListeners();
+    await _save();
+    return added;
+  }
+
   Future<void> _save() async {
     final prefs = await SharedPreferences.getInstance();
     final data = _sightings.values.map((s) => s.toJson()).toList();

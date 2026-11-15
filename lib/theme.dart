@@ -27,6 +27,8 @@ class DexColors {
         return const Color(0xFFB98BEB);
       case AnimalCategory.pez:
         return const Color(0xFF45CFD6);
+      case AnimalCategory.invertebrado:
+        return const Color(0xFFF07AA8);
     }
   }
 
@@ -42,6 +44,8 @@ class DexColors {
         return Icons.water_drop;
       case AnimalCategory.pez:
         return Icons.waves;
+      case AnimalCategory.invertebrado:
+        return Icons.bug_report;
     }
   }
 

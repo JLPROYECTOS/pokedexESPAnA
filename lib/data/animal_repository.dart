@@ -3,32 +3,26 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../models/animal.dart';
+import '../services/identifier_service.dart';
 
-/// Fuente de datos del catalogo. Hoy lee JSON empaquetado en la app;
-/// se puede sustituir por una base de datos local o una API sin tocar la UI.
+/// Fuente de datos del catalogo: assets/data/catalog.json, generado por
+/// scripts/build_catalog.py. Devuelve las especies en orden alfabetico y
+/// numeradas segun ese orden.
 class AnimalRepository {
   Future<List<Animal>> loadAll() async {
-    final raw = await rootBundle.loadString('assets/data/animals.json');
-    final list = (jsonDecode(raw) as List).cast<Map<String, dynamic>>();
+    final raw = await rootBundle.loadString('assets/data/catalog.json');
+    final decoded = jsonDecode(raw);
+    final list = ((decoded is Map ? decoded['animals'] : decoded) as List)
+        .cast<Map<String, dynamic>>();
 
-    Map<String, dynamic> photos = {};
-    try {
-      final rawPhotos = await rootBundle.loadString('assets/data/photos.json');
-      photos = (jsonDecode(rawPhotos) as Map).cast<String, dynamic>();
-    } catch (_) {
-      // Sin creditos todavia: la app funciona igualmente.
-    }
-
-    final animals = list.map((item) {
-      final info = photos[item['id']];
-      return Animal.fromJson(
-        item,
-        credit: info is Map
-            ? PhotoCredit.fromJson(info.cast<String, dynamic>())
-            : null,
+    final sorted = [...list]..sort(
+        (a, b) => IdentifierService.normalize(a['commonName'] as String)
+            .compareTo(IdentifierService.normalize(b['commonName'] as String)),
       );
-    }).toList()
-      ..sort((a, b) => a.number.compareTo(b.number));
-    return animals;
+
+    return [
+      for (var i = 0; i < sorted.length; i++)
+        Animal.fromJson(sorted[i], number: i + 1),
+    ];
   }
 }

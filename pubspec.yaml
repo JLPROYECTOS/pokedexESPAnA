@@ -1,7 +1,7 @@
 name: ibericodex
 description: Guia de campo de la fauna de la peninsula iberica con registro de avistamientos.
 publish_to: "none"
-version: 0.2.0+2
+version: 0.3.0+3
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
