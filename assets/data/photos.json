@@ -319,6 +319,11 @@
   "license": "CC BY 3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Mauremys_leprosa_03_by-dpc.jpg"
  },
+ "gallineta_comun": {
+  "author": "Alexis Lours",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Common_moorhen_%28Gallinula_chloropus%29_France.jpg"
+ },
  "gallipato": {
   "author": "No machine-readable author provided. Pengo assumed (based on copyright claims).",
   "license": "CC BY-SA 2.5",
@@ -614,6 +619,11 @@
   "license": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Isard_des_pyrenees_bigorre_2003.jpg"
  },
+ "sabalo": {
+  "author": "Krüger",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Alosa_alosa.jpg"
+ },
  "salamandra_comun": {
   "author": "Javier Virués Ortega",
   "license": "CC BY-SA 4.0",
@@ -628,6 +638,11 @@
   "author": "Javier Virués Ortega",
   "license": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Salamanquesa.jpg"
+ },
+ "salmon_atlantico": {
+  "author": "User:Wolfgang Striewski",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Wst_atlantischer_lachs_stoer_001.jpg"
  },
  "samaruc": {
   "author": "Joanbanjo",
@@ -663,6 +678,11 @@
   "author": "Javier Ábalos from Valencia, España",
   "license": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File:Alytes_cisternasii_%28Iberian_midwife_toad%29_%2833480216383%29.jpg"
+ },
+ "somormujo_lavanco": {
+  "author": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Podiceps_cristatus_2_-_Lake_Dulverton.jpg"
  },
  "tejon": {
   "author": "BadgerHero",
