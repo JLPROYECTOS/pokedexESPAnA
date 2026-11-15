@@ -148,8 +148,15 @@ def nice_name(name):
     return " ".join(out)
 
 
+def tidy(text):
+    text = (text or "").replace("\u200b", "").replace("\u00a0", " ")
+    text = re.sub(r"\[cita requerida\]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"\s+([,.;])", r"\1", text)
+
+
 def trim_extract(text, limit=520):
-    text = re.sub(r"\s+", " ", text or "").strip()
+    text = tidy(text)
     text = re.sub(r"\(\s*[,;]?\s*\)", "", text)
     text = re.sub(r"\s+([,.;])", r"\1", text)
     if len(text) < 60:
@@ -501,6 +508,9 @@ def main():
             print("AVISO: no se obtuvo ninguna especie nueva; se conserva lo anterior")
     else:
         print(f"Se reutilizan {len(autos)} especies ya generadas")
+
+    for animal in autos:
+        animal["description"] = tidy(animal.get("description"))
 
     photos = curated_photos(curated, by_sci)
     download_all([(a["id"], a.get("photo", {}).get("url")) for a in autos])

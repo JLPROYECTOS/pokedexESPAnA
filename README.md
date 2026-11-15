@@ -26,8 +26,7 @@ ibericodex/
 ├── pubspec.yaml
 ├── assets/
 │   ├── data/catalog.json        # catálogo generado por scripts/build_catalog.py
-│   ├── data/photos.json         # autor y licencia de cada foto
-│   └── images/<id>.jpg          # fotos, descargadas por scripts/fetch_photos.py
+│   └── images/<id>.jpg          # fotos, descargadas por scripts/build_catalog.py
 └── lib/
     ├── main.dart                # arranque, tema, proveedor de estado
     ├── models/
@@ -67,7 +66,7 @@ por otro motor manteniendo la firma `identify(texto, animales)`.
 
 ## Modelo de datos
 
-Cada entrada de `assets/data/animals.json`:
+Cada ficha escrita a mano de `data/curated.json` (el resto se genera desde iNaturalist y Wikipedia):
 
 ```json
 {
