@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../models/animal.dart';
+import '../theme.dart';
 import 'animal_image.dart';
 
-/// Miniatura de la cuadricula con su estado (pendiente / registrado).
+/// Celda de la cuadricula con su estado (pendiente / registrado).
 class AnimalTile extends StatelessWidget {
   const AnimalTile({
     super.key,
@@ -18,12 +19,19 @@ class AnimalTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      margin: EdgeInsets.zero,
-      child: InkWell(
-        onTap: onTap,
+    final color = DexColors.category(animal.category);
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        clipBehavior: Clip.antiAlias,
+        decoration: BoxDecoration(
+          color: DexColors.panel,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: seen ? color : DexColors.line,
+            width: seen ? 2 : 1,
+          ),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -33,68 +41,71 @@ class AnimalTile extends StatelessWidget {
                 children: [
                   Hero(
                     tag: 'animal-${animal.id}',
-                    child: AnimalImage(animal: animal, seen: seen),
+                    child: AnimalImage(
+                      animal: animal,
+                      seen: seen,
+                      cacheWidth: 320,
+                    ),
                   ),
                   Positioned(
-                    left: 6,
-                    top: 4,
-                    child: Text(
-                      animal.numberLabel,
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        shadows: const [
-                          Shadow(blurRadius: 3, color: Colors.black),
-                        ],
+                    left: 0,
+                    top: 0,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 2,
+                      ),
+                      decoration: const BoxDecoration(
+                        color: Color(0xCC0E1726),
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(8),
+                        ),
+                      ),
+                      child: Text(
+                        animal.numberLabel,
+                        style: dexMono(
+                          size: 10,
+                          color: seen ? DexColors.accent : DexColors.textDim,
+                        ),
                       ),
                     ),
                   ),
-                  if (seen) const Center(child: _SeenStamp()),
+                  if (seen)
+                    Positioned(
+                      right: 4,
+                      top: 4,
+                      child: Container(
+                        padding: const EdgeInsets.all(2),
+                        decoration: const BoxDecoration(
+                          color: DexColors.seen,
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.check,
+                          size: 14,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),
+            Container(height: 3, color: seen ? color : DexColors.line),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 6),
               child: Text(
                 animal.commonName,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                style: theme.textTheme.labelMedium?.copyWith(
-                  fontWeight: seen ? FontWeight.bold : FontWeight.normal,
-                  color: seen ? null : theme.disabledColor,
+                style: TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: seen ? FontWeight.w800 : FontWeight.w500,
+                  color: seen ? DexColors.text : DexColors.textDim,
                 ),
               ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class _SeenStamp extends StatelessWidget {
-  const _SeenStamp();
-
-  @override
-  Widget build(BuildContext context) {
-    const color = Color(0xFF2E7D32);
-    return Transform.rotate(
-      angle: -0.3,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.85),
-          border: Border.all(color: color, width: 2),
-          borderRadius: BorderRadius.circular(6),
-        ),
-        child: const Text(
-          'VISTO',
-          style: TextStyle(
-            color: color,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 1.5,
-          ),
         ),
       ),
     );

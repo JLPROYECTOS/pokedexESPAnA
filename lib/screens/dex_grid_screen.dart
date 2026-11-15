@@ -4,10 +4,14 @@ import 'package:provider/provider.dart';
 import '../models/animal.dart';
 import '../services/identifier_service.dart';
 import '../state/dex_state.dart';
+import '../theme.dart';
 import '../widgets/animal_tile.dart';
+import '../widgets/dex_widgets.dart';
 import 'detail_screen.dart';
 
-/// Pantalla principal: buscador, filtros por categoria y cuadricula.
+enum SeenFilter { all, seen, pending }
+
+/// Pantalla principal: buscador, filtros y cuadricula numerada.
 class DexGridScreen extends StatefulWidget {
   const DexGridScreen({super.key});
 
@@ -18,75 +22,149 @@ class DexGridScreen extends StatefulWidget {
 class _DexGridScreenState extends State<DexGridScreen> {
   String _query = '';
   AnimalCategory? _category;
+  SeenFilter _seenFilter = SeenFilter.all;
 
-  List<Animal> _filter(List<Animal> animals) {
+  List<Animal> _filter(DexState state) {
     final q = IdentifierService.normalize(_query.trim());
-    return animals.where((a) {
+    return state.animals.where((a) {
       if (_category != null && a.category != _category) return false;
+      final seen = state.isSeen(a.id);
+      if (_seenFilter == SeenFilter.seen && !seen) return false;
+      if (_seenFilter == SeenFilter.pending && seen) return false;
       if (q.isEmpty) return true;
       return IdentifierService.normalize(a.commonName).contains(q) ||
-          IdentifierService.normalize(a.scientificName).contains(q);
+          IdentifierService.normalize(a.scientificName).contains(q) ||
+          a.number.toString() == q;
     }).toList();
+  }
+
+  String get _seenFilterLabel {
+    switch (_seenFilter) {
+      case SeenFilter.all:
+        return 'TODOS';
+      case SeenFilter.seen:
+        return 'VISTOS';
+      case SeenFilter.pending:
+        return 'PENDIENTES';
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final state = context.watch<DexState>();
-    final visible = _filter(state.animals);
+    final visible = _filter(state);
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('IbéricoDex'),
-        actions: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 16),
-              child: Text(
-                '${state.seenCount} / ${state.animals.length}',
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ),
-          ),
-        ],
-      ),
+    return DeviceFrame(
+      title: 'IbéricoDex',
+      subtitle: 'FAUNA DE LA PENÍNSULA IBÉRICA',
+      trailing: CounterPill(seen: state.seenCount, total: state.animals.length),
       body: state.loading
           ? const Center(child: CircularProgressIndicator())
           : Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(12, 12, 12, 4),
-                  child: TextField(
-                    onChanged: (v) => setState(() => _query = v),
-                    decoration: const InputDecoration(
-                      prefixIcon: Icon(Icons.search),
-                      hintText: 'Buscar por nombre',
-                      border: OutlineInputBorder(),
-                      isDense: true,
-                    ),
+                  padding: const EdgeInsets.fromLTRB(12, 12, 12, 8),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          onChanged: (v) => setState(() => _query = v),
+                          style: const TextStyle(color: DexColors.text),
+                          decoration: const InputDecoration(
+                            prefixIcon: Icon(
+                              Icons.search,
+                              color: DexColors.textDim,
+                            ),
+                            hintText: 'Buscar por nombre o número',
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      PopupMenuButton<SeenFilter>(
+                        tooltip: 'Filtrar por estado',
+                        initialValue: _seenFilter,
+                        onSelected: (v) => setState(() => _seenFilter = v),
+                        itemBuilder: (_) => const [
+                          PopupMenuItem(
+                            value: SeenFilter.all,
+                            child: Text('Todos'),
+                          ),
+                          PopupMenuItem(
+                            value: SeenFilter.seen,
+                            child: Text('Solo vistos'),
+                          ),
+                          PopupMenuItem(
+                            value: SeenFilter.pending,
+                            child: Text('Solo pendientes'),
+                          ),
+                        ],
+                        child: Container(
+                          height: 44,
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          decoration: BoxDecoration(
+                            color: _seenFilter == SeenFilter.all
+                                ? DexColors.panel
+                                : DexColors.accent,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: DexColors.line),
+                          ),
+                          child: Icon(
+                            Icons.tune,
+                            color: _seenFilter == SeenFilter.all
+                                ? DexColors.text
+                                : Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(
-                  height: 48,
+                  height: 34,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     children: [
-                      _chip('Todos', null),
-                      for (final c in AnimalCategory.values) _chip(c.label, c),
+                      DexChip(
+                        label: 'Todos',
+                        color: DexColors.accent,
+                        selected: _category == null,
+                        onTap: () => setState(() => _category = null),
+                      ),
+                      for (final c in AnimalCategory.values)
+                        DexChip(
+                          label: c.label,
+                          color: DexColors.category(c),
+                          selected: _category == c,
+                          onTap: () => setState(() => _category = c),
+                        ),
                     ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(14, 10, 14, 2),
+                  child: Text(
+                    '${visible.length} ENTRADAS · $_seenFilterLabel',
+                    style: dexMono(size: 10),
                   ),
                 ),
                 Expanded(
                   child: visible.isEmpty
-                      ? const Center(child: Text('Sin resultados'))
+                      ? Center(
+                          child: Text(
+                            'SIN RESULTADOS',
+                            style: dexMono(size: 13),
+                          ),
+                        )
                       : GridView.builder(
                           padding: const EdgeInsets.all(12),
                           gridDelegate:
                               const SliverGridDelegateWithMaxCrossAxisExtent(
-                            maxCrossAxisExtent: 140,
+                            maxCrossAxisExtent: 130,
                             mainAxisSpacing: 10,
                             crossAxisSpacing: 10,
-                            childAspectRatio: 0.82,
+                            childAspectRatio: 0.8,
                           ),
                           itemCount: visible.length,
                           itemBuilder: (context, i) {
@@ -107,17 +185,6 @@ class _DexGridScreenState extends State<DexGridScreen> {
                 ),
               ],
             ),
-    );
-  }
-
-  Widget _chip(String label, AnimalCategory? category) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: ChoiceChip(
-        label: Text(label),
-        selected: _category == category,
-        onSelected: (_) => setState(() => _category = category),
-      ),
     );
   }
 }

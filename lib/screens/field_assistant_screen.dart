@@ -3,7 +3,9 @@ import 'package:provider/provider.dart';
 
 import '../services/identifier_service.dart';
 import '../state/dex_state.dart';
+import '../theme.dart';
 import '../widgets/animal_image.dart';
+import '../widgets/dex_widgets.dart';
 import '../widgets/register_dialog.dart';
 import 'detail_screen.dart';
 
@@ -38,119 +40,180 @@ class _FieldAssistantScreenState extends State<FieldAssistantScreen> {
     final state = context.watch<DexState>();
     final results = _results;
 
-    return Scaffold(
-      appBar: AppBar(title: const Text('Asistente de campo')),
+    return DeviceFrame(
+      title: 'Escáner de campo',
+      subtitle: 'IDENTIFICACIÓN POR DESCRIPCIÓN',
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(12),
         children: [
-          const Text(
-            'Describe el animal que acabas de ver: tamaño, colores, '
-            'marcas llamativas y dónde estaba.',
-          ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: _controller,
-            minLines: 3,
-            maxLines: 5,
-            textCapitalization: TextCapitalization.sentences,
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(),
-              hintText:
-                  'Ej.: es un pájaro mediano, negro con el pico rojo y '
-                  'vive cerca de un río',
+          DexPanel(
+            title: 'Describe el animal',
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Text(
+                  'Tamaño, colores, marcas llamativas y dónde estaba.',
+                  style: TextStyle(color: DexColors.textDim),
+                ),
+                const SizedBox(height: 10),
+                TextField(
+                  controller: _controller,
+                  minLines: 3,
+                  maxLines: 5,
+                  style: const TextStyle(color: DexColors.text),
+                  textCapitalization: TextCapitalization.sentences,
+                  decoration: const InputDecoration(
+                    fillColor: DexColors.screen,
+                    hintText:
+                        'Ej.: es un pájaro mediano, negro con el pico rojo '
+                        'y vive cerca de un río',
+                  ),
+                ),
+                const SizedBox(height: 10),
+                SizedBox(
+                  height: 48,
+                  child: FilledButton.icon(
+                    onPressed: _identify,
+                    icon: const Icon(Icons.center_focus_strong),
+                    label: const Text('ANALIZAR'),
+                  ),
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: 12),
-          FilledButton.icon(
-            onPressed: _identify,
-            icon: const Icon(Icons.travel_explore),
-            label: const Text('Identificar'),
-          ),
-          const SizedBox(height: 16),
           if (results != null && results.isEmpty)
-            const Text(
-              'No encuentro coincidencias. Prueba a añadir colores, '
-              'tamaño o el tipo de animal.',
+            DexPanel(
+              title: 'Sin coincidencias',
+              child: const Text(
+                'Prueba a añadir colores, tamaño o el tipo de animal.',
+                style: TextStyle(color: DexColors.text),
+              ),
+            ),
+          if (results != null && results.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(2, 0, 2, 8),
+              child: Text(
+                '${results.length} CANDIDATOS',
+                style: dexMono(size: 10),
+              ),
             ),
           if (results != null)
-            for (final s in results) _suggestionCard(context, state, s),
+            for (var i = 0; i < results.length; i++)
+              _suggestionCard(context, state, results[i], i + 1),
         ],
       ),
     );
   }
 
-  Widget _suggestionCard(BuildContext context, DexState state, Suggestion s) {
+  Widget _suggestionCard(
+    BuildContext context,
+    DexState state,
+    Suggestion s,
+    int rank,
+  ) {
     final seen = state.isSeen(s.animal.id);
     final percent = (s.score * 100).round();
-    return Card(
+    final color = DexColors.category(s.animal.category);
+
+    return Container(
       margin: const EdgeInsets.only(bottom: 12),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: SizedBox(
-                    width: 64,
-                    height: 64,
-                    child: AnimalImage(animal: s.animal, seen: true),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: DexColors.panel,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: rank == 1 ? DexColors.accent : DexColors.line),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: SizedBox(
+                  width: 72,
+                  height: 72,
+                  child: AnimalImage(
+                    animal: s.animal,
+                    seen: true,
+                    cacheWidth: 220,
                   ),
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        s.animal.commonName,
-                        style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '${s.animal.numberLabel} · ${s.animal.category.singular.toUpperCase()}',
+                      style: dexMono(size: 10, color: color),
+                    ),
+                    Text(
+                      s.animal.commonName,
+                      style: const TextStyle(
+                        color: DexColors.text,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
                       ),
-                      Text(
-                        s.animal.scientificName,
-                        style: const TextStyle(fontStyle: FontStyle.italic),
+                    ),
+                    Text(
+                      s.animal.scientificName,
+                      style: const TextStyle(
+                        color: DexColors.textDim,
+                        fontStyle: FontStyle.italic,
+                        fontSize: 12,
                       ),
-                      const SizedBox(height: 6),
-                      LinearProgressIndicator(value: s.score.clamp(0, 1)),
-                      const SizedBox(height: 2),
-                      Text('Coincidencia: $percent %'),
-                    ],
-                  ),
+                    ),
+                    const SizedBox(height: 8),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: DexBar(value: s.score, color: DexColors.accent),
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          '$percent %',
+                          style: dexMono(size: 12, color: DexColors.accent),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Encaja en: ${s.matched.join(', ')}',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
-            const SizedBox(height: 8),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                TextButton(
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Encaja en: ${s.matched.join(', ')}',
+            style: const TextStyle(color: DexColors.textDim, fontSize: 12),
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton(
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (_) => DetailScreen(animalId: s.animal.id),
                     ),
                   ),
-                  child: const Text('Ver ficha'),
+                  child: const Text('VER FICHA'),
                 ),
-                const SizedBox(width: 8),
-                FilledButton.icon(
-                  onPressed: seen
-                      ? null
-                      : () => showRegisterDialog(context, s.animal),
-                  icon: Icon(seen ? Icons.verified : Icons.check),
-                  label: Text(seen ? 'Ya registrado' : 'Es este, registrar'),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: FilledButton.icon(
+                  onPressed:
+                      seen ? null : () => showRegisterDialog(context, s.animal),
+                  icon: Icon(seen ? Icons.verified : Icons.check, size: 18),
+                  label: Text(seen ? 'REGISTRADO' : 'ES ESTE'),
                 ),
-              ],
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

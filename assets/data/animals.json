@@ -1,146 +1,4259 @@
 [
-  {"id": "lince_iberico", "number": 1, "commonName": "Lince ibérico", "scientificName": "Lynx pardinus", "category": "mamifero", "family": "Felidae", "habitat": "Monte mediterráneo y matorral con abundancia de conejo", "conservation": "VU",
-   "description": "Felino de tamaño mediano, endémico de la península ibérica. Pelaje pardo moteado de negro, patillas largas a modo de barbas, orejas rematadas en pinceles negros y cola muy corta con la punta negra. Depende casi por completo del conejo de monte.",
-   "facts": ["A comienzos de los años 2000 quedaban menos de cien ejemplares; los programas de cría y reintroducción han elevado la población por encima de los dos mil.", "Los pinceles de las orejas y las barbas crecen con la edad."],
-   "keywords": ["gato grande", "felino", "mediano", "moteado", "pardo", "orejas con pinceles", "barbas", "cola corta", "matorral", "crepuscular"]},
-  {"id": "lobo_iberico", "number": 2, "commonName": "Lobo ibérico", "scientificName": "Canis lupus signatus", "category": "mamifero", "family": "Canidae", "habitat": "Bosques, sierras y llanuras cerealistas del noroeste peninsular", "conservation": "LC",
-   "description": "Subespecie ibérica del lobo gris, algo más pequeña y esbelta. Pelaje pardo grisáceo con marcas oscuras en la parte delantera de las patas anteriores, lomo y cola, y manchas blancas en los labios. Vive en manadas familiares.",
-   "facts": ["El nombre signatus alude a las marcas oscuras que luce en patas, lomo y cola.", "Una manada suele estar formada por una pareja reproductora y sus crías de uno o dos años."],
-   "keywords": ["perro grande", "canido", "grande", "gris", "pardo", "manada", "aullido", "patas con marcas negras", "sierra", "bosque", "nocturno"]},
-  {"id": "oso_pardo", "number": 3, "commonName": "Oso pardo", "scientificName": "Ursus arctos", "category": "mamifero", "family": "Ursidae", "habitat": "Bosques caducifolios y montaña de la Cordillera Cantábrica y los Pirineos", "conservation": "LC",
-   "description": "El mayor carnívoro terrestre de la península. Cuerpo robusto, pelaje pardo de tono variable, orejas redondeadas y cola casi invisible. Es omnívoro: come frutos, hierba, insectos, miel y carroña.",
-   "facts": ["Pasa el invierno aletargado en una osera; las crías nacen durante ese periodo.", "A escala global no está amenazado, pero las poblaciones ibéricas son pequeñas y están protegidas."],
-   "keywords": ["muy grande", "robusto", "marron", "peludo", "montana", "bosque", "omnivoro", "huellas grandes"]},
-  {"id": "gineta", "number": 4, "commonName": "Gineta", "scientificName": "Genetta genetta", "category": "mamifero", "family": "Viverridae", "habitat": "Bosques, dehesas y roquedos con vegetación densa", "conservation": "LC",
-   "description": "Carnívoro esbelto del tamaño de un gato, de cuerpo alargado y patas cortas. Pelaje grisáceo con hileras de manchas negras y una cola muy larga con anillos claros y oscuros. Es nocturna y excelente trepadora.",
-   "facts": ["Se cree que llegó a la península desde el norte de África hace siglos, traída por el ser humano.", "Deposita sus excrementos en letrinas situadas en rocas o ramas destacadas."],
-   "keywords": ["parecido a gato", "esbelto", "pequeno", "gris", "moteado", "cola larga anillada", "nocturno", "trepa arboles", "bosque"]},
-  {"id": "nutria", "number": 5, "commonName": "Nutria europea", "scientificName": "Lutra lutra", "category": "mamifero", "family": "Mustelidae", "habitat": "Ríos, embalses, lagunas y costas con orillas bien conservadas", "conservation": "NT",
-   "description": "Mustélido semiacuático de cuerpo alargado, pelaje marrón denso con garganta más clara, cabeza aplanada, patas con membranas y cola gruesa y musculosa. Se alimenta sobre todo de peces, cangrejos y anfibios.",
-   "facts": ["Su pelaje es tan denso que mantiene la piel seca bajo el agua.", "Su presencia suele indicar un río en buen estado."],
-   "keywords": ["mediano", "alargado", "marron", "nada", "bucea", "rio", "agua", "cola gruesa", "bigotes", "come peces"]},
-  {"id": "cabra_montes", "number": 6, "commonName": "Cabra montés", "scientificName": "Capra pyrenaica", "category": "mamifero", "family": "Bovidae", "habitat": "Roquedos y alta montaña: Gredos, Sierra Nevada, Cazorla, Maestrazgo", "conservation": "LC",
-   "description": "Cabra salvaje endémica de la península. Los machos son grandes, con manchas negras en patas y flancos y cuernos gruesos y nudosos curvados hacia atrás; las hembras son más pequeñas y de cuernos cortos.",
-   "facts": ["La subespecie pirenaica, el bucardo, se extinguió en el año 2000.", "Se mueve con soltura por paredes casi verticales."],
-   "keywords": ["cabra", "grande", "marron", "cuernos grandes", "rocas", "montana", "trepa", "rebano", "barba"]},
-  {"id": "desman_iberico", "number": 7, "commonName": "Desmán ibérico", "scientificName": "Galemys pyrenaicus", "category": "mamifero", "family": "Talpidae", "habitat": "Arroyos de montaña limpios y oxigenados del norte peninsular", "conservation": "EN",
-   "description": "Pequeño mamífero semiacuático emparentado con los topos. Tiene una trompa larga, aplanada y muy móvil, patas traseras grandes con membranas y una cola larga. Busca invertebrados acuáticos entre las piedras del fondo.",
-   "facts": ["Usa su trompa, muy sensible, para detectar presas bajo el agua.", "Es uno de los mamíferos más amenazados y difíciles de ver de la península."],
-   "keywords": ["muy pequeno", "parecido a topo", "trompa", "hocico largo", "gris", "nada", "rio de montana", "agua", "nocturno", "cola larga"]},
-  {"id": "zorro_rojo", "number": 8, "commonName": "Zorro rojo", "scientificName": "Vulpes vulpes", "category": "mamifero", "family": "Canidae", "habitat": "Casi cualquier ambiente: bosques, campos, costas y periferia urbana", "conservation": "LC",
-   "description": "Cánido de tamaño mediano, pelaje rojizo, pecho blanquecino, patas oscuras, hocico afilado, orejas puntiagudas y cola larga y poblada, a menudo con la punta blanca. Oportunista y muy adaptable.",
-   "facts": ["Caza roedores con un característico salto en arco.", "Es el carnívoro silvestre con mayor distribución del mundo."],
-   "keywords": ["perro pequeno", "mediano", "rojizo", "naranja", "cola larga peluda", "punta blanca", "orejas puntiagudas", "hocico afilado", "campo", "nocturno"]},
-  {"id": "jabali", "number": 9, "commonName": "Jabalí", "scientificName": "Sus scrofa", "category": "mamifero", "family": "Suidae", "habitat": "Bosques, matorral, cultivos y zonas periurbanas", "conservation": "LC",
-   "description": "Cerdo salvaje de cuerpo compacto, cabeza grande y alargada, pelaje áspero pardo oscuro o negruzco y, en los machos, colmillos visibles. Hoza el suelo en busca de raíces, bellotas e invertebrados.",
-   "facts": ["Las crías, llamadas rayones, tienen el cuerpo listado de claro y oscuro.", "Deja el terreno removido tras hozar con el hocico."],
-   "keywords": ["cerdo salvaje", "grande", "robusto", "negro", "marron", "pelo aspero", "colmillos", "hocico", "bosque", "piara", "nocturno"]},
-  {"id": "ciervo", "number": 10, "commonName": "Ciervo rojo", "scientificName": "Cervus elaphus", "category": "mamifero", "family": "Cervidae", "habitat": "Bosques, dehesas y monte mediterráneo", "conservation": "LC",
-   "description": "Gran herbívoro de pelaje pardo rojizo en verano y más grisáceo en invierno. Los machos portan una cuerna ramificada que renuevan cada año; las hembras carecen de ella.",
-   "facts": ["En otoño tiene lugar la berrea, cuando los machos braman para atraer a las hembras.", "La cuerna cae a finales de invierno y vuelve a crecer cubierta de una piel llamada terciopelo."],
-   "keywords": ["venado", "muy grande", "marron", "rojizo", "cuernos ramificados", "astas", "berrea", "bosque", "dehesa", "manada", "herbivoro"]},
-  {"id": "aguila_imperial", "number": 11, "commonName": "Águila imperial ibérica", "scientificName": "Aquila adalberti", "category": "ave", "family": "Accipitridae", "habitat": "Monte mediterráneo y dehesas con arbolado disperso", "conservation": "VU",
-   "description": "Gran rapaz endémica de la península. El adulto es pardo muy oscuro con los hombros blancos y la nuca clara. Caza sobre todo conejos y anida en grandes árboles.",
-   "facts": ["Es una de las rapaces más escasas del mundo y solo cría en la península ibérica.", "Los jóvenes son de color pajizo y tardan unos cinco años en adquirir el plumaje adulto."],
-   "keywords": ["rapaz", "aguila", "muy grande", "marron oscuro", "hombros blancos", "planea", "vuela alto", "dehesa", "garras"]},
-  {"id": "buitre_leonado", "number": 12, "commonName": "Buitre leonado", "scientificName": "Gyps fulvus", "category": "ave", "family": "Accipitridae", "habitat": "Cortados rocosos y sierras; campea sobre terrenos abiertos", "conservation": "LC",
-   "description": "Rapaz carroñera enorme, de plumaje leonado, alas muy anchas con las puntas oscuras y digitadas, cuello largo cubierto de plumón blanquecino y gorguera clara. Vuela en círculos aprovechando las térmicas.",
-   "facts": ["Su envergadura supera los dos metros y medio.", "España acoge la mayor parte de la población europea."],
-   "keywords": ["rapaz", "buitre", "enorme", "marron claro", "cuello pelado", "cuello blanco", "planea en circulos", "grupo", "acantilado", "rocas", "carrona"]},
-  {"id": "quebrantahuesos", "number": 13, "commonName": "Quebrantahuesos", "scientificName": "Gypaetus barbatus", "category": "ave", "family": "Accipitridae", "habitat": "Alta montaña con grandes cortados: Pirineos y zonas de reintroducción", "conservation": "NT",
-   "description": "Buitre de gran tamaño y silueta inconfundible: alas largas y estrechas y cola en forma de rombo. El adulto tiene el pecho anaranjado, el dorso oscuro, un antifaz negro y unas cerdas a modo de barba.",
-   "facts": ["Se alimenta sobre todo de huesos, que deja caer desde gran altura sobre las rocas para romperlos.", "El tono anaranjado del pecho lo adquiere al bañarse en barros ricos en óxidos de hierro."],
-   "keywords": ["rapaz", "buitre", "enorme", "naranja", "pecho anaranjado", "barba", "antifaz negro", "cola en rombo", "alta montana", "planea", "huesos"]},
-  {"id": "abejaruco", "number": 14, "commonName": "Abejaruco europeo", "scientificName": "Merops apiaster", "category": "ave", "family": "Meropidae", "habitat": "Campos abiertos con taludes arenosos, riberas y dehesas", "conservation": "LC",
-   "description": "Una de las aves más coloridas de Europa: garganta amarilla, vientre azul turquesa, dorso castaño y dorado, antifaz negro y pico largo y curvado. Caza insectos al vuelo y cría en colonias.",
-   "facts": ["Excava túneles de más de un metro en taludes para anidar.", "Antes de tragar una abeja la frota contra una rama para quitarle el aguijón."],
-   "keywords": ["mediano", "muy colorido", "amarillo", "azul", "turquesa", "verde", "pico largo curvo", "caza insectos", "bandada", "talud", "verano", "cable"]},
-  {"id": "martin_pescador", "number": 15, "commonName": "Martín pescador", "scientificName": "Alcedo atthis", "category": "ave", "family": "Alcedinidae", "habitat": "Ríos, arroyos y lagunas de aguas limpias con orillas terrosas", "conservation": "LC",
-   "description": "Ave pequeña y compacta, de dorso azul brillante, vientre naranja y pico largo y recto en forma de daga. Se posa en ramas sobre el agua y se zambulle en picado para capturar pececillos.",
-   "facts": ["Suele verse como un destello azul que cruza el río a ras de agua.", "Anida al fondo de un túnel excavado en un talud de la orilla."],
-   "keywords": ["pequeno", "azul brillante", "naranja", "pico largo recto", "rio", "agua", "se zambulle", "pesca", "vuelo rapido", "rama"]},
-  {"id": "chova_piquirroja", "number": 16, "commonName": "Chova piquirroja", "scientificName": "Pyrrhocorax pyrrhocorax", "category": "ave", "family": "Corvidae", "habitat": "Montañas, cortados fluviales, acantilados costeros y edificios en ruinas", "conservation": "LC",
-   "description": "Córvido de tamaño mediano, completamente negro con brillo azulado, pico rojo, largo y curvado hacia abajo, y patas rojas. Vuela con gran acrobacia y se alimenta de insectos que busca en el suelo.",
-   "facts": ["Los jóvenes tienen el pico amarillento, lo que puede confundirlos con la chova piquigualda.", "Su reclamo es un grito agudo y metálico."],
-   "keywords": ["mediano", "cuervo", "negro", "pico rojo", "pico curvo", "patas rojas", "acantilado", "cortado", "montana", "rocas", "bandada", "acrobatico"]},
-  {"id": "gallineta_comun", "number": 17, "commonName": "Gallineta común", "scientificName": "Gallinula chloropus", "category": "ave", "family": "Rallidae", "habitat": "Ríos lentos, charcas, acequias y lagunas con vegetación en las orillas", "conservation": "LC",
-   "description": "Ave acuática de tamaño mediano y plumaje negruzco, con el dorso pardo y una línea blanca en los flancos. Tiene el pico rojo con la punta amarilla y un escudo frontal rojo. Nada cabeceando y camina por las orillas.",
-   "facts": ["Mueve la cola a sacudidas mostrando las plumas blancas de debajo.", "También se la conoce como polla de agua."],
-   "keywords": ["mediano", "negro", "pico rojo", "punta amarilla", "frente roja", "rio", "agua", "charca", "nada", "orilla", "carrizo", "patas verdes"]},
-  {"id": "ciguena_blanca", "number": 18, "commonName": "Cigüeña blanca", "scientificName": "Ciconia ciconia", "category": "ave", "family": "Ciconiidae", "habitat": "Pastizales, dehesas, humedales y pueblos", "conservation": "LC",
-   "description": "Ave zancuda grande, blanca con las plumas de vuelo negras, pico y patas largos y rojos. Construye voluminosos nidos de ramas en torres, tejados, postes y árboles.",
-   "facts": ["Se comunica golpeando el pico, un sonido llamado crotoreo.", "Muchas han dejado de migrar a África y pasan el invierno en la península."],
-   "keywords": ["grande", "zancuda", "blanco", "alas negras", "pico rojo largo", "patas rojas largas", "nido", "torre", "iglesia", "pueblo", "pradera"]},
-  {"id": "abubilla", "number": 19, "commonName": "Abubilla", "scientificName": "Upupa epops", "category": "ave", "family": "Upupidae", "habitat": "Campos abiertos con arbolado, dehesas, huertos y jardines", "conservation": "LC",
-   "description": "Ave inconfundible de cuerpo anaranjado rosado, alas y cola listadas en blanco y negro, pico largo y curvado y una gran cresta eréctil con las puntas negras. Busca insectos caminando por el suelo.",
-   "facts": ["Su nombre imita su canto, un repetido up-up-up.", "Su vuelo ondulante recuerda al de una mariposa grande."],
-   "keywords": ["mediano", "naranja", "cresta", "penacho", "alas blanco y negro", "rayas", "pico largo curvo", "suelo", "jardin", "campo"]},
-  {"id": "buho_real", "number": 20, "commonName": "Búho real", "scientificName": "Bubo bubo", "category": "ave", "family": "Strigidae", "habitat": "Roquedos, barrancos y bosques con cortados", "conservation": "LC",
-   "description": "La mayor rapaz nocturna de Europa. Cuerpo voluminoso, plumaje pardo jaspeado de negro, grandes ojos anaranjados y penachos de plumas a modo de orejas.",
-   "facts": ["Su canto grave, un «buu-ho», se oye a gran distancia en las noches de invierno.", "Puede capturar presas del tamaño de un conejo o un erizo."],
-   "keywords": ["rapaz nocturna", "buho", "muy grande", "marron", "ojos naranjas", "orejas", "penachos", "nocturno", "rocas", "barranco", "canto grave"]},
-  {"id": "rabilargo", "number": 21, "commonName": "Rabilargo ibérico", "scientificName": "Cyanopica cooki", "category": "ave", "family": "Corvidae", "habitat": "Dehesas, encinares, pinares y olivares del centro y suroeste", "conservation": "LC",
-   "description": "Córvido esbelto con capirote negro, garganta blanca, cuerpo beige rosado y alas y cola larga de color azul celeste. Muy sociable, se desplaza en bandos ruidosos.",
-   "facts": ["Solo vive en la península ibérica; su pariente más cercano habita en Asia oriental.", "Cría en colonias laxas y varios adultos ayudan a alimentar a los pollos."],
-   "keywords": ["mediano", "cabeza negra", "alas azules", "cola larga azul", "celeste", "bandada", "ruidoso", "dehesa", "encinas", "pinar"]},
-  {"id": "lagarto_ocelado", "number": 22, "commonName": "Lagarto ocelado", "scientificName": "Timon lepidus", "category": "reptil", "family": "Lacertidae", "habitat": "Matorral mediterráneo, dehesas, olivares y zonas pedregosas soleadas", "conservation": "NT",
-   "description": "El mayor lagarto de la península, robusto y de cabeza grande. Es verde con un fino dibujo negro y luce manchas azules redondeadas, los ocelos, en los costados.",
-   "facts": ["Los machos grandes superan los 60 cm contando la cola.", "Se refugia en madrigueras de conejo, muros de piedra y troncos huecos."],
-   "keywords": ["lagarto", "grande", "verde", "manchas azules", "ocelos", "cabeza grande", "cola larga", "sol", "piedras", "matorral", "rapido"]},
-  {"id": "vibora_hocicuda", "number": 23, "commonName": "Víbora hocicuda", "scientificName": "Vipera latastei", "category": "reptil", "family": "Viperidae", "habitat": "Zonas pedregosas, matorral y bosques abiertos, a menudo en montaña", "conservation": "VU",
-   "description": "Serpiente venenosa de cuerpo corto y grueso, cabeza triangular, pupila vertical y hocico respingado. Es grisácea o parda con una banda oscura en zigzag a lo largo del dorso.",
-   "facts": ["El apéndice levantado del hocico la distingue de las demás serpientes ibéricas.", "Es tímida y solo muerde si se siente acorralada; ante una mordedura hay que acudir a un centro sanitario."],
-   "keywords": ["vibora", "culebra", "pequeno", "corto y grueso", "gris", "zigzag", "cabeza triangular", "hocico levantado", "venenosa", "piedras", "montana"]},
-  {"id": "galapago_leproso", "number": 24, "commonName": "Galápago leproso", "scientificName": "Mauremys leprosa", "category": "reptil", "family": "Geoemydidae", "habitat": "Ríos, charcas, embalses y arroyos de aguas tranquilas", "conservation": "VU",
-   "description": "Tortuga de agua dulce de caparazón aplanado, pardo verdoso, y cuello con líneas amarillentas o anaranjadas. Pasa largos ratos tomando el sol sobre piedras y troncos y se lanza al agua al menor peligro.",
-   "facts": ["Su nombre se debe a las algas que a veces deterioran las placas del caparazón.", "Sufre la competencia de galápagos exóticos liberados en la naturaleza."],
-   "keywords": ["galapago", "caparazon", "mediano", "verdoso", "marron", "cuello con rayas", "rio", "charca", "agua", "toma el sol", "tronco", "nada"]},
-  {"id": "camaleon_comun", "number": 25, "commonName": "Camaleón común", "scientificName": "Chamaeleo chamaeleon", "category": "reptil", "family": "Chamaeleonidae", "habitat": "Pinares costeros, retamares, huertos y jardines del sur peninsular", "conservation": "LC",
-   "description": "Reptil arborícola de cuerpo comprimido, cola prensil, dedos en forma de pinza y ojos que se mueven de manera independiente. Cambia de color según la temperatura, la luz y su estado.",
-   "facts": ["Captura insectos proyectando una lengua tan larga como su cuerpo.", "Las hembras bajan al suelo para enterrar la puesta."],
-   "keywords": ["mediano", "verde", "cambia de color", "ojos saltones independientes", "cola enrollada", "lento", "arbusto", "rama", "trepa", "costa", "lengua larga"]},
-  {"id": "culebra_escalera", "number": 26, "commonName": "Culebra de escalera", "scientificName": "Zamenis scalaris", "category": "reptil", "family": "Colubridae", "habitat": "Matorral, cultivos, muros de piedra y linderos soleados", "conservation": "LC",
-   "description": "Culebra robusta y no venenosa, de color pardo amarillento. Los juveniles muestran en el dorso un dibujo negro en forma de escalera; en los adultos quedan solo dos líneas oscuras paralelas.",
-   "facts": ["Es buena trepadora y saquea nidos de aves y roedores.", "Si se la molesta bufa y puede morder, pero no tiene veneno."],
-   "keywords": ["culebra", "grande", "larga", "marron claro", "amarillento", "dos lineas oscuras", "dibujo de escalera", "muro", "piedras", "campo", "trepa"]},
-  {"id": "salamanquesa_comun", "number": 27, "commonName": "Salamanquesa común", "scientificName": "Tarentola mauritanica", "category": "reptil", "family": "Phyllodactylidae", "habitat": "Muros, roquedos, troncos y edificios de zonas cálidas", "conservation": "LC",
-   "description": "Pequeño reptil aplanado, de piel grisácea o parda cubierta de tubérculos, ojos grandes sin párpados y dedos anchos con láminas adhesivas que le permiten trepar por paredes y techos.",
-   "facts": ["Acude por la noche a las farolas para cazar los insectos que atrae la luz.", "Puede desprenderse de la cola para escapar de un depredador."],
-   "keywords": ["lagartija", "pequeno", "gris", "aplanado", "rugoso", "muro", "casa", "techo", "luz", "farola", "nocturno", "dedos anchos", "trepa"]},
-  {"id": "salamandra_comun", "number": 28, "commonName": "Salamandra común", "scientificName": "Salamandra salamandra", "category": "anfibio", "family": "Salamandridae", "habitat": "Bosques húmedos y sombríos cerca de arroyos y fuentes", "conservation": "VU",
-   "description": "Anfibio de cuerpo robusto y piel lisa y brillante, negra con manchas o bandas amarillas muy llamativas. Es lenta, terrestre y sale sobre todo en noches lluviosas.",
-   "facts": ["Sus colores avisan de que su piel segrega sustancias tóxicas.", "El dibujo de manchas varía mucho entre regiones: en el norte suelen ser bandas, en el sur manchas sueltas."],
-   "keywords": ["mediano", "negro", "moteado", "manchas amarillas", "amarillo", "piel brillante", "lento", "bosque humedo", "lluvia", "nocturno", "hojarasca"]},
-  {"id": "gallipato", "number": 29, "commonName": "Gallipato", "scientificName": "Pleurodeles waltl", "category": "anfibio", "family": "Salamandridae", "habitat": "Charcas, balsas, albercas y arroyos de aguas quietas", "conservation": "NT",
-   "description": "Uno de los mayores anfibios con cola de Europa. Cabeza ancha y aplanada, piel rugosa de color pardo grisáceo y una hilera de bultos anaranjados en cada costado. Muy acuático.",
-   "facts": ["Como defensa, las puntas de sus costillas pueden atravesar la piel por esos bultos del costado.", "Puede superar los 20 cm de longitud."],
-   "keywords": ["triton grande", "grande", "gris", "marron", "piel rugosa", "cabeza plana", "bultos naranjas en el costado", "charca", "agua", "cola aplanada", "nada"]},
-  {"id": "sapo_partero_iberico", "number": 30, "commonName": "Sapo partero ibérico", "scientificName": "Alytes cisternasii", "category": "anfibio", "family": "Alytidae", "habitat": "Dehesas y encinares de suelo arenoso del centro y suroeste", "conservation": "LC",
-   "description": "Sapo pequeño y rechoncho, de piel granulosa parda con puntitos rojizos, ojos grandes con pupila vertical y hábitos excavadores. Endémico de la península.",
-   "facts": ["El macho lleva la puesta enrollada en las patas traseras hasta que eclosiona.", "Su canto es una nota aflautada y breve que recuerda al de un autillo."],
-   "keywords": ["sapo", "muy pequeno", "rechoncho", "marron", "piel con granos", "puntos rojizos", "nocturno", "silbido", "dehesa", "arena", "huevos en las patas"]},
-  {"id": "ranita_san_antonio", "number": 31, "commonName": "Ranita de San Antonio ibérica", "scientificName": "Hyla molleri", "category": "anfibio", "family": "Hylidae", "habitat": "Charcas, prados húmedos y vegetación de ribera", "conservation": "LC",
-   "description": "Rana pequeña de piel lisa y color verde brillante, con una banda oscura que va del ojo al costado. Tiene discos adhesivos en los dedos y trepa por juncos, zarzas y arbustos.",
-   "facts": ["Los machos cantan en coro inflando un saco vocal casi tan grande como su cuerpo.", "Puede cambiar de tono, del verde claro al pardo."],
-   "keywords": ["rana", "muy pequeno", "verde brillante", "piel lisa", "banda oscura lateral", "trepa", "juncos", "charca", "coro", "ventosas en los dedos"]},
-  {"id": "trucha_comun", "number": 32, "commonName": "Trucha común", "scientificName": "Salmo trutta", "category": "pez", "family": "Salmonidae", "habitat": "Ríos y arroyos de aguas frías, limpias y bien oxigenadas", "conservation": "LC",
-   "description": "Pez de cuerpo fusiforme, pardo verdoso en el dorso y más claro en los flancos, salpicados de motas negras y rojas rodeadas de un halo claro. Tiene una pequeña aleta adiposa cerca de la cola.",
-   "facts": ["Remonta los ríos para desovar en fondos de grava.", "Las poblaciones autóctonas se ven afectadas por las repoblaciones con truchas de otras procedencias."],
-   "keywords": ["mediano", "alargado", "marron verdoso", "moteado", "motas rojas y negras", "rio de montana", "agua fria", "corriente", "salta"]},
-  {"id": "anguila_europea", "number": 33, "commonName": "Anguila europea", "scientificName": "Anguilla anguilla", "category": "pez", "family": "Anguillidae", "habitat": "Ríos, estuarios, albuferas y lagunas costeras", "conservation": "CR",
-   "description": "Pez de cuerpo muy alargado y cilíndrico, con aspecto de serpiente, piel viscosa y una aleta continua que recorre dorso, cola y vientre. Es de hábitos nocturnos.",
-   "facts": ["Nace en el mar de los Sargazos y cruza el Atlántico como larva antes de entrar en los ríos.", "Sus juveniles, las angulas, son transparentes."],
-   "keywords": ["largo", "parecido a serpiente", "cilindrico", "oscuro", "verdoso", "piel resbaladiza", "rio", "estuario", "fondo", "nocturno"]},
-  {"id": "jarabugo", "number": 34, "commonName": "Jarabugo", "scientificName": "Anaecypris hispanica", "category": "pez", "family": "Leuciscidae", "habitat": "Arroyos pequeños de la cuenca del Guadiana, con vegetación acuática", "conservation": "EN",
-   "description": "Pez diminuto y endémico de la península, de cuerpo estilizado, color pardo plateado con pequeñas manchas oscuras, boca orientada hacia arriba y escamas muy pequeñas.",
-   "facts": ["Rara vez supera los 7 cm.", "Sobrevive al verano en pozas aisladas cuando los arroyos dejan de correr."],
-   "keywords": ["diminuto", "muy pequeno", "plateado", "pequenas manchas", "arroyo", "poza", "banco", "boca hacia arriba"]},
-  {"id": "barbo_comun", "number": 35, "commonName": "Barbo común ibérico", "scientificName": "Luciobarbus bocagei", "category": "pez", "family": "Cyprinidae", "habitat": "Tramos medios de ríos de las cuencas del Duero y del Tajo", "conservation": "LC",
-   "description": "Pez robusto de dorso pardo verdoso y vientre claro, con labios gruesos y cuatro barbillones alrededor de la boca, que usa para buscar alimento en el fondo.",
-   "facts": ["En primavera remonta los ríos en grupo para frezar en zonas de grava.", "Es endémico de la península ibérica."],
-   "keywords": ["grande", "robusto", "marron verdoso", "bigotes", "barbillones", "labios gruesos", "rio", "fondo", "banco"]},
-  {"id": "salmon_atlantico", "number": 36, "commonName": "Salmón atlántico", "scientificName": "Salmo salar", "category": "pez", "family": "Salmonidae", "habitat": "Ríos cantábricos y gallegos; fase adulta en el océano Atlántico", "conservation": "NT",
-   "description": "Pez grande y potente, plateado con pequeñas motas negras en forma de aspa sobre la línea lateral. Nace en el río, crece en el mar y regresa a su río natal para reproducirse.",
-   "facts": ["Supera saltos de agua de varios metros en su remonte.", "Los ríos del norte de la península marcan el límite sur de su distribución en Europa."],
-   "keywords": ["grande", "plateado", "motas negras", "salta", "remonta el rio", "rio", "cascada", "norte", "mar"]}
+ {
+  "id": "lince_iberico",
+  "number": 1,
+  "commonName": "Lince ibérico",
+  "scientificName": "Lynx pardinus",
+  "category": "mamifero",
+  "family": "Felidae",
+  "habitat": "Monte mediterráneo y matorral con abundancia de conejo",
+  "conservation": "VU",
+  "description": "Felino de tamaño mediano, endémico de la península ibérica. Pelaje pardo moteado de negro, patillas largas a modo de barbas, orejas rematadas en pinceles negros y cola muy corta con la punta negra. Depende casi por completo del conejo de monte.",
+  "facts": [
+   "A comienzos de los años 2000 quedaban menos de cien ejemplares; los programas de cría y reintroducción han elevado la población por encima de los dos mil.",
+   "Los pinceles de las orejas y las barbas crecen con la edad."
+  ],
+  "keywords": [
+   "gato grande",
+   "felino",
+   "mediano",
+   "moteado",
+   "pardo",
+   "orejas con pinceles",
+   "barbas",
+   "cola corta",
+   "matorral",
+   "crepuscular"
+  ]
+ },
+ {
+  "id": "lobo_iberico",
+  "number": 2,
+  "commonName": "Lobo ibérico",
+  "scientificName": "Canis lupus signatus",
+  "category": "mamifero",
+  "family": "Canidae",
+  "habitat": "Bosques, sierras y llanuras cerealistas del noroeste peninsular",
+  "conservation": "LC",
+  "description": "Subespecie ibérica del lobo gris, algo más pequeña y esbelta. Pelaje pardo grisáceo con marcas oscuras en la parte delantera de las patas anteriores, lomo y cola, y manchas blancas en los labios. Vive en manadas familiares.",
+  "facts": [
+   "El nombre signatus alude a las marcas oscuras que luce en patas, lomo y cola.",
+   "Una manada suele estar formada por una pareja reproductora y sus crías de uno o dos años."
+  ],
+  "keywords": [
+   "perro grande",
+   "canido",
+   "grande",
+   "gris",
+   "pardo",
+   "manada",
+   "aullido",
+   "patas con marcas negras",
+   "sierra",
+   "bosque",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "oso_pardo",
+  "number": 3,
+  "commonName": "Oso pardo",
+  "scientificName": "Ursus arctos",
+  "category": "mamifero",
+  "family": "Ursidae",
+  "habitat": "Bosques caducifolios y montaña de la Cordillera Cantábrica y los Pirineos",
+  "conservation": "LC",
+  "description": "El mayor carnívoro terrestre de la península. Cuerpo robusto, pelaje pardo de tono variable, orejas redondeadas y cola casi invisible. Es omnívoro: come frutos, hierba, insectos, miel y carroña.",
+  "facts": [
+   "Pasa el invierno aletargado en una osera; las crías nacen durante ese periodo.",
+   "A escala global no está amenazado, pero las poblaciones ibéricas son pequeñas y están protegidas."
+  ],
+  "keywords": [
+   "muy grande",
+   "robusto",
+   "marron",
+   "peludo",
+   "montana",
+   "bosque",
+   "omnivoro",
+   "huellas grandes"
+  ]
+ },
+ {
+  "id": "gineta",
+  "number": 4,
+  "commonName": "Gineta",
+  "scientificName": "Genetta genetta",
+  "category": "mamifero",
+  "family": "Viverridae",
+  "habitat": "Bosques, dehesas y roquedos con vegetación densa",
+  "conservation": "LC",
+  "description": "Carnívoro esbelto del tamaño de un gato, de cuerpo alargado y patas cortas. Pelaje grisáceo con hileras de manchas negras y una cola muy larga con anillos claros y oscuros. Es nocturna y excelente trepadora.",
+  "facts": [
+   "Se cree que llegó a la península desde el norte de África hace siglos, traída por el ser humano.",
+   "Deposita sus excrementos en letrinas situadas en rocas o ramas destacadas."
+  ],
+  "keywords": [
+   "parecido a gato",
+   "esbelto",
+   "pequeno",
+   "gris",
+   "moteado",
+   "cola larga anillada",
+   "nocturno",
+   "trepa arboles",
+   "bosque"
+  ]
+ },
+ {
+  "id": "nutria",
+  "number": 5,
+  "commonName": "Nutria europea",
+  "scientificName": "Lutra lutra",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Ríos, embalses, lagunas y costas con orillas bien conservadas",
+  "conservation": "NT",
+  "description": "Mustélido semiacuático de cuerpo alargado, pelaje marrón denso con garganta más clara, cabeza aplanada, patas con membranas y cola gruesa y musculosa. Se alimenta sobre todo de peces, cangrejos y anfibios.",
+  "facts": [
+   "Su pelaje es tan denso que mantiene la piel seca bajo el agua.",
+   "Su presencia suele indicar un río en buen estado."
+  ],
+  "keywords": [
+   "mediano",
+   "alargado",
+   "marron",
+   "nada",
+   "bucea",
+   "rio",
+   "agua",
+   "cola gruesa",
+   "bigotes",
+   "come peces"
+  ]
+ },
+ {
+  "id": "cabra_montes",
+  "number": 6,
+  "commonName": "Cabra montés",
+  "scientificName": "Capra pyrenaica",
+  "category": "mamifero",
+  "family": "Bovidae",
+  "habitat": "Roquedos y alta montaña: Gredos, Sierra Nevada, Cazorla, Maestrazgo",
+  "conservation": "LC",
+  "description": "Cabra salvaje endémica de la península. Los machos son grandes, con manchas negras en patas y flancos y cuernos gruesos y nudosos curvados hacia atrás; las hembras son más pequeñas y de cuernos cortos.",
+  "facts": [
+   "La subespecie pirenaica, el bucardo, se extinguió en el año 2000.",
+   "Se mueve con soltura por paredes casi verticales."
+  ],
+  "keywords": [
+   "cabra",
+   "grande",
+   "marron",
+   "cuernos grandes",
+   "rocas",
+   "montana",
+   "trepa",
+   "rebano",
+   "barba"
+  ]
+ },
+ {
+  "id": "desman_iberico",
+  "number": 7,
+  "commonName": "Desmán ibérico",
+  "scientificName": "Galemys pyrenaicus",
+  "category": "mamifero",
+  "family": "Talpidae",
+  "habitat": "Arroyos de montaña limpios y oxigenados del norte peninsular",
+  "conservation": "EN",
+  "description": "Pequeño mamífero semiacuático emparentado con los topos. Tiene una trompa larga, aplanada y muy móvil, patas traseras grandes con membranas y una cola larga. Busca invertebrados acuáticos entre las piedras del fondo.",
+  "facts": [
+   "Usa su trompa, muy sensible, para detectar presas bajo el agua.",
+   "Es uno de los mamíferos más amenazados y difíciles de ver de la península."
+  ],
+  "keywords": [
+   "muy pequeno",
+   "parecido a topo",
+   "trompa",
+   "hocico largo",
+   "gris",
+   "nada",
+   "rio de montana",
+   "agua",
+   "nocturno",
+   "cola larga"
+  ]
+ },
+ {
+  "id": "zorro_rojo",
+  "number": 8,
+  "commonName": "Zorro rojo",
+  "scientificName": "Vulpes vulpes",
+  "category": "mamifero",
+  "family": "Canidae",
+  "habitat": "Casi cualquier ambiente: bosques, campos, costas y periferia urbana",
+  "conservation": "LC",
+  "description": "Cánido de tamaño mediano, pelaje rojizo, pecho blanquecino, patas oscuras, hocico afilado, orejas puntiagudas y cola larga y poblada, a menudo con la punta blanca. Oportunista y muy adaptable.",
+  "facts": [
+   "Caza roedores con un característico salto en arco.",
+   "Es el carnívoro silvestre con mayor distribución del mundo."
+  ],
+  "keywords": [
+   "perro pequeno",
+   "mediano",
+   "rojizo",
+   "naranja",
+   "cola larga peluda",
+   "punta blanca",
+   "orejas puntiagudas",
+   "hocico afilado",
+   "campo",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "jabali",
+  "number": 9,
+  "commonName": "Jabalí",
+  "scientificName": "Sus scrofa",
+  "category": "mamifero",
+  "family": "Suidae",
+  "habitat": "Bosques, matorral, cultivos y zonas periurbanas",
+  "conservation": "LC",
+  "description": "Cerdo salvaje de cuerpo compacto, cabeza grande y alargada, pelaje áspero pardo oscuro o negruzco y, en los machos, colmillos visibles. Hoza el suelo en busca de raíces, bellotas e invertebrados.",
+  "facts": [
+   "Las crías, llamadas rayones, tienen el cuerpo listado de claro y oscuro.",
+   "Deja el terreno removido tras hozar con el hocico."
+  ],
+  "keywords": [
+   "cerdo salvaje",
+   "grande",
+   "robusto",
+   "negro",
+   "marron",
+   "pelo aspero",
+   "colmillos",
+   "hocico",
+   "bosque",
+   "piara",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "ciervo",
+  "number": 10,
+  "commonName": "Ciervo rojo",
+  "scientificName": "Cervus elaphus",
+  "category": "mamifero",
+  "family": "Cervidae",
+  "habitat": "Bosques, dehesas y monte mediterráneo",
+  "conservation": "LC",
+  "description": "Gran herbívoro de pelaje pardo rojizo en verano y más grisáceo en invierno. Los machos portan una cuerna ramificada que renuevan cada año; las hembras carecen de ella.",
+  "facts": [
+   "En otoño tiene lugar la berrea, cuando los machos braman para atraer a las hembras.",
+   "La cuerna cae a finales de invierno y vuelve a crecer cubierta de una piel llamada terciopelo."
+  ],
+  "keywords": [
+   "venado",
+   "muy grande",
+   "marron",
+   "rojizo",
+   "cuernos ramificados",
+   "astas",
+   "berrea",
+   "bosque",
+   "dehesa",
+   "manada",
+   "herbivoro"
+  ]
+ },
+ {
+  "id": "conejo",
+  "number": 11,
+  "commonName": "Conejo de monte",
+  "scientificName": "Oryctolagus cuniculus",
+  "category": "mamifero",
+  "family": "Leporidae",
+  "habitat": "Matorral, dehesas y cultivos con suelos blandos donde excavar",
+  "conservation": "EN",
+  "description": "Lagomorfo de tamaño mediano, pelaje pardo grisáceo, orejas largas y cola corta, blanca por debajo. Vive en madrigueras comunales llamadas vivares y es la presa clave del monte mediterráneo.",
+  "facts": [
+   "Es originario de la península ibérica y de él descienden todos los conejos domésticos.",
+   "Más de cuarenta depredadores ibéricos lo incluyen en su dieta."
+  ],
+  "keywords": [
+   "pequeno",
+   "gris",
+   "marron",
+   "orejas largas",
+   "cola blanca",
+   "salta",
+   "madriguera",
+   "matorral",
+   "campo",
+   "crepuscular"
+  ]
+ },
+ {
+  "id": "liebre_iberica",
+  "number": 12,
+  "commonName": "Liebre ibérica",
+  "scientificName": "Lepus granatensis",
+  "category": "mamifero",
+  "family": "Leporidae",
+  "habitat": "Campos abiertos, cultivos de cereal, dehesas y matorral ralo",
+  "conservation": "LC",
+  "description": "Mayor y más esbelta que el conejo, con orejas muy largas de punta negra, patas traseras largas y vientre blanco bien delimitado. No excava madrigueras: descansa en una depresión del suelo llamada cama.",
+  "facts": [
+   "Es endémica de la península ibérica.",
+   "Los lebratos nacen con pelo y los ojos abiertos."
+  ],
+  "keywords": [
+   "mediano",
+   "marron",
+   "orejas muy largas",
+   "punta negra",
+   "patas largas",
+   "corre rapido",
+   "campo abierto",
+   "cultivo",
+   "vientre blanco"
+  ]
+ },
+ {
+  "id": "erizo_europeo",
+  "number": 13,
+  "commonName": "Erizo europeo",
+  "scientificName": "Erinaceus europaeus",
+  "category": "mamifero",
+  "family": "Erinaceidae",
+  "habitat": "Bosques, setos, huertos, parques y jardines",
+  "conservation": "NT",
+  "description": "Pequeño mamífero rechoncho con el dorso cubierto de púas pardas y claras, hocico puntiagudo y patas cortas. Nocturno, come invertebrados y se enrolla en una bola cuando se siente amenazado.",
+  "facts": [
+   "Un adulto tiene varios miles de púas.",
+   "Hiberna durante los meses fríos en un nido de hojas."
+  ],
+  "keywords": [
+   "pequeno",
+   "puas",
+   "pinchos",
+   "bola",
+   "marron",
+   "hocico puntiagudo",
+   "nocturno",
+   "jardin",
+   "huerto",
+   "hojarasca"
+  ]
+ },
+ {
+  "id": "ardilla_roja",
+  "number": 14,
+  "commonName": "Ardilla roja",
+  "scientificName": "Sciurus vulgaris",
+  "category": "mamifero",
+  "family": "Sciuridae",
+  "habitat": "Pinares y bosques mixtos, también parques arbolados",
+  "conservation": "LC",
+  "description": "Roedor arborícola de pelaje rojizo a pardo oscuro, vientre blanco, cola larga y muy poblada y, en invierno, pinceles de pelo en las orejas. Diurna y muy ágil.",
+  "facts": [
+   "Entierra piñones y frutos secos como despensa; los que olvida ayudan a regenerar el bosque.",
+   "Deja a su paso piñas roídas hasta el eje."
+  ],
+  "keywords": [
+   "pequeno",
+   "rojizo",
+   "marron",
+   "cola peluda",
+   "trepa arboles",
+   "pinar",
+   "bosque",
+   "parque",
+   "pinas",
+   "diurno",
+   "orejas con pinceles"
+  ]
+ },
+ {
+  "id": "tejon",
+  "number": 15,
+  "commonName": "Tejón",
+  "scientificName": "Meles meles",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Bosques, dehesas y campiñas con suelos fáciles de excavar",
+  "conservation": "LC",
+  "description": "Mustélido robusto de patas cortas, cuerpo gris y cabeza blanca cruzada por dos bandas negras que pasan por los ojos. Nocturno y omnívoro, vive en grupos familiares en madrigueras complejas llamadas tejoneras.",
+  "facts": [
+   "Las tejoneras pueden usarse durante generaciones.",
+   "Come lombrices, frutos, raíces, insectos y pequeños vertebrados."
+  ],
+  "keywords": [
+   "mediano",
+   "robusto",
+   "gris",
+   "cara blanca con rayas negras",
+   "patas cortas",
+   "madriguera",
+   "nocturno",
+   "bosque",
+   "excava"
+  ]
+ },
+ {
+  "id": "garduna",
+  "number": 16,
+  "commonName": "Garduña",
+  "scientificName": "Martes foina",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Roquedos, bosques, pueblos y construcciones rurales",
+  "conservation": "LC",
+  "description": "Mustélido esbelto del tamaño de un gato, pardo, con cola larga y poblada y una mancha blanca en la garganta que se bifurca hacia las patas delanteras. Nocturna y buena trepadora.",
+  "facts": [
+   "Es frecuente que se instale en desvanes, pajares y edificios abandonados.",
+   "Se distingue de la marta por el babero blanco y dividido."
+  ],
+  "keywords": [
+   "mediano",
+   "esbelto",
+   "marron",
+   "babero blanco",
+   "garganta blanca",
+   "cola larga peluda",
+   "nocturno",
+   "trepa",
+   "rocas",
+   "pueblo",
+   "desvan"
+  ]
+ },
+ {
+  "id": "comadreja",
+  "number": 17,
+  "commonName": "Comadreja",
+  "scientificName": "Mustela nivalis",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Muros de piedra, linderos, cultivos, prados y bosques",
+  "conservation": "LC",
+  "description": "El carnívoro más pequeño de Europa: cuerpo muy alargado y fino, patas cortas, dorso pardo canela y vientre blanco. Es muy activa y caza roedores dentro de sus galerías.",
+  "facts": [
+   "Es tan delgada que cabe por agujeros del grosor de un dedo pulgar.",
+   "A menudo se yergue sobre las patas traseras para otear."
+  ],
+  "keywords": [
+   "muy pequeno",
+   "alargado",
+   "fino",
+   "marron canela",
+   "vientre blanco",
+   "rapido",
+   "muro de piedra",
+   "campo",
+   "caza ratones"
+  ]
+ },
+ {
+  "id": "turon",
+  "number": 18,
+  "commonName": "Turón",
+  "scientificName": "Mustela putorius",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Riberas, humedales, bosques y campiñas",
+  "conservation": "LC",
+  "description": "Mustélido de cuerpo alargado, pelaje pardo oscuro con borra amarillenta y un característico antifaz oscuro sobre el hocico y las orejas blanquecinos. Nocturno y solitario.",
+  "facts": [
+   "Es el antepasado silvestre del hurón doméstico.",
+   "Se defiende con una secreción de olor muy intenso."
+  ],
+  "keywords": [
+   "mediano",
+   "alargado",
+   "marron oscuro",
+   "antifaz",
+   "hocico blanco",
+   "nocturno",
+   "rio",
+   "humedal",
+   "olor fuerte"
+  ]
+ },
+ {
+  "id": "gato_montes",
+  "number": 19,
+  "commonName": "Gato montés",
+  "scientificName": "Felis silvestris",
+  "category": "mamifero",
+  "family": "Felidae",
+  "habitat": "Bosques y monte mediterráneo poco alterados",
+  "conservation": "LC",
+  "description": "Parecido a un gato doméstico atigrado pero más corpulento, con cabeza ancha y una cola gruesa, de punta roma y negra, con varios anillos oscuros. Esquivo y sobre todo nocturno.",
+  "facts": [
+   "La cola gruesa y anillada es el mejor rasgo para distinguirlo de un gato doméstico.",
+   "La hibridación con gatos domésticos es una de sus principales amenazas."
+  ],
+  "keywords": [
+   "gato",
+   "mediano",
+   "atigrado",
+   "rayas",
+   "gris",
+   "marron",
+   "cola gruesa anillada",
+   "punta negra",
+   "bosque",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "meloncillo",
+  "number": 20,
+  "commonName": "Meloncillo",
+  "scientificName": "Herpestes ichneumon",
+  "category": "mamifero",
+  "family": "Herpestidae",
+  "habitat": "Matorral denso y riberas del suroeste peninsular",
+  "conservation": "LC",
+  "description": "La única mangosta de Europa. Cuerpo alargado y bajo, pelaje pardo grisáceo de aspecto canoso, hocico afilado y cola larga que termina en un pincel negro. Diurno.",
+  "facts": [
+   "Las familias se desplazan en fila, cada animal pegado a la cola del anterior.",
+   "Incluye culebras y víboras entre sus presas."
+  ],
+  "keywords": [
+   "mangosta",
+   "mediano",
+   "alargado",
+   "gris",
+   "marron",
+   "cola larga con pincel negro",
+   "diurno",
+   "matorral",
+   "fila",
+   "suroeste"
+  ]
+ },
+ {
+  "id": "corzo",
+  "number": 21,
+  "commonName": "Corzo",
+  "scientificName": "Capreolus capreolus",
+  "category": "mamifero",
+  "family": "Cervidae",
+  "habitat": "Bosques con claros, sotos y mosaicos de cultivo y monte",
+  "conservation": "LC",
+  "description": "El cérvido más pequeño de la península. Pelaje rojizo en verano y grisáceo en invierno, hocico negro, escudo anal blanco y sin cola visible. El macho luce una cuerna corta de tres puntas.",
+  "facts": [
+   "Su voz de alarma es un ladrido ronco que recuerda al de un perro.",
+   "Los corcinos nacen moteados de blanco."
+  ],
+  "keywords": [
+   "ciervo pequeno",
+   "mediano",
+   "rojizo",
+   "gris",
+   "trasero blanco",
+   "cuernos cortos",
+   "ladra",
+   "bosque",
+   "claro",
+   "herbivoro",
+   "solitario"
+  ]
+ },
+ {
+  "id": "gamo",
+  "number": 22,
+  "commonName": "Gamo",
+  "scientificName": "Dama dama",
+  "category": "mamifero",
+  "family": "Cervidae",
+  "habitat": "Dehesas, bosques abiertos y fincas con pastizal",
+  "conservation": "LC",
+  "description": "Cérvido de tamaño medio con el dorso pardo rojizo moteado de blanco en verano y una cola larga, negra por encima. Los machos tienen la cuerna aplanada en forma de pala.",
+  "facts": [
+   "La época de celo se llama ronca, por el sonido gutural de los machos.",
+   "Fue introducido en la península en la Antigüedad."
+  ],
+  "keywords": [
+   "ciervo",
+   "grande",
+   "marron",
+   "moteado de blanco",
+   "cuernos en pala",
+   "cola negra",
+   "dehesa",
+   "manada",
+   "herbivoro"
+  ]
+ },
+ {
+  "id": "rebeco",
+  "number": 23,
+  "commonName": "Rebeco",
+  "scientificName": "Rupicapra pyrenaica",
+  "category": "mamifero",
+  "family": "Bovidae",
+  "habitat": "Alta montaña de los Pirineos y la Cordillera Cantábrica",
+  "conservation": "LC",
+  "description": "Bóvido ágil del tamaño de una cabra, con cuernos finos y negros acabados en gancho hacia atrás y cara clara cruzada por una banda oscura. Pelaje rojizo en verano y muy oscuro en invierno.",
+  "facts": [
+   "En los Pirineos se le llama sarrio o isard.",
+   "Ambos sexos tienen cuernos."
+  ],
+  "keywords": [
+   "cabra",
+   "mediano",
+   "cuernos en gancho",
+   "cara clara con raya oscura",
+   "alta montana",
+   "rocas",
+   "trepa",
+   "rebano",
+   "nieve"
+  ]
+ },
+ {
+  "id": "liron_careto",
+  "number": 24,
+  "commonName": "Lirón careto",
+  "scientificName": "Eliomys quercinus",
+  "category": "mamifero",
+  "family": "Gliridae",
+  "habitat": "Bosques, roquedos, muros de piedra y construcciones rurales",
+  "conservation": "NT",
+  "description": "Roedor de ojos grandes rodeados por un antifaz negro que llega hasta detrás de las orejas, dorso pardo, vientre blanco y cola larga terminada en un pincel blanco y negro. Nocturno y trepador.",
+  "facts": [
+   "Hiberna varios meses, de ahí la expresión «dormir como un lirón».",
+   "Puede desprenderse de la piel de la cola para escapar."
+  ],
+  "keywords": [
+   "raton",
+   "pequeno",
+   "antifaz negro",
+   "ojos grandes",
+   "cola con pincel",
+   "orejas grandes",
+   "nocturno",
+   "trepa",
+   "muro de piedra",
+   "bosque"
+  ]
+ },
+ {
+  "id": "rata_de_agua",
+  "number": 25,
+  "commonName": "Rata de agua",
+  "scientificName": "Arvicola sapidus",
+  "category": "mamifero",
+  "family": "Cricetidae",
+  "habitat": "Orillas de ríos, arroyos, acequias y lagunas con vegetación densa",
+  "conservation": "VU",
+  "description": "Roedor grande de pelaje pardo oscuro y denso, hocico romo, orejas pequeñas casi ocultas y cola peluda más corta que el cuerpo. Buena nadadora, se alimenta de plantas de ribera.",
+  "facts": [
+   "Es un topillo de gran tamaño, no una rata auténtica.",
+   "Solo vive en la península ibérica y Francia."
+  ],
+  "keywords": [
+   "raton grande",
+   "mediano",
+   "marron oscuro",
+   "hocico redondeado",
+   "orejas pequenas",
+   "nada",
+   "rio",
+   "orilla",
+   "juncos",
+   "agua"
+  ]
+ },
+ {
+  "id": "murcielago_enano",
+  "number": 26,
+  "commonName": "Murciélago enano",
+  "scientificName": "Pipistrellus pipistrellus",
+  "category": "mamifero",
+  "family": "Vespertilionidae",
+  "habitat": "Pueblos, ciudades, bosques y riberas",
+  "conservation": "LC",
+  "description": "Uno de los murciélagos más pequeños y comunes de Europa. Pelaje pardo, orejas cortas y vuelo rápido y quebrado. Sale al anochecer a cazar mosquitos y otros insectos pequeños.",
+  "facts": [
+   "Pesa unos cinco gramos, menos que una moneda.",
+   "Un solo individuo puede comer cientos de mosquitos en una noche."
+  ],
+  "keywords": [
+   "murcielago",
+   "diminuto",
+   "muy pequeno",
+   "marron",
+   "vuela",
+   "anochecer",
+   "nocturno",
+   "farola",
+   "ciudad",
+   "pueblo",
+   "insectos"
+  ]
+ },
+ {
+  "id": "murcielago_herradura",
+  "number": 27,
+  "commonName": "Murciélago grande de herradura",
+  "scientificName": "Rhinolophus ferrumequinum",
+  "category": "mamifero",
+  "family": "Rhinolophidae",
+  "habitat": "Cuevas, minas y edificios antiguos cerca de bosques y pastos",
+  "conservation": "LC",
+  "description": "Murciélago grande con una excrecencia nasal en forma de herradura. En reposo cuelga libremente del techo envuelto en sus alas. Pelaje pardo grisáceo.",
+  "facts": [
+   "Emite los ultrasonidos por la nariz, no por la boca.",
+   "Puede vivir más de treinta años."
+  ],
+  "keywords": [
+   "murcielago",
+   "mediano",
+   "nariz en herradura",
+   "cuelga del techo",
+   "cueva",
+   "mina",
+   "nocturno",
+   "vuela",
+   "envuelto en las alas"
+  ]
+ },
+ {
+  "id": "topo_iberico",
+  "number": 28,
+  "commonName": "Topo ibérico",
+  "scientificName": "Talpa occidentalis",
+  "category": "mamifero",
+  "family": "Talpidae",
+  "habitat": "Prados, huertos y bosques de suelos profundos y húmedos",
+  "conservation": "LC",
+  "description": "Pequeño mamífero subterráneo de cuerpo cilíndrico, pelaje negro aterciopelado, manos anchas en forma de pala y ojos cubiertos por la piel. Endémico de la península.",
+  "facts": [
+   "Rara vez se le ve: delatan su presencia los montones de tierra de las toperas.",
+   "Se alimenta sobre todo de lombrices."
+  ],
+  "keywords": [
+   "pequeno",
+   "negro",
+   "aterciopelado",
+   "manos como palas",
+   "sin ojos",
+   "bajo tierra",
+   "excava",
+   "montones de tierra",
+   "prado",
+   "huerto"
+  ]
+ },
+ {
+  "id": "marta",
+  "number": 29,
+  "commonName": "Marta",
+  "scientificName": "Martes martes",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Bosques maduros del norte peninsular",
+  "conservation": "LC",
+  "description": "Mustélido forestal parecido a la garduña, de pelaje pardo chocolate, orejas grandes y babero de color crema o amarillento, sin dividir. Trepa con enorme agilidad.",
+  "facts": [
+   "Es capaz de perseguir ardillas por las copas de los árboles.",
+   "El babero amarillento y entero la distingue de la garduña."
+  ],
+  "keywords": [
+   "mediano",
+   "esbelto",
+   "marron oscuro",
+   "babero amarillo",
+   "cola larga peluda",
+   "trepa arboles",
+   "bosque",
+   "norte",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "vison_europeo",
+  "number": 30,
+  "commonName": "Visón europeo",
+  "scientificName": "Mustela lutreola",
+  "category": "mamifero",
+  "family": "Mustelidae",
+  "habitat": "Ríos y humedales con orillas muy cubiertas, en el alto Ebro y el norte",
+  "conservation": "CR",
+  "description": "Mustélido semiacuático pequeño, de pelaje pardo chocolate muy oscuro y con los labios superior e inferior blancos. Es uno de los mamíferos más amenazados de Europa.",
+  "facts": [
+   "El visón americano, escapado de granjas peleteras, es su principal amenaza.",
+   "El blanco en ambos labios lo distingue del visón americano, que solo lo tiene en el inferior."
+  ],
+  "keywords": [
+   "pequeno",
+   "alargado",
+   "marron muy oscuro",
+   "labios blancos",
+   "nada",
+   "rio",
+   "orilla",
+   "agua",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "delfin_mular",
+  "number": 31,
+  "commonName": "Delfín mular",
+  "scientificName": "Tursiops truncatus",
+  "category": "mamifero",
+  "family": "Delphinidae",
+  "habitat": "Aguas costeras, rías y estuarios de todo el litoral peninsular",
+  "conservation": "LC",
+  "description": "Cetáceo robusto de dorso gris y vientre claro, hocico corto y bien marcado y aleta dorsal alta y curvada. Vive en grupos y se acerca con frecuencia a la costa.",
+  "facts": [
+   "En las rías gallegas y el estuario del Sado hay grupos residentes.",
+   "Se orienta y caza mediante ecolocalización."
+  ],
+  "keywords": [
+   "delfin",
+   "muy grande",
+   "gris",
+   "aleta dorsal",
+   "salta",
+   "mar",
+   "costa",
+   "ria",
+   "grupo",
+   "nada"
+  ]
+ },
+ {
+  "id": "aguila_imperial",
+  "number": 32,
+  "commonName": "Águila imperial ibérica",
+  "scientificName": "Aquila adalberti",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Monte mediterráneo y dehesas con arbolado disperso",
+  "conservation": "VU",
+  "description": "Gran rapaz endémica de la península. El adulto es pardo muy oscuro con los hombros blancos y la nuca clara. Caza sobre todo conejos y anida en grandes árboles.",
+  "facts": [
+   "Es una de las rapaces más escasas del mundo y solo cría en la península ibérica.",
+   "Los jóvenes son de color pajizo y tardan unos cinco años en adquirir el plumaje adulto."
+  ],
+  "keywords": [
+   "rapaz",
+   "aguila",
+   "muy grande",
+   "marron oscuro",
+   "hombros blancos",
+   "planea",
+   "vuela alto",
+   "dehesa",
+   "garras"
+  ]
+ },
+ {
+  "id": "buitre_leonado",
+  "number": 33,
+  "commonName": "Buitre leonado",
+  "scientificName": "Gyps fulvus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Cortados rocosos y sierras; campea sobre terrenos abiertos",
+  "conservation": "LC",
+  "description": "Rapaz carroñera enorme, de plumaje leonado, alas muy anchas con las puntas oscuras y digitadas, cuello largo cubierto de plumón blanquecino y gorguera clara. Vuela en círculos aprovechando las térmicas.",
+  "facts": [
+   "Su envergadura supera los dos metros y medio.",
+   "España acoge la mayor parte de la población europea."
+  ],
+  "keywords": [
+   "rapaz",
+   "buitre",
+   "enorme",
+   "marron claro",
+   "cuello pelado",
+   "cuello blanco",
+   "planea en circulos",
+   "grupo",
+   "acantilado",
+   "rocas",
+   "carrona"
+  ]
+ },
+ {
+  "id": "quebrantahuesos",
+  "number": 34,
+  "commonName": "Quebrantahuesos",
+  "scientificName": "Gypaetus barbatus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Alta montaña con grandes cortados: Pirineos y zonas de reintroducción",
+  "conservation": "NT",
+  "description": "Buitre de gran tamaño y silueta inconfundible: alas largas y estrechas y cola en forma de rombo. El adulto tiene el pecho anaranjado, el dorso oscuro, un antifaz negro y unas cerdas a modo de barba.",
+  "facts": [
+   "Se alimenta sobre todo de huesos, que deja caer desde gran altura sobre las rocas para romperlos.",
+   "El tono anaranjado del pecho lo adquiere al bañarse en barros ricos en óxidos de hierro."
+  ],
+  "keywords": [
+   "rapaz",
+   "buitre",
+   "enorme",
+   "naranja",
+   "pecho anaranjado",
+   "barba",
+   "antifaz negro",
+   "cola en rombo",
+   "alta montana",
+   "planea",
+   "huesos"
+  ]
+ },
+ {
+  "id": "abejaruco",
+  "number": 35,
+  "commonName": "Abejaruco europeo",
+  "scientificName": "Merops apiaster",
+  "category": "ave",
+  "family": "Meropidae",
+  "habitat": "Campos abiertos con taludes arenosos, riberas y dehesas",
+  "conservation": "LC",
+  "description": "Una de las aves más coloridas de Europa: garganta amarilla, vientre azul turquesa, dorso castaño y dorado, antifaz negro y pico largo y curvado. Caza insectos al vuelo y cría en colonias.",
+  "facts": [
+   "Excava túneles de más de un metro en taludes para anidar.",
+   "Antes de tragar una abeja la frota contra una rama para quitarle el aguijón."
+  ],
+  "keywords": [
+   "mediano",
+   "muy colorido",
+   "amarillo",
+   "azul",
+   "turquesa",
+   "verde",
+   "pico largo curvo",
+   "caza insectos",
+   "bandada",
+   "talud",
+   "verano",
+   "cable"
+  ]
+ },
+ {
+  "id": "martin_pescador",
+  "number": 36,
+  "commonName": "Martín pescador",
+  "scientificName": "Alcedo atthis",
+  "category": "ave",
+  "family": "Alcedinidae",
+  "habitat": "Ríos, arroyos y lagunas de aguas limpias con orillas terrosas",
+  "conservation": "LC",
+  "description": "Ave pequeña y compacta, de dorso azul brillante, vientre naranja y pico largo y recto en forma de daga. Se posa en ramas sobre el agua y se zambulle en picado para capturar pececillos.",
+  "facts": [
+   "Suele verse como un destello azul que cruza el río a ras de agua.",
+   "Anida al fondo de un túnel excavado en un talud de la orilla."
+  ],
+  "keywords": [
+   "pequeno",
+   "azul brillante",
+   "naranja",
+   "pico largo recto",
+   "rio",
+   "agua",
+   "se zambulle",
+   "pesca",
+   "vuelo rapido",
+   "rama"
+  ]
+ },
+ {
+  "id": "chova_piquirroja",
+  "number": 37,
+  "commonName": "Chova piquirroja",
+  "scientificName": "Pyrrhocorax pyrrhocorax",
+  "category": "ave",
+  "family": "Corvidae",
+  "habitat": "Montañas, cortados fluviales, acantilados costeros y edificios en ruinas",
+  "conservation": "LC",
+  "description": "Córvido de tamaño mediano, completamente negro con brillo azulado, pico rojo, largo y curvado hacia abajo, y patas rojas. Vuela con gran acrobacia y se alimenta de insectos que busca en el suelo.",
+  "facts": [
+   "Los jóvenes tienen el pico amarillento, lo que puede confundirlos con la chova piquigualda.",
+   "Su reclamo es un grito agudo y metálico."
+  ],
+  "keywords": [
+   "mediano",
+   "cuervo",
+   "negro",
+   "pico rojo",
+   "pico curvo",
+   "patas rojas",
+   "acantilado",
+   "cortado",
+   "montana",
+   "rocas",
+   "bandada",
+   "acrobatico"
+  ]
+ },
+ {
+  "id": "gallineta_comun",
+  "number": 38,
+  "commonName": "Gallineta común",
+  "scientificName": "Gallinula chloropus",
+  "category": "ave",
+  "family": "Rallidae",
+  "habitat": "Ríos lentos, charcas, acequias y lagunas con vegetación en las orillas",
+  "conservation": "LC",
+  "description": "Ave acuática de tamaño mediano y plumaje negruzco, con el dorso pardo y una línea blanca en los flancos. Tiene el pico rojo con la punta amarilla y un escudo frontal rojo. Nada cabeceando y camina por las orillas.",
+  "facts": [
+   "Mueve la cola a sacudidas mostrando las plumas blancas de debajo.",
+   "También se la conoce como polla de agua."
+  ],
+  "keywords": [
+   "mediano",
+   "negro",
+   "pico rojo",
+   "punta amarilla",
+   "frente roja",
+   "rio",
+   "agua",
+   "charca",
+   "nada",
+   "orilla",
+   "carrizo",
+   "patas verdes"
+  ]
+ },
+ {
+  "id": "ciguena_blanca",
+  "number": 39,
+  "commonName": "Cigüeña blanca",
+  "scientificName": "Ciconia ciconia",
+  "category": "ave",
+  "family": "Ciconiidae",
+  "habitat": "Pastizales, dehesas, humedales y pueblos",
+  "conservation": "LC",
+  "description": "Ave zancuda grande, blanca con las plumas de vuelo negras, pico y patas largos y rojos. Construye voluminosos nidos de ramas en torres, tejados, postes y árboles.",
+  "facts": [
+   "Se comunica golpeando el pico, un sonido llamado crotoreo.",
+   "Muchas han dejado de migrar a África y pasan el invierno en la península."
+  ],
+  "keywords": [
+   "grande",
+   "zancuda",
+   "blanco",
+   "alas negras",
+   "pico rojo largo",
+   "patas rojas largas",
+   "nido",
+   "torre",
+   "iglesia",
+   "pueblo",
+   "pradera"
+  ]
+ },
+ {
+  "id": "abubilla",
+  "number": 40,
+  "commonName": "Abubilla",
+  "scientificName": "Upupa epops",
+  "category": "ave",
+  "family": "Upupidae",
+  "habitat": "Campos abiertos con arbolado, dehesas, huertos y jardines",
+  "conservation": "LC",
+  "description": "Ave inconfundible de cuerpo anaranjado rosado, alas y cola listadas en blanco y negro, pico largo y curvado y una gran cresta eréctil con las puntas negras. Busca insectos caminando por el suelo.",
+  "facts": [
+   "Su nombre imita su canto, un repetido up-up-up.",
+   "Su vuelo ondulante recuerda al de una mariposa grande."
+  ],
+  "keywords": [
+   "mediano",
+   "naranja",
+   "cresta",
+   "penacho",
+   "alas blanco y negro",
+   "rayas",
+   "pico largo curvo",
+   "suelo",
+   "jardin",
+   "campo"
+  ]
+ },
+ {
+  "id": "buho_real",
+  "number": 41,
+  "commonName": "Búho real",
+  "scientificName": "Bubo bubo",
+  "category": "ave",
+  "family": "Strigidae",
+  "habitat": "Roquedos, barrancos y bosques con cortados",
+  "conservation": "LC",
+  "description": "La mayor rapaz nocturna de Europa. Cuerpo voluminoso, plumaje pardo jaspeado de negro, grandes ojos anaranjados y penachos de plumas a modo de orejas.",
+  "facts": [
+   "Su canto grave, un «buu-ho», se oye a gran distancia en las noches de invierno.",
+   "Puede capturar presas del tamaño de un conejo o un erizo."
+  ],
+  "keywords": [
+   "rapaz nocturna",
+   "buho",
+   "muy grande",
+   "marron",
+   "ojos naranjas",
+   "orejas",
+   "penachos",
+   "nocturno",
+   "rocas",
+   "barranco",
+   "canto grave"
+  ]
+ },
+ {
+  "id": "rabilargo",
+  "number": 42,
+  "commonName": "Rabilargo ibérico",
+  "scientificName": "Cyanopica cooki",
+  "category": "ave",
+  "family": "Corvidae",
+  "habitat": "Dehesas, encinares, pinares y olivares del centro y suroeste",
+  "conservation": "LC",
+  "description": "Córvido esbelto con capirote negro, garganta blanca, cuerpo beige rosado y alas y cola larga de color azul celeste. Muy sociable, se desplaza en bandos ruidosos.",
+  "facts": [
+   "Solo vive en la península ibérica; su pariente más cercano habita en Asia oriental.",
+   "Cría en colonias laxas y varios adultos ayudan a alimentar a los pollos."
+  ],
+  "keywords": [
+   "mediano",
+   "cabeza negra",
+   "alas azules",
+   "cola larga azul",
+   "celeste",
+   "bandada",
+   "ruidoso",
+   "dehesa",
+   "encinas",
+   "pinar"
+  ]
+ },
+ {
+  "id": "aguila_real",
+  "number": 43,
+  "commonName": "Águila real",
+  "scientificName": "Aquila chrysaetos",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Sierras y montañas con cortados y terreno abierto",
+  "conservation": "LC",
+  "description": "Rapaz muy grande y poderosa, parda oscura con la nuca dorada. Los jóvenes muestran manchas blancas en las alas y en la base de la cola. Planea con las alas ligeramente en V.",
+  "facts": [
+   "Las parejas mantienen el mismo territorio durante años.",
+   "Caza conejos, liebres y perdices."
+  ],
+  "keywords": [
+   "rapaz",
+   "aguila",
+   "muy grande",
+   "marron oscuro",
+   "nuca dorada",
+   "planea",
+   "montana",
+   "cortado",
+   "vuela alto"
+  ]
+ },
+ {
+  "id": "aguila_perdicera",
+  "number": 44,
+  "commonName": "Águila perdicera",
+  "scientificName": "Aquila fasciata",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Sierras cálidas con cortados, sobre todo en el este y el sur",
+  "conservation": "LC",
+  "description": "Águila mediana de dorso pardo oscuro con una mancha blanca en la espalda, partes inferiores blancas listadas y alas oscuras por debajo. Ágil y potente.",
+  "facts": [
+   "También se llama águila-azor perdicera o águila de Bonelli.",
+   "En España es una de las rapaces más amenazadas."
+  ],
+  "keywords": [
+   "rapaz",
+   "aguila",
+   "grande",
+   "marron",
+   "pecho blanco rayado",
+   "mancha blanca en la espalda",
+   "cortado",
+   "sierra",
+   "planea"
+  ]
+ },
+ {
+  "id": "aguila_culebrera",
+  "number": 45,
+  "commonName": "Culebrera europea",
+  "scientificName": "Circaetus gallicus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Monte mediterráneo, pinares y laderas soleadas",
+  "conservation": "LC",
+  "description": "Rapaz grande, muy clara por debajo y con la cabeza y el pecho pardos a modo de capucha. Cabeza ancha, de aspecto de búho, con ojos amarillos. Se cierne en el aire mientras busca presas.",
+  "facts": [
+   "Se alimenta casi solo de culebras y lagartos.",
+   "Pasa el invierno en África."
+  ],
+  "keywords": [
+   "rapaz",
+   "aguila",
+   "grande",
+   "blanco por debajo",
+   "capucha marron",
+   "ojos amarillos",
+   "se cierne",
+   "come culebras",
+   "verano",
+   "planea"
+  ]
+ },
+ {
+  "id": "aguila_calzada",
+  "number": 46,
+  "commonName": "Aguililla calzada",
+  "scientificName": "Hieraaetus pennatus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Bosques con claros, dehesas y sierras",
+  "conservation": "LC",
+  "description": "La más pequeña de las águilas ibéricas. Tiene dos formas: una clara, blanca por debajo con las plumas de vuelo negras, y otra oscura. Vista de frente muestra dos manchas blancas en los hombros.",
+  "facts": [
+   "Las manchas blancas de los hombros se conocen como «luces de aterrizaje».",
+   "Es migradora y llega en primavera."
+  ],
+  "keywords": [
+   "rapaz",
+   "aguila pequena",
+   "mediano",
+   "blanco y negro por debajo",
+   "manchas blancas en los hombros",
+   "bosque",
+   "dehesa",
+   "verano",
+   "planea"
+  ]
+ },
+ {
+  "id": "busardo_ratonero",
+  "number": 47,
+  "commonName": "Busardo ratonero",
+  "scientificName": "Buteo buteo",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Campiñas, bosques con claros y bordes de carretera",
+  "conservation": "LC",
+  "description": "Rapaz mediana y compacta, de alas anchas y cola corta. Plumaje pardo muy variable, a menudo con una banda clara en el pecho. Se posa en postes y planea en círculos.",
+  "facts": [
+   "Su reclamo es un maullido lastimero.",
+   "Es la rapaz diurna más fácil de ver junto a las carreteras."
+  ],
+  "keywords": [
+   "rapaz",
+   "mediano",
+   "marron",
+   "pecho claro",
+   "alas anchas",
+   "poste",
+   "carretera",
+   "planea en circulos",
+   "maullido",
+   "campo"
+  ]
+ },
+ {
+  "id": "milano_real",
+  "number": 48,
+  "commonName": "Milano real",
+  "scientificName": "Milvus milvus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Campiñas, dehesas y pastizales con arbolado",
+  "conservation": "LC",
+  "description": "Rapaz elegante de plumaje rojizo, cabeza gris pálida, cola larga muy ahorquillada de color teja y grandes manchas blancas bajo las alas. Vuelo muy ágil.",
+  "facts": [
+   "En invierno llegan a la península miles de ejemplares de Europa central.",
+   "Mueve la cola como un timón de forma continua."
+  ],
+  "keywords": [
+   "rapaz",
+   "mediano",
+   "rojizo",
+   "cola ahorquillada",
+   "cola en horquilla",
+   "manchas blancas en las alas",
+   "cabeza gris",
+   "planea",
+   "campo",
+   "invierno"
+  ]
+ },
+ {
+  "id": "milano_negro",
+  "number": 49,
+  "commonName": "Milano negro",
+  "scientificName": "Milvus migrans",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Riberas, embalses, dehesas y vertederos",
+  "conservation": "LC",
+  "description": "Rapaz mediana de plumaje pardo oscuro uniforme y cola poco ahorquillada. Oportunista y gregario, se concentra en torno al agua y los basureros.",
+  "facts": [
+   "Es de las primeras aves migradoras en regresar, ya en febrero.",
+   "Cruza el Estrecho de Gibraltar en grandes bandos."
+  ],
+  "keywords": [
+   "rapaz",
+   "mediano",
+   "marron oscuro",
+   "cola poco ahorquillada",
+   "bandada",
+   "rio",
+   "embalse",
+   "vertedero",
+   "verano",
+   "planea"
+  ]
+ },
+ {
+  "id": "alimoche",
+  "number": 50,
+  "commonName": "Alimoche común",
+  "scientificName": "Neophron percnopterus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Cortados rocosos y zonas ganaderas",
+  "conservation": "EN",
+  "description": "El buitre más pequeño de Europa. El adulto es blanco sucio con las plumas de vuelo negras, la cara desnuda y amarilla y la cola en forma de cuña.",
+  "facts": [
+   "Usa piedras para romper huevos, uno de los pocos casos de uso de herramientas en aves.",
+   "Es migrador y pasa el invierno al sur del Sáhara."
+  ],
+  "keywords": [
+   "rapaz",
+   "buitre pequeno",
+   "grande",
+   "blanco",
+   "alas con negro",
+   "cara amarilla",
+   "cola en cuna",
+   "cortado",
+   "rocas",
+   "verano",
+   "planea"
+  ]
+ },
+ {
+  "id": "buitre_negro",
+  "number": 51,
+  "commonName": "Buitre negro",
+  "scientificName": "Aegypius monachus",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Sierras con monte mediterráneo y dehesas",
+  "conservation": "NT",
+  "description": "La mayor rapaz de Europa. Plumaje pardo negruzco, cabeza con plumón claro y gorguera oscura. Alas muy anchas y rectangulares. Anida sobre grandes árboles.",
+  "facts": [
+   "Su envergadura puede rozar los tres metros.",
+   "España alberga la mayor población de Europa."
+  ],
+  "keywords": [
+   "rapaz",
+   "buitre",
+   "enorme",
+   "negro",
+   "marron muy oscuro",
+   "alas anchas",
+   "planea",
+   "dehesa",
+   "sierra",
+   "carrona"
+  ]
+ },
+ {
+  "id": "halcon_peregrino",
+  "number": 52,
+  "commonName": "Halcón peregrino",
+  "scientificName": "Falco peregrinus",
+  "category": "ave",
+  "family": "Falconidae",
+  "habitat": "Cortados, acantilados costeros y edificios altos",
+  "conservation": "LC",
+  "description": "Halcón robusto de dorso gris pizarra, partes inferiores claras barradas y una ancha bigotera negra. Alas puntiagudas y vuelo potente. Caza aves en el aire.",
+  "facts": [
+   "En sus picados supera los 300 km/h: es el animal más rápido del mundo.",
+   "Cría también en catedrales y rascacielos."
+  ],
+  "keywords": [
+   "rapaz",
+   "halcon",
+   "mediano",
+   "gris",
+   "pecho barrado",
+   "bigotera negra",
+   "alas puntiagudas",
+   "muy rapido",
+   "picado",
+   "acantilado",
+   "cortado",
+   "edificio"
+  ]
+ },
+ {
+  "id": "cernicalo_vulgar",
+  "number": 53,
+  "commonName": "Cernícalo vulgar",
+  "scientificName": "Falco tinnunculus",
+  "category": "ave",
+  "family": "Falconidae",
+  "habitat": "Campos abiertos, cultivos, bordes de carretera y ciudades",
+  "conservation": "LC",
+  "description": "Halcón pequeño de cola larga. El macho tiene el dorso rojizo moteado y la cabeza y la cola grises; la hembra es parda barrada. Caza roedores e insectos.",
+  "facts": [
+   "Se cierne inmóvil en el aire batiendo las alas, mirando al suelo.",
+   "Anida en edificios, cortados y nidos viejos de córvidos."
+  ],
+  "keywords": [
+   "rapaz",
+   "halcon pequeno",
+   "pequeno",
+   "rojizo",
+   "cabeza gris",
+   "cola larga",
+   "se cierne",
+   "quieto en el aire",
+   "campo",
+   "carretera",
+   "ciudad"
+  ]
+ },
+ {
+  "id": "cernicalo_primilla",
+  "number": 54,
+  "commonName": "Cernícalo primilla",
+  "scientificName": "Falco naumanni",
+  "category": "ave",
+  "family": "Falconidae",
+  "habitat": "Estepas cerealistas y pueblos con edificios antiguos",
+  "conservation": "LC",
+  "description": "Parecido al cernícalo vulgar, algo menor. El macho tiene el dorso rojizo sin motas y una franja gris azulada en el ala. Cría en colonias en iglesias, castillos y cortijos.",
+  "facts": [
+   "Tiene las uñas blancas, no negras.",
+   "Se alimenta sobre todo de saltamontes, grillos y escarabajos."
+  ],
+  "keywords": [
+   "rapaz",
+   "halcon pequeno",
+   "pequeno",
+   "rojizo sin motas",
+   "cabeza gris",
+   "colonia",
+   "iglesia",
+   "pueblo",
+   "tejado",
+   "verano",
+   "se cierne"
+  ]
+ },
+ {
+  "id": "azor",
+  "number": 55,
+  "commonName": "Azor común",
+  "scientificName": "Accipiter gentilis",
+  "category": "ave",
+  "family": "Accipitridae",
+  "habitat": "Bosques extensos y maduros",
+  "conservation": "LC",
+  "description": "Rapaz forestal potente, de alas cortas y redondeadas y cola larga. Dorso gris pardo, partes inferiores finamente barradas y ceja blanca marcada sobre el ojo anaranjado.",
+  "facts": [
+   "Maniobra a gran velocidad entre los árboles.",
+   "La hembra es bastante mayor que el macho."
+  ],
+  "keywords": [
+   "rapaz",
+   "mediano",
+   "gris",
+   "pecho barrado",
+   "ceja blanca",
+   "cola larga",
+   "alas cortas",
+   "bosque",
+   "rapido"
+  ]
+ },
+ {
+  "id": "aguila_pescadora",
+  "number": 56,
+  "commonName": "Águila pescadora",
+  "scientificName": "Pandion haliaetus",
+  "category": "ave",
+  "family": "Pandionidae",
+  "habitat": "Costas, embalses, marismas y grandes ríos",
+  "conservation": "LC",
+  "description": "Rapaz de dorso pardo oscuro y partes inferiores blancas, con un antifaz oscuro que cruza el ojo. Alas largas y acodadas. Se alimenta casi solo de peces.",
+  "facts": [
+   "Se zambulle con las garras por delante y puede sumergirse por completo.",
+   "Las plantas de sus patas tienen escamas ásperas para sujetar peces resbaladizos."
+  ],
+  "keywords": [
+   "rapaz",
+   "aguila",
+   "grande",
+   "blanco por debajo",
+   "marron por arriba",
+   "antifaz",
+   "pesca",
+   "se zambulle",
+   "embalse",
+   "costa",
+   "agua"
+  ]
+ },
+ {
+  "id": "lechuza_comun",
+  "number": 57,
+  "commonName": "Lechuza común",
+  "scientificName": "Tyto alba",
+  "category": "ave",
+  "family": "Tytonidae",
+  "habitat": "Campos abiertos, pueblos, graneros y campanarios",
+  "conservation": "LC",
+  "description": "Rapaz nocturna de tamaño medio, muy pálida: partes inferiores blancas, dorso dorado y gris y un disco facial blanco en forma de corazón, con ojos negros.",
+  "facts": [
+   "Vuela en absoluto silencio gracias a la estructura de sus plumas.",
+   "No ulula: emite chillidos y siseos."
+  ],
+  "keywords": [
+   "rapaz nocturna",
+   "buho",
+   "mediano",
+   "blanco",
+   "cara en forma de corazon",
+   "ojos negros",
+   "nocturno",
+   "granero",
+   "campanario",
+   "pueblo",
+   "silencioso"
+  ]
+ },
+ {
+  "id": "mochuelo",
+  "number": 58,
+  "commonName": "Mochuelo europeo",
+  "scientificName": "Athene noctua",
+  "category": "ave",
+  "family": "Strigidae",
+  "habitat": "Olivares, dehesas, cultivos con muros y construcciones",
+  "conservation": "LC",
+  "description": "Búho pequeño y rechoncho, de cabeza aplanada, ojos amarillos y expresión ceñuda. Plumaje pardo moteado de blanco. Se deja ver de día posado en postes, tejados y majanos.",
+  "facts": [
+   "Balancea el cuerpo arriba y abajo cuando algo le inquieta.",
+   "En la Grecia clásica era el ave de Atenea."
+  ],
+  "keywords": [
+   "rapaz nocturna",
+   "buho pequeno",
+   "pequeno",
+   "marron moteado",
+   "ojos amarillos",
+   "cabeza plana",
+   "poste",
+   "olivar",
+   "de dia",
+   "tejado"
+  ]
+ },
+ {
+  "id": "carabo",
+  "number": 59,
+  "commonName": "Cárabo común",
+  "scientificName": "Strix aluco",
+  "category": "ave",
+  "family": "Strigidae",
+  "habitat": "Bosques, sotos, parques y jardines con árboles viejos",
+  "conservation": "LC",
+  "description": "Búho mediano de cabeza grande y redonda, sin penachos, y ojos negros. Plumaje críptico pardo rojizo o grisáceo. Estrictamente nocturno.",
+  "facts": [
+   "Su ulular es el típico sonido de búho de las películas.",
+   "Anida en huecos de árboles."
+  ],
+  "keywords": [
+   "rapaz nocturna",
+   "buho",
+   "mediano",
+   "marron",
+   "cabeza redonda",
+   "ojos negros",
+   "sin orejas",
+   "nocturno",
+   "bosque",
+   "parque",
+   "ulula"
+  ]
+ },
+ {
+  "id": "autillo",
+  "number": 60,
+  "commonName": "Autillo europeo",
+  "scientificName": "Otus scops",
+  "category": "ave",
+  "family": "Strigidae",
+  "habitat": "Arboledas, sotos, parques y pueblos",
+  "conservation": "LC",
+  "description": "Búho muy pequeño, de plumaje gris pardo que imita la corteza, con pequeños penachos a modo de orejas y ojos amarillos. Llega en primavera desde África.",
+  "facts": [
+   "Su canto es un silbido corto y aflautado que repite cada pocos segundos durante toda la noche.",
+   "Se alimenta sobre todo de insectos grandes."
+  ],
+  "keywords": [
+   "rapaz nocturna",
+   "buho pequeno",
+   "muy pequeno",
+   "gris",
+   "orejas",
+   "ojos amarillos",
+   "silbido",
+   "nocturno",
+   "parque",
+   "arboles",
+   "verano"
+  ]
+ },
+ {
+  "id": "ciguena_negra",
+  "number": 61,
+  "commonName": "Cigüeña negra",
+  "scientificName": "Ciconia nigra",
+  "category": "ave",
+  "family": "Ciconiidae",
+  "habitat": "Bosques y sierras tranquilas con ríos y charcas, sobre todo en el oeste",
+  "conservation": "LC",
+  "description": "Zancuda grande de plumaje negro con reflejos verdes y púrpuras, vientre blanco y pico y patas rojos. Mucho más esquiva que la cigüeña blanca.",
+  "facts": [
+   "Anida en cortados rocosos y grandes árboles, lejos de las personas.",
+   "En España es una especie escasa y amenazada."
+  ],
+  "keywords": [
+   "grande",
+   "zancuda",
+   "negro",
+   "vientre blanco",
+   "pico rojo largo",
+   "patas rojas largas",
+   "rio",
+   "charca",
+   "cortado",
+   "solitaria"
+  ]
+ },
+ {
+  "id": "garza_real",
+  "number": 62,
+  "commonName": "Garza real",
+  "scientificName": "Ardea cinerea",
+  "category": "ave",
+  "family": "Ardeidae",
+  "habitat": "Ríos, embalses, marismas, arrozales y charcas",
+  "conservation": "LC",
+  "description": "Zancuda grande y gris, de cuello largo blanco, con una lista negra sobre el ojo que se prolonga en un penacho, y pico amarillento en forma de puñal. Vuela con el cuello recogido.",
+  "facts": [
+   "Permanece inmóvil largo rato hasta lanzar el pico sobre un pez.",
+   "Cría en colonias en lo alto de los árboles."
+  ],
+  "keywords": [
+   "grande",
+   "zancuda",
+   "gris",
+   "cuello largo",
+   "pico largo amarillo",
+   "penacho negro",
+   "patas largas",
+   "rio",
+   "embalse",
+   "orilla",
+   "quieta",
+   "pesca"
+  ]
+ },
+ {
+  "id": "garceta_comun",
+  "number": 63,
+  "commonName": "Garceta común",
+  "scientificName": "Egretta garzetta",
+  "category": "ave",
+  "family": "Ardeidae",
+  "habitat": "Marismas, arrozales, costas y orillas de ríos",
+  "conservation": "LC",
+  "description": "Garza mediana, completamente blanca, de pico y patas negros y dedos amarillos. En época de cría luce plumas largas y finas en la nuca y el dorso.",
+  "facts": [
+   "Remueve el fondo con sus pies amarillos para espantar a las presas.",
+   "Sus plumas ornamentales fueron muy codiciadas para sombreros."
+  ],
+  "keywords": [
+   "mediano",
+   "zancuda",
+   "blanco",
+   "pico negro",
+   "patas negras",
+   "pies amarillos",
+   "cuello largo",
+   "marisma",
+   "arrozal",
+   "orilla",
+   "agua"
+  ]
+ },
+ {
+  "id": "flamenco",
+  "number": 64,
+  "commonName": "Flamenco común",
+  "scientificName": "Phoenicopterus roseus",
+  "category": "ave",
+  "family": "Phoenicopteridae",
+  "habitat": "Lagunas salobres, salinas y marismas",
+  "conservation": "LC",
+  "description": "Ave inconfundible de patas y cuello larguísimos, plumaje blanco rosado, alas con rojo y negro y pico grueso y curvado. Vive en grandes bandos.",
+  "facts": [
+   "La laguna de Fuente de Piedra, en Málaga, acoge la mayor colonia de la península.",
+   "Su color rosa procede de los pigmentos de los crustáceos y algas que filtra."
+  ],
+  "keywords": [
+   "muy grande",
+   "rosa",
+   "patas muy largas",
+   "cuello muy largo",
+   "pico curvo",
+   "bandada",
+   "laguna",
+   "salina",
+   "marisma",
+   "agua"
+  ]
+ },
+ {
+  "id": "espatula",
+  "number": 65,
+  "commonName": "Espátula común",
+  "scientificName": "Platalea leucorodia",
+  "category": "ave",
+  "family": "Threskiornithidae",
+  "habitat": "Marismas, estuarios y lagunas someras",
+  "conservation": "LC",
+  "description": "Zancuda blanca de gran tamaño con un pico largo, negro y aplanado que se ensancha en la punta como una cuchara. En época de cría tiene penacho y una mancha amarillenta en el pecho.",
+  "facts": [
+   "Pesca barriendo el agua de lado a lado con el pico entreabierto.",
+   "Vuela con el cuello estirado, al contrario que las garzas."
+  ],
+  "keywords": [
+   "grande",
+   "zancuda",
+   "blanco",
+   "pico en forma de cuchara",
+   "pico aplanado",
+   "patas negras largas",
+   "marisma",
+   "estuario",
+   "agua"
+  ]
+ },
+ {
+  "id": "anade_azulon",
+  "number": 66,
+  "commonName": "Ánade azulón",
+  "scientificName": "Anas platyrhynchos",
+  "category": "ave",
+  "family": "Anatidae",
+  "habitat": "Cualquier masa de agua: ríos, embalses, charcas y estanques urbanos",
+  "conservation": "LC",
+  "description": "El pato más común. El macho tiene la cabeza verde brillante, collar blanco, pecho castaño y pico amarillo; la hembra es parda moteada. Ambos lucen una banda azul en el ala.",
+  "facts": [
+   "Es el antepasado de la mayoría de los patos domésticos.",
+   "Solo la hembra emite el clásico «cuac»."
+  ],
+  "keywords": [
+   "pato",
+   "mediano",
+   "cabeza verde",
+   "collar blanco",
+   "pico amarillo",
+   "marron",
+   "nada",
+   "rio",
+   "estanque",
+   "parque",
+   "charca",
+   "agua"
+  ]
+ },
+ {
+  "id": "focha_comun",
+  "number": 67,
+  "commonName": "Focha común",
+  "scientificName": "Fulica atra",
+  "category": "ave",
+  "family": "Rallidae",
+  "habitat": "Embalses, lagunas y ríos lentos con vegetación acuática",
+  "conservation": "LC",
+  "description": "Ave acuática rechoncha y completamente negra, con el pico y un escudo frontal blancos. Bucea para alimentarse y suele formar grandes grupos en invierno.",
+  "facts": [
+   "No tiene membranas entre los dedos, sino lóbulos que le ayudan a nadar.",
+   "Para alzar el vuelo necesita una larga carrera sobre el agua."
+  ],
+  "keywords": [
+   "mediano",
+   "negro",
+   "pico blanco",
+   "frente blanca",
+   "nada",
+   "bucea",
+   "embalse",
+   "laguna",
+   "grupo",
+   "agua"
+  ]
+ },
+ {
+  "id": "somormujo_lavanco",
+  "number": 68,
+  "commonName": "Somormujo lavanco",
+  "scientificName": "Podiceps cristatus",
+  "category": "ave",
+  "family": "Podicipedidae",
+  "habitat": "Embalses y lagunas grandes con orillas de vegetación",
+  "conservation": "LC",
+  "description": "Ave buceadora esbelta, de cuello largo y blanco y pico rosado en forma de daga. En primavera luce un moño negro y golas castañas y negras a los lados de la cabeza.",
+  "facts": [
+   "La pareja realiza una vistosa danza nupcial sincronizada.",
+   "Los pollos, rayados, viajan sobre el dorso de sus padres."
+  ],
+  "keywords": [
+   "mediano",
+   "cuello largo blanco",
+   "mono negro",
+   "cresta",
+   "pico en daga",
+   "bucea",
+   "nada",
+   "embalse",
+   "laguna",
+   "agua"
+  ]
+ },
+ {
+  "id": "cormoran_grande",
+  "number": 69,
+  "commonName": "Cormorán grande",
+  "scientificName": "Phalacrocorax carbo",
+  "category": "ave",
+  "family": "Phalacrocoracidae",
+  "habitat": "Costas, estuarios, embalses y grandes ríos",
+  "conservation": "LC",
+  "description": "Ave acuática grande y negra, de cuello largo, pico ganchudo y mejillas blanquecinas. Nada muy hundida y bucea para capturar peces.",
+  "facts": [
+   "Se posa con las alas extendidas para secar el plumaje.",
+   "Es sobre todo invernante en el interior peninsular."
+  ],
+  "keywords": [
+   "grande",
+   "negro",
+   "cuello largo",
+   "pico ganchudo",
+   "alas abiertas",
+   "se seca al sol",
+   "bucea",
+   "nada",
+   "pesca",
+   "embalse",
+   "costa",
+   "rio"
+  ]
+ },
+ {
+  "id": "gaviota_patiamarilla",
+  "number": 70,
+  "commonName": "Gaviota patiamarilla",
+  "scientificName": "Larus michahellis",
+  "category": "ave",
+  "family": "Laridae",
+  "habitat": "Costas, puertos, ciudades litorales, embalses y vertederos",
+  "conservation": "LC",
+  "description": "Gaviota grande de cuerpo blanco, dorso gris, puntas de las alas negras con motas blancas, patas amarillas y pico amarillo con una mancha roja. Los jóvenes son pardos moteados.",
+  "facts": [
+   "Los pollos picotean la mancha roja del pico para pedir alimento.",
+   "Tarda cuatro años en adquirir el plumaje adulto."
+  ],
+  "keywords": [
+   "gaviota",
+   "grande",
+   "blanco",
+   "gris",
+   "patas amarillas",
+   "pico amarillo con mancha roja",
+   "mar",
+   "costa",
+   "puerto",
+   "ciudad",
+   "ruidosa"
+  ]
+ },
+ {
+  "id": "avutarda",
+  "number": 71,
+  "commonName": "Avutarda euroasiática",
+  "scientificName": "Otis tarda",
+  "category": "ave",
+  "family": "Otididae",
+  "habitat": "Llanuras cerealistas y estepas del interior",
+  "conservation": "EN",
+  "description": "Ave esteparia enorme y corpulenta. Cabeza y cuello grises, dorso pardo barrado de negro y vientre blanco. Los machos lucen en primavera unos bigotes de plumas blancas.",
+  "facts": [
+   "Los machos son de las aves voladoras más pesadas del mundo.",
+   "En el cortejo, la «rueda», el macho se transforma en una bola de plumas blancas."
+  ],
+  "keywords": [
+   "enorme",
+   "muy grande",
+   "cuello gris",
+   "marron barrado",
+   "vientre blanco",
+   "camina",
+   "llanura",
+   "cereal",
+   "estepa",
+   "grupo"
+  ]
+ },
+ {
+  "id": "perdiz_roja",
+  "number": 72,
+  "commonName": "Perdiz roja",
+  "scientificName": "Alectoris rufa",
+  "category": "ave",
+  "family": "Phasianidae",
+  "habitat": "Cultivos, matorral ralo, viñedos y olivares",
+  "conservation": "NT",
+  "description": "Ave rechoncha de pico, anillo ocular y patas rojos. Garganta blanca bordeada por un collar negro que se deshace en motas sobre el pecho gris, y flancos listados de castaño, negro y blanco.",
+  "facts": [
+   "Prefiere correr antes que volar.",
+   "Los pollos, los perdigones, siguen a los adultos nada más nacer."
+  ],
+  "keywords": [
+   "mediano",
+   "rechoncho",
+   "pico rojo",
+   "patas rojas",
+   "garganta blanca",
+   "collar negro",
+   "flancos rayados",
+   "corre",
+   "suelo",
+   "campo",
+   "cultivo",
+   "bando"
+  ]
+ },
+ {
+  "id": "urogallo",
+  "number": 73,
+  "commonName": "Urogallo común",
+  "scientificName": "Tetrao urogallus",
+  "category": "ave",
+  "family": "Phasianidae",
+  "habitat": "Bosques maduros de montaña en la Cordillera Cantábrica y los Pirineos",
+  "conservation": "LC",
+  "description": "Gallinácea forestal de gran tamaño. El macho es negruzco con el pecho verde metálico, ceja roja y cola que abre en abanico; la hembra es parda barrada.",
+  "facts": [
+   "Durante el canto de celo el macho queda sordo unos instantes.",
+   "A escala global no está amenazado, pero las poblaciones ibéricas están en situación crítica."
+  ],
+  "keywords": [
+   "muy grande",
+   "gallo",
+   "negro",
+   "pecho verde",
+   "ceja roja",
+   "cola en abanico",
+   "bosque de montana",
+   "suelo",
+   "norte"
+  ]
+ },
+ {
+  "id": "grulla_comun",
+  "number": 74,
+  "commonName": "Grulla común",
+  "scientificName": "Grus grus",
+  "category": "ave",
+  "family": "Gruidae",
+  "habitat": "Dehesas de encina, rastrojos y lagunas someras en invierno",
+  "conservation": "LC",
+  "description": "Ave muy grande y esbelta, gris, con cabeza y cuello negros y blancos, una mancha roja en la coronilla y un penacho de plumas caídas sobre la cola. Vuela en formación de V.",
+  "facts": [
+   "Decenas de miles pasan el invierno en Extremadura y en la laguna de Gallocanta.",
+   "Su trompeteo se oye a kilómetros."
+  ],
+  "keywords": [
+   "muy grande",
+   "gris",
+   "cuello negro y blanco",
+   "coronilla roja",
+   "patas largas",
+   "vuela en v",
+   "bandada",
+   "dehesa",
+   "laguna",
+   "invierno",
+   "trompeteo"
+  ]
+ },
+ {
+  "id": "ciguenuela",
+  "number": 75,
+  "commonName": "Cigüeñuela común",
+  "scientificName": "Himantopus himantopus",
+  "category": "ave",
+  "family": "Recurvirostridae",
+  "habitat": "Salinas, marismas, arrozales y charcas someras",
+  "conservation": "LC",
+  "description": "Limícola esbelta, blanca con el dorso y las alas negros, pico negro fino como una aguja y patas rosadas larguísimas.",
+  "facts": [
+   "En proporción al cuerpo, tiene unas de las patas más largas entre las aves.",
+   "Defiende el nido con vuelos y reclamos insistentes."
+  ],
+  "keywords": [
+   "mediano",
+   "blanco y negro",
+   "patas rosas muy largas",
+   "pico fino negro",
+   "zancuda",
+   "salina",
+   "marisma",
+   "charca",
+   "arrozal",
+   "agua"
+  ]
+ },
+ {
+  "id": "avefria",
+  "number": 76,
+  "commonName": "Avefría europea",
+  "scientificName": "Vanellus vanellus",
+  "category": "ave",
+  "family": "Charadriidae",
+  "habitat": "Prados húmedos, cultivos y orillas de lagunas",
+  "conservation": "NT",
+  "description": "Limícola del tamaño de una paloma, con dorso verde oscuro irisado, pecho negro, vientre blanco y un largo penacho fino en la cabeza. Alas anchas y redondeadas.",
+  "facts": [
+   "Su vuelo es acrobático, con giros y caídas bruscas.",
+   "En invierno llegan grandes bandos del norte de Europa."
+  ],
+  "keywords": [
+   "mediano",
+   "verde oscuro",
+   "blanco y negro",
+   "penacho fino",
+   "cresta",
+   "alas redondeadas",
+   "prado",
+   "cultivo",
+   "bandada",
+   "invierno"
+  ]
+ },
+ {
+  "id": "paloma_torcaz",
+  "number": 77,
+  "commonName": "Paloma torcaz",
+  "scientificName": "Columba palumbus",
+  "category": "ave",
+  "family": "Columbidae",
+  "habitat": "Bosques, dehesas, cultivos, parques y jardines",
+  "conservation": "LC",
+  "description": "La mayor de las palomas ibéricas. Gris azulada, con pecho rosado, una mancha blanca a cada lado del cuello y una franja blanca en el ala visible en vuelo.",
+  "facts": [
+   "Al levantar el vuelo produce un sonoro palmoteo con las alas.",
+   "En otoño cruzan los Pirineos grandes bandos migradores."
+  ],
+  "keywords": [
+   "paloma",
+   "mediano",
+   "gris",
+   "pecho rosado",
+   "mancha blanca en el cuello",
+   "franja blanca en el ala",
+   "parque",
+   "bosque",
+   "bandada"
+  ]
+ },
+ {
+  "id": "cuco",
+  "number": 78,
+  "commonName": "Cuco común",
+  "scientificName": "Cuculus canorus",
+  "category": "ave",
+  "family": "Cuculidae",
+  "habitat": "Bosques, sotos, matorral y campiñas",
+  "conservation": "LC",
+  "description": "Ave esbelta de cola larga, gris por encima y con el vientre blanco finamente barrado, que en vuelo recuerda a un pequeño halcón. Más fácil de oír que de ver.",
+  "facts": [
+   "Pone sus huevos en nidos de otras aves, que crían al pollo como propio.",
+   "El canto «cu-cú» del macho anuncia la primavera."
+  ],
+  "keywords": [
+   "mediano",
+   "gris",
+   "vientre barrado",
+   "cola larga",
+   "canto cucu",
+   "primavera",
+   "bosque",
+   "parasito de nidos"
+  ]
+ },
+ {
+  "id": "vencejo_comun",
+  "number": 79,
+  "commonName": "Vencejo común",
+  "scientificName": "Apus apus",
+  "category": "ave",
+  "family": "Apodidae",
+  "habitat": "Cielos de pueblos y ciudades; anida en edificios",
+  "conservation": "LC",
+  "description": "Ave de vuelo muy rápido, pardo negruzca, con alas largas y estrechas en forma de hoz y cola corta ahorquillada. Pasa casi toda su vida en el aire.",
+  "facts": [
+   "Puede volar diez meses seguidos sin posarse: come, duerme y se aparea en vuelo.",
+   "Sus patas son tan cortas que le cuesta despegar desde el suelo."
+  ],
+  "keywords": [
+   "pequeno",
+   "negro",
+   "alas en forma de hoz",
+   "vuela muy rapido",
+   "chilla",
+   "bandada",
+   "ciudad",
+   "pueblo",
+   "cielo",
+   "verano"
+  ]
+ },
+ {
+  "id": "golondrina_comun",
+  "number": 80,
+  "commonName": "Golondrina común",
+  "scientificName": "Hirundo rustica",
+  "category": "ave",
+  "family": "Hirundinidae",
+  "habitat": "Pueblos, granjas y campos abiertos",
+  "conservation": "LC",
+  "description": "Ave estilizada de dorso azul oscuro brillante, frente y garganta rojizas, vientre claro y cola muy ahorquillada con dos largas plumas externas.",
+  "facts": [
+   "Construye con barro un nido en forma de cuenco abierto en cuadras y porches.",
+   "Pasa el invierno al sur del Sáhara."
+  ],
+  "keywords": [
+   "pequeno",
+   "azul oscuro",
+   "garganta roja",
+   "vientre blanco",
+   "cola en horquilla larga",
+   "nido de barro",
+   "vuela bajo",
+   "pueblo",
+   "granja",
+   "cable",
+   "verano"
+  ]
+ },
+ {
+  "id": "carraca",
+  "number": 81,
+  "commonName": "Carraca europea",
+  "scientificName": "Coracias garrulus",
+  "category": "ave",
+  "family": "Coraciidae",
+  "habitat": "Campos abiertos y cálidos con árboles dispersos o construcciones",
+  "conservation": "LC",
+  "description": "Ave del tamaño de una grajilla, de vivo color azul turquesa con el dorso castaño y azul violeta en las alas. Se posa en cables y postes al acecho de insectos grandes.",
+  "facts": [
+   "En el cortejo, el macho se deja caer en picado girando sobre sí mismo.",
+   "Ocupa cajas nido colocadas en postes eléctricos."
+  ],
+  "keywords": [
+   "mediano",
+   "azul turquesa",
+   "espalda marron",
+   "cable",
+   "poste",
+   "campo abierto",
+   "verano",
+   "colorido"
+  ]
+ },
+ {
+  "id": "pito_real_iberico",
+  "number": 82,
+  "commonName": "Pito real ibérico",
+  "scientificName": "Picus sharpei",
+  "category": "ave",
+  "family": "Picidae",
+  "habitat": "Sotos, dehesas, bosques abiertos, parques y huertos",
+  "conservation": "NT",
+  "description": "Pájaro carpintero grande, verde por encima, con el obispillo amarillo y el capirote rojo. Se alimenta en el suelo, sobre todo de hormigas.",
+  "facts": [
+   "Su reclamo es un relincho sonoro que parece una carcajada.",
+   "Captura hormigas con una lengua larga y pegajosa."
+  ],
+  "keywords": [
+   "pajaro carpintero",
+   "mediano",
+   "verde",
+   "cabeza roja",
+   "obispillo amarillo",
+   "relincho",
+   "risa",
+   "suelo",
+   "hormigas",
+   "arboles",
+   "parque"
+  ]
+ },
+ {
+  "id": "pico_picapinos",
+  "number": 83,
+  "commonName": "Pico picapinos",
+  "scientificName": "Dendrocopos major",
+  "category": "ave",
+  "family": "Picidae",
+  "habitat": "Bosques de todo tipo, sotos y parques",
+  "conservation": "LC",
+  "description": "Pájaro carpintero blanco y negro con una gran mancha blanca en cada hombro y la zona bajo la cola de color rojo intenso. El macho tiene además la nuca roja.",
+  "facts": [
+   "Tamborilea sobre troncos huecos para marcar territorio.",
+   "Encaja las piñas en grietas para abrirlas a picotazos."
+  ],
+  "keywords": [
+   "pajaro carpintero",
+   "mediano",
+   "blanco y negro",
+   "rojo bajo la cola",
+   "nuca roja",
+   "tamborilea",
+   "tronco",
+   "bosque",
+   "pinar",
+   "trepa"
+  ]
+ },
+ {
+  "id": "urraca",
+  "number": 84,
+  "commonName": "Urraca común",
+  "scientificName": "Pica pica",
+  "category": "ave",
+  "family": "Corvidae",
+  "habitat": "Campos, pueblos, parques y bordes de carretera",
+  "conservation": "LC",
+  "description": "Córvido blanco y negro de cola muy larga con irisaciones verdes y azules. Inteligente, ruidosa y muy adaptable.",
+  "facts": [
+   "Es una de las pocas aves que se reconoce en un espejo.",
+   "Construye un nido voluminoso cubierto con un techo de ramas."
+  ],
+  "keywords": [
+   "mediano",
+   "blanco y negro",
+   "cola muy larga",
+   "reflejos verdes y azules",
+   "ruidoso",
+   "parque",
+   "pueblo",
+   "campo",
+   "carretera"
+  ]
+ },
+ {
+  "id": "cuervo_grande",
+  "number": 85,
+  "commonName": "Cuervo grande",
+  "scientificName": "Corvus corax",
+  "category": "ave",
+  "family": "Corvidae",
+  "habitat": "Sierras, acantilados y grandes espacios abiertos",
+  "conservation": "LC",
+  "description": "El mayor de los córvidos, completamente negro, con pico muy robusto, plumas hirsutas en la garganta y cola en forma de cuña.",
+  "facts": [
+   "Su voz es un «cruac» grave y resonante.",
+   "Las parejas permanecen unidas de por vida."
+  ],
+  "keywords": [
+   "grande",
+   "negro",
+   "pico grueso",
+   "cola en cuna",
+   "graznido grave",
+   "pareja",
+   "montana",
+   "acantilado",
+   "carrona"
+  ]
+ },
+ {
+  "id": "arrendajo",
+  "number": 86,
+  "commonName": "Arrendajo euroasiático",
+  "scientificName": "Garrulus glandarius",
+  "category": "ave",
+  "family": "Corvidae",
+  "habitat": "Bosques de robles, encinas y pinos",
+  "conservation": "LC",
+  "description": "Córvido de color pardo rosado con bigotera negra, obispillo blanco y un llamativo panel de plumas azules barradas de negro en el ala.",
+  "facts": [
+   "Entierra miles de bellotas cada otoño y así planta robles y encinas.",
+   "Imita las voces de otras aves, incluidas las rapaces."
+  ],
+  "keywords": [
+   "mediano",
+   "marron rosado",
+   "plumas azules en el ala",
+   "bigote negro",
+   "obispillo blanco",
+   "chillido aspero",
+   "bosque",
+   "bellotas"
+  ]
+ },
+ {
+  "id": "mirlo_comun",
+  "number": 87,
+  "commonName": "Mirlo común",
+  "scientificName": "Turdus merula",
+  "category": "ave",
+  "family": "Turdidae",
+  "habitat": "Bosques, setos, huertos, parques y jardines",
+  "conservation": "LC",
+  "description": "El macho es completamente negro con el pico y el anillo ocular de color amarillo anaranjado; la hembra es parda oscura. Busca lombrices en el suelo.",
+  "facts": [
+   "Su canto aflautado es de los primeros en sonar al amanecer.",
+   "Es una de las aves que mejor se ha adaptado a las ciudades."
+  ],
+  "keywords": [
+   "mediano",
+   "negro",
+   "pico amarillo",
+   "pico naranja",
+   "anillo en el ojo",
+   "canto",
+   "suelo",
+   "jardin",
+   "parque",
+   "seto"
+  ]
+ },
+ {
+  "id": "petirrojo",
+  "number": 88,
+  "commonName": "Petirrojo europeo",
+  "scientificName": "Erithacus rubecula",
+  "category": "ave",
+  "family": "Muscicapidae",
+  "habitat": "Bosques frescos, setos, parques y jardines",
+  "conservation": "LC",
+  "description": "Pájaro pequeño y rechoncho, de dorso pardo, cara y pecho anaranjados y vientre blanquecino. Confiado y curioso.",
+  "facts": [
+   "Defiende su territorio con fiereza y canta también en invierno.",
+   "Suele seguir a quien remueve la tierra para atrapar lombrices."
+  ],
+  "keywords": [
+   "pequeno",
+   "rechoncho",
+   "pecho naranja",
+   "pecho rojo",
+   "marron",
+   "confiado",
+   "jardin",
+   "parque",
+   "bosque",
+   "invierno",
+   "canto"
+  ]
+ },
+ {
+  "id": "carbonero_comun",
+  "number": 89,
+  "commonName": "Carbonero común",
+  "scientificName": "Parus major",
+  "category": "ave",
+  "family": "Paridae",
+  "habitat": "Bosques, sotos, huertos, parques y jardines",
+  "conservation": "LC",
+  "description": "Pájaro pequeño de cabeza negra con grandes mejillas blancas, dorso verdoso y partes inferiores amarillas recorridas por una banda negra a modo de corbata.",
+  "facts": [
+   "Su canto recuerda a un «chi-chi-pán» repetido.",
+   "Ocupa con facilidad las cajas nido."
+  ],
+  "keywords": [
+   "pequeno",
+   "cabeza negra",
+   "mejillas blancas",
+   "pecho amarillo",
+   "corbata negra",
+   "jardin",
+   "parque",
+   "bosque",
+   "caja nido",
+   "comedero"
+  ]
+ },
+ {
+  "id": "herrerillo_comun",
+  "number": 90,
+  "commonName": "Herrerillo común",
+  "scientificName": "Cyanistes caeruleus",
+  "category": "ave",
+  "family": "Paridae",
+  "habitat": "Bosques de hoja caduca, sotos, parques y jardines",
+  "conservation": "LC",
+  "description": "Pajarillo de capirote, alas y cola azules, cara blanca cruzada por una lista oscura y partes inferiores amarillas. Muy acrobático.",
+  "facts": [
+   "Se cuelga boca abajo de las ramas más finas para buscar insectos.",
+   "Pesa apenas diez gramos."
+  ],
+  "keywords": [
+   "muy pequeno",
+   "cabeza azul",
+   "alas azules",
+   "pecho amarillo",
+   "cara blanca",
+   "acrobatico",
+   "cuelga boca abajo",
+   "jardin",
+   "parque",
+   "comedero"
+  ]
+ },
+ {
+  "id": "gorrion_comun",
+  "number": 91,
+  "commonName": "Gorrión común",
+  "scientificName": "Passer domesticus",
+  "category": "ave",
+  "family": "Passeridae",
+  "habitat": "Pueblos, ciudades y granjas, siempre junto al ser humano",
+  "conservation": "LC",
+  "description": "Pájaro pequeño y robusto. El macho tiene la coronilla gris, la nuca castaña, las mejillas claras y un babero negro; la hembra es parda y lisa.",
+  "facts": [
+   "Vive ligado a las personas desde hace miles de años.",
+   "Sus poblaciones han disminuido de forma notable en muchas ciudades europeas."
+  ],
+  "keywords": [
+   "pequeno",
+   "marron",
+   "babero negro",
+   "cabeza gris",
+   "ciudad",
+   "pueblo",
+   "terraza",
+   "grupo",
+   "calle",
+   "tejado"
+  ]
+ },
+ {
+  "id": "jilguero",
+  "number": 92,
+  "commonName": "Jilguero europeo",
+  "scientificName": "Carduelis carduelis",
+  "category": "ave",
+  "family": "Fringillidae",
+  "habitat": "Campos con cardos, huertos, olivares, parques y jardines",
+  "conservation": "LC",
+  "description": "Pajarillo inconfundible de cara roja, cabeza blanca y negra, dorso pardo y alas negras con una ancha franja amarilla.",
+  "facts": [
+   "Su pico fino le permite extraer las semillas de los cardos.",
+   "Su canto es un gorjeo líquido y variado."
+  ],
+  "keywords": [
+   "pequeno",
+   "cara roja",
+   "franja amarilla en el ala",
+   "cabeza blanca y negra",
+   "cardos",
+   "bandada",
+   "canto",
+   "huerto",
+   "jardin",
+   "colorido"
+  ]
+ },
+ {
+  "id": "estornino_negro",
+  "number": 93,
+  "commonName": "Estornino negro",
+  "scientificName": "Sturnus unicolor",
+  "category": "ave",
+  "family": "Sturnidae",
+  "habitat": "Pueblos, ciudades, dehesas y campos de cultivo",
+  "conservation": "LC",
+  "description": "Ave de tamaño medio, negra y brillante sin apenas motas, con el pico amarillo en primavera y las patas rosadas. Gregario y ruidoso.",
+  "facts": [
+   "Es un gran imitador de otros cantos y sonidos.",
+   "Su distribución se limita a la península ibérica, el noroeste de África y el Mediterráneo occidental."
+  ],
+  "keywords": [
+   "mediano",
+   "negro brillante",
+   "pico amarillo",
+   "patas rosas",
+   "bandada",
+   "silba",
+   "imita",
+   "tejado",
+   "antena",
+   "pueblo",
+   "ciudad"
+  ]
+ },
+ {
+  "id": "lavandera_blanca",
+  "number": 94,
+  "commonName": "Lavandera blanca",
+  "scientificName": "Motacilla alba",
+  "category": "ave",
+  "family": "Motacillidae",
+  "habitat": "Orillas, prados, pueblos, aparcamientos y campos arados",
+  "conservation": "LC",
+  "description": "Pájaro esbelto de plumaje blanco, negro y gris, con una cola larga que balancea arriba y abajo sin cesar. Camina y corretea por el suelo.",
+  "facts": [
+   "También se la llama pajarita de las nieves.",
+   "En invierno se reúne en dormideros de cientos de aves, a veces en árboles de ciudad."
+  ],
+  "keywords": [
+   "pequeno",
+   "blanco negro y gris",
+   "cola larga",
+   "mueve la cola",
+   "camina",
+   "corretea",
+   "suelo",
+   "orilla",
+   "rio",
+   "pueblo",
+   "aparcamiento"
+  ]
+ },
+ {
+  "id": "mirlo_acuatico",
+  "number": 95,
+  "commonName": "Mirlo acuático",
+  "scientificName": "Cinclus cinclus",
+  "category": "ave",
+  "family": "Cinclidae",
+  "habitat": "Ríos y torrentes de montaña de aguas rápidas y limpias",
+  "conservation": "LC",
+  "description": "Pájaro rechoncho de cola corta, pardo oscuro con un gran babero blanco. Se posa en las piedras del río haciendo reverencias.",
+  "facts": [
+   "Es el único pájaro cantor que bucea y camina por el fondo del río.",
+   "Su presencia indica aguas de buena calidad."
+  ],
+  "keywords": [
+   "pequeno",
+   "rechoncho",
+   "marron oscuro",
+   "negro",
+   "pecho blanco",
+   "babero blanco",
+   "cola corta",
+   "rio de montana",
+   "piedras",
+   "bucea",
+   "agua",
+   "corriente"
+  ]
+ },
+ {
+  "id": "oropendola",
+  "number": 96,
+  "commonName": "Oropéndola europea",
+  "scientificName": "Oriolus oriolus",
+  "category": "ave",
+  "family": "Oriolidae",
+  "habitat": "Sotos fluviales, choperas y bosques frondosos",
+  "conservation": "LC",
+  "description": "El macho es de un amarillo intenso con las alas y la cola negras y el pico rosado; la hembra es verdosa. Se oculta en lo alto de las copas.",
+  "facts": [
+   "Su canto es un silbido aflautado y melodioso.",
+   "Teje un nido colgante en forma de hamaca en la horquilla de una rama."
+  ],
+  "keywords": [
+   "mediano",
+   "amarillo intenso",
+   "alas negras",
+   "pico rosado",
+   "silbido aflautado",
+   "copa de los arboles",
+   "chopera",
+   "rio",
+   "verano"
+  ]
+ },
+ {
+  "id": "lagarto_ocelado",
+  "number": 97,
+  "commonName": "Lagarto ocelado",
+  "scientificName": "Timon lepidus",
+  "category": "reptil",
+  "family": "Lacertidae",
+  "habitat": "Matorral mediterráneo, dehesas, olivares y zonas pedregosas soleadas",
+  "conservation": "NT",
+  "description": "El mayor lagarto de la península, robusto y de cabeza grande. Es verde con un fino dibujo negro y luce manchas azules redondeadas, los ocelos, en los costados.",
+  "facts": [
+   "Los machos grandes superan los 60 cm contando la cola.",
+   "Se refugia en madrigueras de conejo, muros de piedra y troncos huecos."
+  ],
+  "keywords": [
+   "lagarto",
+   "grande",
+   "verde",
+   "manchas azules",
+   "ocelos",
+   "cabeza grande",
+   "cola larga",
+   "sol",
+   "piedras",
+   "matorral",
+   "rapido"
+  ]
+ },
+ {
+  "id": "vibora_hocicuda",
+  "number": 98,
+  "commonName": "Víbora hocicuda",
+  "scientificName": "Vipera latastei",
+  "category": "reptil",
+  "family": "Viperidae",
+  "habitat": "Zonas pedregosas, matorral y bosques abiertos, a menudo en montaña",
+  "conservation": "VU",
+  "description": "Serpiente venenosa de cuerpo corto y grueso, cabeza triangular, pupila vertical y hocico respingado. Es grisácea o parda con una banda oscura en zigzag a lo largo del dorso.",
+  "facts": [
+   "El apéndice levantado del hocico la distingue de las demás serpientes ibéricas.",
+   "Es tímida y solo muerde si se siente acorralada; ante una mordedura hay que acudir a un centro sanitario."
+  ],
+  "keywords": [
+   "vibora",
+   "culebra",
+   "pequeno",
+   "corto y grueso",
+   "gris",
+   "zigzag",
+   "cabeza triangular",
+   "hocico levantado",
+   "venenosa",
+   "piedras",
+   "montana"
+  ]
+ },
+ {
+  "id": "galapago_leproso",
+  "number": 99,
+  "commonName": "Galápago leproso",
+  "scientificName": "Mauremys leprosa",
+  "category": "reptil",
+  "family": "Geoemydidae",
+  "habitat": "Ríos, charcas, embalses y arroyos de aguas tranquilas",
+  "conservation": "VU",
+  "description": "Tortuga de agua dulce de caparazón aplanado, pardo verdoso, y cuello con líneas amarillentas o anaranjadas. Pasa largos ratos tomando el sol sobre piedras y troncos y se lanza al agua al menor peligro.",
+  "facts": [
+   "Su nombre se debe a las algas que a veces deterioran las placas del caparazón.",
+   "Sufre la competencia de galápagos exóticos liberados en la naturaleza."
+  ],
+  "keywords": [
+   "galapago",
+   "caparazon",
+   "mediano",
+   "verdoso",
+   "marron",
+   "cuello con rayas",
+   "rio",
+   "charca",
+   "agua",
+   "toma el sol",
+   "tronco",
+   "nada"
+  ]
+ },
+ {
+  "id": "camaleon_comun",
+  "number": 100,
+  "commonName": "Camaleón común",
+  "scientificName": "Chamaeleo chamaeleon",
+  "category": "reptil",
+  "family": "Chamaeleonidae",
+  "habitat": "Pinares costeros, retamares, huertos y jardines del sur peninsular",
+  "conservation": "LC",
+  "description": "Reptil arborícola de cuerpo comprimido, cola prensil, dedos en forma de pinza y ojos que se mueven de manera independiente. Cambia de color según la temperatura, la luz y su estado.",
+  "facts": [
+   "Captura insectos proyectando una lengua tan larga como su cuerpo.",
+   "Las hembras bajan al suelo para enterrar la puesta."
+  ],
+  "keywords": [
+   "mediano",
+   "verde",
+   "cambia de color",
+   "ojos saltones independientes",
+   "cola enrollada",
+   "lento",
+   "arbusto",
+   "rama",
+   "trepa",
+   "costa",
+   "lengua larga"
+  ]
+ },
+ {
+  "id": "culebra_escalera",
+  "number": 101,
+  "commonName": "Culebra de escalera",
+  "scientificName": "Zamenis scalaris",
+  "category": "reptil",
+  "family": "Colubridae",
+  "habitat": "Matorral, cultivos, muros de piedra y linderos soleados",
+  "conservation": "LC",
+  "description": "Culebra robusta y no venenosa, de color pardo amarillento. Los juveniles muestran en el dorso un dibujo negro en forma de escalera; en los adultos quedan solo dos líneas oscuras paralelas.",
+  "facts": [
+   "Es buena trepadora y saquea nidos de aves y roedores.",
+   "Si se la molesta bufa y puede morder, pero no tiene veneno."
+  ],
+  "keywords": [
+   "culebra",
+   "grande",
+   "larga",
+   "marron claro",
+   "amarillento",
+   "dos lineas oscuras",
+   "dibujo de escalera",
+   "muro",
+   "piedras",
+   "campo",
+   "trepa"
+  ]
+ },
+ {
+  "id": "salamanquesa_comun",
+  "number": 102,
+  "commonName": "Salamanquesa común",
+  "scientificName": "Tarentola mauritanica",
+  "category": "reptil",
+  "family": "Phyllodactylidae",
+  "habitat": "Muros, roquedos, troncos y edificios de zonas cálidas",
+  "conservation": "LC",
+  "description": "Pequeño reptil aplanado, de piel grisácea o parda cubierta de tubérculos, ojos grandes sin párpados y dedos anchos con láminas adhesivas que le permiten trepar por paredes y techos.",
+  "facts": [
+   "Acude por la noche a las farolas para cazar los insectos que atrae la luz.",
+   "Puede desprenderse de la cola para escapar de un depredador."
+  ],
+  "keywords": [
+   "lagartija",
+   "pequeno",
+   "gris",
+   "aplanado",
+   "rugoso",
+   "muro",
+   "casa",
+   "techo",
+   "luz",
+   "farola",
+   "nocturno",
+   "dedos anchos",
+   "trepa"
+  ]
+ },
+ {
+  "id": "lagartija_iberica",
+  "number": 103,
+  "commonName": "Lagartija ibérica",
+  "scientificName": "Podarcis hispanicus",
+  "category": "reptil",
+  "family": "Lacertidae",
+  "habitat": "Muros, roquedos, taludes y construcciones",
+  "conservation": "LC",
+  "description": "Lagartija pequeña y esbelta, de cabeza aplanada y cola larga. Dorso pardo o grisáceo con líneas y manchas oscuras. Muy ágil trepando por paredes y rocas.",
+  "facts": [
+   "Bajo este nombre se agrupan en realidad varias especies muy parecidas.",
+   "Suelta la cola para distraer a los depredadores y después la regenera."
+  ],
+  "keywords": [
+   "lagartija",
+   "pequeno",
+   "marron",
+   "gris",
+   "rayas",
+   "cola larga",
+   "muro",
+   "pared",
+   "rocas",
+   "sol",
+   "rapido",
+   "trepa"
+  ]
+ },
+ {
+  "id": "lagartija_colilarga",
+  "number": 104,
+  "commonName": "Lagartija colilarga",
+  "scientificName": "Psammodromus algirus",
+  "category": "reptil",
+  "family": "Lacertidae",
+  "habitat": "Matorral mediterráneo, encinares y pinares con hojarasca",
+  "conservation": "LC",
+  "description": "Lagartija robusta con una cola que puede duplicar la longitud del cuerpo. Dorso pardo con dos líneas claras a cada lado y escamas ásperas y puntiagudas.",
+  "facts": [
+   "En celo, los machos tienen la garganta anaranjada y manchas azules en los hombros.",
+   "Puede emitir un chillido cuando es capturada."
+  ],
+  "keywords": [
+   "lagartija",
+   "pequeno",
+   "marron",
+   "lineas claras en los costados",
+   "cola muy larga",
+   "matorral",
+   "hojarasca",
+   "rapido"
+  ]
+ },
+ {
+  "id": "lagarto_verdinegro",
+  "number": 105,
+  "commonName": "Lagarto verdinegro",
+  "scientificName": "Lacerta schreiberi",
+  "category": "reptil",
+  "family": "Lacertidae",
+  "habitat": "Orillas de arroyos y zonas húmedas de montaña del noroeste y el centro",
+  "conservation": "NT",
+  "description": "Lagarto de tamaño medio, verde con abundante moteado negro. En época de celo los machos tienen la cabeza de un azul intenso. Endémico de la península.",
+  "facts": [
+   "Rara vez se aleja del agua.",
+   "Las hembras suelen ser más pardas, con grandes manchas negras."
+  ],
+  "keywords": [
+   "lagarto",
+   "mediano",
+   "verde",
+   "moteado negro",
+   "cabeza azul",
+   "arroyo",
+   "zona humeda",
+   "montana",
+   "cola larga"
+  ]
+ },
+ {
+  "id": "lagartija_colirroja",
+  "number": 106,
+  "commonName": "Lagartija colirroja",
+  "scientificName": "Acanthodactylus erythrurus",
+  "category": "reptil",
+  "family": "Lacertidae",
+  "habitat": "Arenales, dunas y terrenos sueltos con vegetación dispersa",
+  "conservation": "LC",
+  "description": "Lagartija de hocico afilado y dorso con bandas claras y oscuras. Los jóvenes y las hembras tienen la cola de color rojo vivo. Corre a gran velocidad sobre la arena.",
+  "facts": [
+   "Los dedos tienen escamas a modo de peine que facilitan correr sobre la arena.",
+   "Levanta las patas del suelo caliente de forma alterna."
+  ],
+  "keywords": [
+   "lagartija",
+   "pequeno",
+   "rayas",
+   "cola roja",
+   "arena",
+   "dunas",
+   "muy rapido",
+   "sol"
+  ]
+ },
+ {
+  "id": "eslizon_tridactilo",
+  "number": 107,
+  "commonName": "Eslizón tridáctilo ibérico",
+  "scientificName": "Chalcides striatus",
+  "category": "reptil",
+  "family": "Scincidae",
+  "habitat": "Prados y herbazales densos y soleados",
+  "conservation": "LC",
+  "description": "Reptil de cuerpo muy alargado y brillante, con aspecto de pequeña serpiente, pero con cuatro patas diminutas de tres dedos. Dorso pardo con líneas longitudinales.",
+  "facts": [
+   "Se desliza entre la hierba como si nadara.",
+   "Las crías nacen ya formadas, sin puesta de huevos."
+  ],
+  "keywords": [
+   "parecido a serpiente",
+   "pequeno",
+   "alargado",
+   "brillante",
+   "patas diminutas",
+   "rayas",
+   "hierba",
+   "prado",
+   "rapido"
+  ]
+ },
+ {
+  "id": "lucion",
+  "number": 108,
+  "commonName": "Lución",
+  "scientificName": "Anguis fragilis",
+  "category": "reptil",
+  "family": "Anguidae",
+  "habitat": "Prados húmedos, setos y bosques del norte peninsular",
+  "conservation": "LC",
+  "description": "Lagarto sin patas, de cuerpo cilíndrico, liso y brillante, pardo o cobrizo. A diferencia de las serpientes, tiene párpados y puede parpadear.",
+  "facts": [
+   "Es inofensivo y come babosas y lombrices.",
+   "Puede desprenderse de la cola, de ahí el nombre fragilis."
+  ],
+  "keywords": [
+   "parecido a serpiente",
+   "sin patas",
+   "pequeno",
+   "marron",
+   "cobrizo",
+   "brillante",
+   "liso",
+   "lento",
+   "prado humedo",
+   "norte",
+   "babosas"
+  ]
+ },
+ {
+  "id": "culebrilla_ciega",
+  "number": 109,
+  "commonName": "Culebrilla ciega",
+  "scientificName": "Blanus cinereus",
+  "category": "reptil",
+  "family": "Blanidae",
+  "habitat": "Suelos sueltos y húmedos bajo piedras, en encinares y cultivos",
+  "conservation": "LC",
+  "description": "Reptil subterráneo de aspecto de lombriz grande: cuerpo rosado o violáceo dividido en anillos, cabeza pequeña y ojos reducidos a dos puntos bajo la piel.",
+  "facts": [
+   "Vive enterrada y suele aparecer al levantar piedras.",
+   "No es una serpiente ni una lombriz, sino un anfisbenio."
+  ],
+  "keywords": [
+   "parecido a lombriz",
+   "pequeno",
+   "rosa",
+   "anillos",
+   "sin patas",
+   "bajo piedras",
+   "bajo tierra",
+   "ojos diminutos"
+  ]
+ },
+ {
+  "id": "culebra_bastarda",
+  "number": 110,
+  "commonName": "Culebra bastarda",
+  "scientificName": "Malpolon monspessulanus",
+  "category": "reptil",
+  "family": "Psammophiidae",
+  "habitat": "Matorral, cultivos, dehesas y bordes de camino soleados",
+  "conservation": "LC",
+  "description": "La mayor serpiente ibérica, capaz de superar los dos metros. Color verdoso o pardo uniforme y unas cejas prominentes que le dan una mirada severa.",
+  "facts": [
+   "Tiene veneno, pero los colmillos están al fondo de la boca y rara vez afecta a las personas.",
+   "Los machos adultos presentan una mancha oscura tras el cuello, la «silla de montar»."
+  ],
+  "keywords": [
+   "culebra",
+   "muy grande",
+   "muy larga",
+   "verdoso",
+   "marron",
+   "cejas marcadas",
+   "mirada severa",
+   "rapido",
+   "matorral",
+   "camino",
+   "sol"
+  ]
+ },
+ {
+  "id": "culebra_herradura",
+  "number": 111,
+  "commonName": "Culebra de herradura",
+  "scientificName": "Hemorrhois hippocrepis",
+  "category": "reptil",
+  "family": "Colubridae",
+  "habitat": "Roquedos, muros, ruinas y cultivos de zonas cálidas",
+  "conservation": "LC",
+  "description": "Culebra esbelta y ágil con un vistoso diseño de manchas oscuras redondeadas bordeadas de amarillo, y una marca en forma de herradura en la cabeza.",
+  "facts": [
+   "Es una excelente trepadora y entra con frecuencia en construcciones.",
+   "No tiene veneno."
+  ],
+  "keywords": [
+   "culebra",
+   "grande",
+   "larga",
+   "manchas oscuras redondas",
+   "amarillo",
+   "herradura en la cabeza",
+   "muro",
+   "ruinas",
+   "trepa",
+   "rocas"
+  ]
+ },
+ {
+  "id": "culebra_viperina",
+  "number": 112,
+  "commonName": "Culebra viperina",
+  "scientificName": "Natrix maura",
+  "category": "reptil",
+  "family": "Natricidae",
+  "habitat": "Ríos, charcas, fuentes, acequias y embalses",
+  "conservation": "LC",
+  "description": "Culebra acuática de tamaño mediano, con un dibujo dorsal en zigzag que recuerda al de una víbora. Nada y bucea para capturar peces, renacuajos y ranas.",
+  "facts": [
+   "Es inofensiva: imita a las víboras aplastando la cabeza y bufando.",
+   "Tiene la pupila redonda, no vertical."
+  ],
+  "keywords": [
+   "culebra",
+   "mediano",
+   "zigzag",
+   "marron",
+   "verdoso",
+   "nada",
+   "bucea",
+   "rio",
+   "charca",
+   "agua",
+   "parecido a vibora"
+  ]
+ },
+ {
+  "id": "culebra_collar",
+  "number": 113,
+  "commonName": "Culebra de collar mediterránea",
+  "scientificName": "Natrix astreptophora",
+  "category": "reptil",
+  "family": "Natricidae",
+  "habitat": "Riberas, prados húmedos y bosques cerca del agua",
+  "conservation": "LC",
+  "description": "Culebra robusta de color verdoso o grisáceo con pequeñas manchas negras e iris rojizo. Los juveniles muestran un collar claro y negro que se pierde con la edad.",
+  "facts": [
+   "Si se ve acorralada se hace la muerta, boca arriba y con la lengua fuera.",
+   "Se alimenta sobre todo de sapos y ranas."
+  ],
+  "keywords": [
+   "culebra",
+   "grande",
+   "verdoso",
+   "gris",
+   "manchas negras",
+   "collar",
+   "ojos rojizos",
+   "rio",
+   "prado humedo",
+   "agua",
+   "se hace la muerta"
+  ]
+ },
+ {
+  "id": "vibora_aspid",
+  "number": 114,
+  "commonName": "Víbora áspid",
+  "scientificName": "Vipera aspis",
+  "category": "reptil",
+  "family": "Viperidae",
+  "habitat": "Laderas pedregosas, prados y bosques claros de los Pirineos y el norte",
+  "conservation": "LC",
+  "description": "Víbora de cuerpo grueso, cabeza triangular, hocico ligeramente levantado y pupila vertical. Dorso con barras transversales o zigzag oscuro.",
+  "facts": [
+   "Es venenosa; ante una mordedura hay que acudir a un centro sanitario.",
+   "Pare crías vivas."
+  ],
+  "keywords": [
+   "vibora",
+   "culebra",
+   "pequeno",
+   "corto y grueso",
+   "cabeza triangular",
+   "zigzag",
+   "barras oscuras",
+   "venenosa",
+   "piedras",
+   "montana",
+   "pirineos"
+  ]
+ },
+ {
+  "id": "galapago_europeo",
+  "number": 115,
+  "commonName": "Galápago europeo",
+  "scientificName": "Emys orbicularis",
+  "category": "reptil",
+  "family": "Emydidae",
+  "habitat": "Charcas, lagunas y arroyos tranquilos con vegetación",
+  "conservation": "NT",
+  "description": "Tortuga de agua dulce de caparazón oscuro y piel negruzca, ambos salpicados de puntos y líneas amarillas. Muy tímida.",
+  "facts": [
+   "Puede vivir varias décadas.",
+   "Es más escasa que el galápago leproso y sus poblaciones están muy fragmentadas."
+  ],
+  "keywords": [
+   "galapago",
+   "caparazon",
+   "mediano",
+   "negro",
+   "puntos amarillos",
+   "charca",
+   "laguna",
+   "agua",
+   "toma el sol",
+   "nada"
+  ]
+ },
+ {
+  "id": "tortuga_mora",
+  "number": 116,
+  "commonName": "Tortuga mora",
+  "scientificName": "Testudo graeca",
+  "category": "reptil",
+  "family": "Testudinidae",
+  "habitat": "Matorral árido del sureste peninsular y Doñana",
+  "conservation": "VU",
+  "description": "Tortuga terrestre de caparazón abombado, amarillento con manchas negras, y con un espolón córneo en la parte trasera de cada muslo.",
+  "facts": [
+   "Pasa los meses más fríos y los más calurosos enterrada e inactiva.",
+   "La recogida para tenerla como mascota ha dañado mucho sus poblaciones."
+  ],
+  "keywords": [
+   "tortuga de tierra",
+   "caparazon abombado",
+   "mediano",
+   "amarillo y negro",
+   "lento",
+   "matorral seco",
+   "camina",
+   "herbivoro"
+  ]
+ },
+ {
+  "id": "tortuga_mediterranea",
+  "number": 117,
+  "commonName": "Tortuga mediterránea",
+  "scientificName": "Testudo hermanni",
+  "category": "reptil",
+  "family": "Testudinidae",
+  "habitat": "Bosque y matorral mediterráneo de Cataluña, y zonas de reintroducción",
+  "conservation": "NT",
+  "description": "Tortuga terrestre de caparazón abombado amarillo y negro. Se distingue de la mora por tener una uña córnea en la punta de la cola y dos placas sobre ella.",
+  "facts": [
+   "La población de la sierra de la Albera, en Girona, es la única natural que queda en la península.",
+   "Come sobre todo hierbas, flores y frutos."
+  ],
+  "keywords": [
+   "tortuga de tierra",
+   "caparazon abombado",
+   "mediano",
+   "amarillo y negro",
+   "lento",
+   "bosque",
+   "matorral",
+   "camina",
+   "herbivoro"
+  ]
+ },
+ {
+  "id": "tortuga_boba",
+  "number": 118,
+  "commonName": "Tortuga boba",
+  "scientificName": "Caretta caretta",
+  "category": "reptil",
+  "family": "Cheloniidae",
+  "habitat": "Aguas marinas del Mediterráneo y el Atlántico; visita las costas",
+  "conservation": "VU",
+  "description": "Tortuga marina grande de caparazón pardo rojizo en forma de corazón y cabeza voluminosa. Es la tortuga marina más frecuente en aguas ibéricas.",
+  "facts": [
+   "En los últimos años ha empezado a anidar en playas del Mediterráneo español.",
+   "Se alimenta de medusas, cangrejos y moluscos."
+  ],
+  "keywords": [
+   "tortuga marina",
+   "muy grande",
+   "caparazon",
+   "marron rojizo",
+   "cabeza grande",
+   "aletas",
+   "nada",
+   "mar",
+   "playa"
+  ]
+ },
+ {
+  "id": "salamandra_comun",
+  "number": 119,
+  "commonName": "Salamandra común",
+  "scientificName": "Salamandra salamandra",
+  "category": "anfibio",
+  "family": "Salamandridae",
+  "habitat": "Bosques húmedos y sombríos cerca de arroyos y fuentes",
+  "conservation": "VU",
+  "description": "Anfibio de cuerpo robusto y piel lisa y brillante, negra con manchas o bandas amarillas muy llamativas. Es lenta, terrestre y sale sobre todo en noches lluviosas.",
+  "facts": [
+   "Sus colores avisan de que su piel segrega sustancias tóxicas.",
+   "El dibujo de manchas varía mucho entre regiones: en el norte suelen ser bandas, en el sur manchas sueltas."
+  ],
+  "keywords": [
+   "mediano",
+   "negro",
+   "moteado",
+   "manchas amarillas",
+   "amarillo",
+   "piel brillante",
+   "lento",
+   "bosque humedo",
+   "lluvia",
+   "nocturno",
+   "hojarasca"
+  ]
+ },
+ {
+  "id": "gallipato",
+  "number": 120,
+  "commonName": "Gallipato",
+  "scientificName": "Pleurodeles waltl",
+  "category": "anfibio",
+  "family": "Salamandridae",
+  "habitat": "Charcas, balsas, albercas y arroyos de aguas quietas",
+  "conservation": "NT",
+  "description": "Uno de los mayores anfibios con cola de Europa. Cabeza ancha y aplanada, piel rugosa de color pardo grisáceo y una hilera de bultos anaranjados en cada costado. Muy acuático.",
+  "facts": [
+   "Como defensa, las puntas de sus costillas pueden atravesar la piel por esos bultos del costado.",
+   "Puede superar los 20 cm de longitud."
+  ],
+  "keywords": [
+   "triton grande",
+   "grande",
+   "gris",
+   "marron",
+   "piel rugosa",
+   "cabeza plana",
+   "bultos naranjas en el costado",
+   "charca",
+   "agua",
+   "cola aplanada",
+   "nada"
+  ]
+ },
+ {
+  "id": "sapo_partero_iberico",
+  "number": 121,
+  "commonName": "Sapo partero ibérico",
+  "scientificName": "Alytes cisternasii",
+  "category": "anfibio",
+  "family": "Alytidae",
+  "habitat": "Dehesas y encinares de suelo arenoso del centro y suroeste",
+  "conservation": "LC",
+  "description": "Sapo pequeño y rechoncho, de piel granulosa parda con puntitos rojizos, ojos grandes con pupila vertical y hábitos excavadores. Endémico de la península.",
+  "facts": [
+   "El macho lleva la puesta enrollada en las patas traseras hasta que eclosiona.",
+   "Su canto es una nota aflautada y breve que recuerda al de un autillo."
+  ],
+  "keywords": [
+   "sapo",
+   "muy pequeno",
+   "rechoncho",
+   "marron",
+   "piel con granos",
+   "puntos rojizos",
+   "nocturno",
+   "silbido",
+   "dehesa",
+   "arena",
+   "huevos en las patas"
+  ]
+ },
+ {
+  "id": "ranita_san_antonio",
+  "number": 122,
+  "commonName": "Ranita de San Antonio ibérica",
+  "scientificName": "Hyla molleri",
+  "category": "anfibio",
+  "family": "Hylidae",
+  "habitat": "Charcas, prados húmedos y vegetación de ribera",
+  "conservation": "LC",
+  "description": "Rana pequeña de piel lisa y color verde brillante, con una banda oscura que va del ojo al costado. Tiene discos adhesivos en los dedos y trepa por juncos, zarzas y arbustos.",
+  "facts": [
+   "Los machos cantan en coro inflando un saco vocal casi tan grande como su cuerpo.",
+   "Puede cambiar de tono, del verde claro al pardo."
+  ],
+  "keywords": [
+   "rana",
+   "muy pequeno",
+   "verde brillante",
+   "piel lisa",
+   "banda oscura lateral",
+   "trepa",
+   "juncos",
+   "charca",
+   "coro",
+   "ventosas en los dedos"
+  ]
+ },
+ {
+  "id": "rana_comun",
+  "number": 123,
+  "commonName": "Rana común",
+  "scientificName": "Pelophylax perezi",
+  "category": "anfibio",
+  "family": "Ranidae",
+  "habitat": "Cualquier punto de agua: charcas, ríos, acequias, estanques",
+  "conservation": "LC",
+  "description": "La rana más abundante de la península. Verde o parda con manchas oscuras y, a menudo, una línea clara a lo largo del dorso. Muy acuática: salta al agua al menor peligro.",
+  "facts": [
+   "Los machos croan inflando dos sacos vocales grises a los lados de la boca.",
+   "Toma el sol en la orilla o sobre plantas flotantes."
+  ],
+  "keywords": [
+   "rana",
+   "mediano",
+   "verde",
+   "manchas oscuras",
+   "linea clara en la espalda",
+   "croa",
+   "salta",
+   "charca",
+   "estanque",
+   "rio",
+   "agua"
+  ]
+ },
+ {
+  "id": "rana_patilarga",
+  "number": 124,
+  "commonName": "Rana patilarga",
+  "scientificName": "Rana iberica",
+  "category": "anfibio",
+  "family": "Ranidae",
+  "habitat": "Arroyos frescos y sombreados de montaña del noroeste y el Sistema Central",
+  "conservation": "VU",
+  "description": "Rana pequeña y parda, con una mancha oscura detrás del ojo a modo de antifaz, garganta oscura con una línea clara y patas traseras muy largas.",
+  "facts": [
+   "Es endémica de la península ibérica.",
+   "Da grandes saltos hacia el agua cuando se la sorprende."
+  ],
+  "keywords": [
+   "rana",
+   "pequeno",
+   "marron",
+   "antifaz oscuro",
+   "patas muy largas",
+   "arroyo",
+   "montana",
+   "sombra",
+   "salta",
+   "agua fria"
+  ]
+ },
+ {
+  "id": "rana_bermeja",
+  "number": 125,
+  "commonName": "Rana bermeja",
+  "scientificName": "Rana temporaria",
+  "category": "anfibio",
+  "family": "Ranidae",
+  "habitat": "Prados, turberas y bosques húmedos del norte peninsular",
+  "conservation": "LC",
+  "description": "Rana robusta de hocico corto y color muy variable, pardo, rojizo o amarillento, con una mancha oscura tras el ojo. Bastante terrestre fuera de la época de cría.",
+  "facts": [
+   "Se reproduce muy pronto, a veces con las charcas aún rodeadas de nieve.",
+   "Pone grandes masas flotantes de huevos."
+  ],
+  "keywords": [
+   "rana",
+   "mediano",
+   "marron",
+   "rojizo",
+   "antifaz oscuro",
+   "prado humedo",
+   "bosque",
+   "norte",
+   "montana",
+   "nieve"
+  ]
+ },
+ {
+  "id": "sapo_comun",
+  "number": 126,
+  "commonName": "Sapo común ibérico",
+  "scientificName": "Bufo spinosus",
+  "category": "anfibio",
+  "family": "Bufonidae",
+  "habitat": "Bosques, cultivos, huertos y jardines; se reproduce en charcas y ríos",
+  "conservation": "LC",
+  "description": "El mayor sapo de la península. Robusto, de piel muy verrugosa parda, ojos de iris rojizo o cobrizo y dos glándulas abultadas detrás de la cabeza.",
+  "facts": [
+   "Las hembras grandes pueden superar los 15 cm.",
+   "Cada año regresa a la misma charca para reproducirse."
+  ],
+  "keywords": [
+   "sapo",
+   "grande",
+   "robusto",
+   "marron",
+   "verrugas",
+   "piel rugosa",
+   "ojos rojizos",
+   "nocturno",
+   "huerto",
+   "jardin",
+   "camina",
+   "lluvia"
+  ]
+ },
+ {
+  "id": "sapo_corredor",
+  "number": 127,
+  "commonName": "Sapo corredor",
+  "scientificName": "Epidalea calamita",
+  "category": "anfibio",
+  "family": "Bufonidae",
+  "habitat": "Terrenos abiertos y arenosos, cultivos y charcas temporales",
+  "conservation": "LC",
+  "description": "Sapo mediano de piel verrugosa, verdosa o parda, con una fina línea amarilla que recorre el centro del dorso y ojos de iris amarillo verdoso.",
+  "facts": [
+   "Sus patas traseras son cortas: en lugar de saltar, corre.",
+   "El canto de los machos se oye a más de un kilómetro."
+  ],
+  "keywords": [
+   "sapo",
+   "mediano",
+   "verdoso",
+   "linea amarilla en la espalda",
+   "verrugas",
+   "corre",
+   "no salta",
+   "nocturno",
+   "charca temporal",
+   "arena",
+   "lluvia"
+  ]
+ },
+ {
+  "id": "sapo_de_espuelas",
+  "number": 128,
+  "commonName": "Sapo de espuelas",
+  "scientificName": "Pelobates cultripes",
+  "category": "anfibio",
+  "family": "Pelobatidae",
+  "habitat": "Suelos arenosos y blandos cerca de charcas temporales",
+  "conservation": "VU",
+  "description": "Sapo rechoncho de piel lisa, con manchas verdosas sobre fondo claro, ojos grandes de pupila vertical y una espuela negra y dura en cada pata trasera.",
+  "facts": [
+   "Usa las espuelas para enterrarse marcha atrás en pocos segundos.",
+   "Sus renacuajos son enormes y pueden superar los 10 cm."
+  ],
+  "keywords": [
+   "sapo",
+   "mediano",
+   "rechoncho",
+   "piel lisa",
+   "manchas verdes",
+   "ojos grandes",
+   "pupila vertical",
+   "espuelas negras",
+   "se entierra",
+   "arena",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "sapillo_pintojo",
+  "number": 129,
+  "commonName": "Sapillo pintojo ibérico",
+  "scientificName": "Discoglossus galganoi",
+  "category": "anfibio",
+  "family": "Alytidae",
+  "habitat": "Prados encharcados, arroyos y charcas someras",
+  "conservation": "LC",
+  "description": "Anfibio con aspecto de rana pequeña, de hocico puntiagudo y pupila en forma de gota invertida. Coloración variable: manchas oscuras o bandas claras longitudinales.",
+  "facts": [
+   "Su lengua tiene forma de disco, de ahí su nombre científico.",
+   "Es endémico de la península ibérica."
+  ],
+  "keywords": [
+   "sapo",
+   "rana",
+   "pequeno",
+   "manchas oscuras",
+   "hocico puntiagudo",
+   "prado encharcado",
+   "arroyo",
+   "charca",
+   "salta"
+  ]
+ },
+ {
+  "id": "sapo_partero_comun",
+  "number": 130,
+  "commonName": "Sapo partero común",
+  "scientificName": "Alytes obstetricans",
+  "category": "anfibio",
+  "family": "Alytidae",
+  "habitat": "Muros, taludes, huertos y pueblos cerca de fuentes y abrevaderos",
+  "conservation": "LC",
+  "description": "Sapo pequeño y rechoncho, gris o pardo con pequeñas verrugas, ojos grandes y pupila vertical. Pasa el día escondido bajo piedras o en grietas.",
+  "facts": [
+   "El macho transporta la puesta enrollada en sus patas traseras durante semanas.",
+   "Su canto es un silbido corto y dulce, como una nota de flauta."
+  ],
+  "keywords": [
+   "sapo",
+   "muy pequeno",
+   "rechoncho",
+   "gris",
+   "verrugas pequenas",
+   "silbido",
+   "nocturno",
+   "muro",
+   "fuente",
+   "huevos en las patas",
+   "pueblo"
+  ]
+ },
+ {
+  "id": "ranita_meridional",
+  "number": 131,
+  "commonName": "Ranita meridional",
+  "scientificName": "Hyla meridionalis",
+  "category": "anfibio",
+  "family": "Hylidae",
+  "habitat": "Charcas, juncales y vegetación de ribera del sur y el oeste",
+  "conservation": "LC",
+  "description": "Ranita trepadora de piel lisa y verde brillante con discos adhesivos en los dedos. La banda oscura lateral llega solo hasta el hombro, sin prolongarse por el costado.",
+  "facts": [
+   "Su canto es más grave y lento que el de la ranita de San Antonio.",
+   "Suele descansar a pleno sol sobre hojas y juncos."
+  ],
+  "keywords": [
+   "rana",
+   "muy pequeno",
+   "verde brillante",
+   "piel lisa",
+   "trepa",
+   "juncos",
+   "charca",
+   "ventosas en los dedos",
+   "coro",
+   "sur"
+  ]
+ },
+ {
+  "id": "triton_jaspeado",
+  "number": 132,
+  "commonName": "Tritón jaspeado",
+  "scientificName": "Triturus marmoratus",
+  "category": "anfibio",
+  "family": "Salamandridae",
+  "habitat": "Charcas, pilones y abrevaderos; bosques y prados cercanos",
+  "conservation": "LC",
+  "description": "Tritón grande de dorso verde vivo jaspeado de negro, con una línea anaranjada a lo largo de la espalda en hembras y juveniles. El macho en celo desarrolla una cresta alta barrada.",
+  "facts": [
+   "Fuera de la época de cría vive en tierra, bajo troncos y piedras.",
+   "La hembra envuelve cada huevo en una hoja de planta acuática."
+  ],
+  "keywords": [
+   "triton",
+   "mediano",
+   "verde y negro",
+   "jaspeado",
+   "linea naranja en la espalda",
+   "cresta",
+   "charca",
+   "abrevadero",
+   "cola aplanada",
+   "agua"
+  ]
+ },
+ {
+  "id": "triton_iberico",
+  "number": 133,
+  "commonName": "Tritón ibérico",
+  "scientificName": "Lissotriton boscai",
+  "category": "anfibio",
+  "family": "Salamandridae",
+  "habitat": "Charcas, fuentes, arroyos y pilones del oeste peninsular",
+  "conservation": "LC",
+  "description": "Tritón pequeño de dorso pardo u oliváceo y vientre anaranjado vivo con puntos negros, bordeado por una banda clara.",
+  "facts": [
+   "Es endémico de la mitad occidental de la península.",
+   "El macho corteja a la hembra agitando la cola delante de ella."
+  ],
+  "keywords": [
+   "triton",
+   "pequeno",
+   "marron",
+   "vientre naranja con puntos negros",
+   "charca",
+   "fuente",
+   "arroyo",
+   "cola aplanada",
+   "agua"
+  ]
+ },
+ {
+  "id": "triton_palmeado",
+  "number": 134,
+  "commonName": "Tritón palmeado",
+  "scientificName": "Lissotriton helveticus",
+  "category": "anfibio",
+  "family": "Salamandridae",
+  "habitat": "Charcas, turberas, fuentes y arroyos del norte peninsular",
+  "conservation": "LC",
+  "description": "Tritón pequeño de dorso pardo oliváceo, garganta rosada sin manchas y vientre amarillento. El macho en celo tiene membranas oscuras en los pies traseros y un filamento al final de la cola.",
+  "facts": [
+   "Debe su nombre a las membranas de los pies del macho.",
+   "Es el tritón más pequeño de la península."
+  ],
+  "keywords": [
+   "triton",
+   "muy pequeno",
+   "marron",
+   "garganta rosa",
+   "pies con membranas",
+   "filamento en la cola",
+   "charca",
+   "fuente",
+   "norte",
+   "agua"
+  ]
+ },
+ {
+  "id": "salamandra_rabilarga",
+  "number": 135,
+  "commonName": "Salamandra rabilarga",
+  "scientificName": "Chioglossa lusitanica",
+  "category": "anfibio",
+  "family": "Salamandridae",
+  "habitat": "Arroyos de bosques muy húmedos del noroeste peninsular",
+  "conservation": "NT",
+  "description": "Salamandra muy esbelta con una cola que supone dos tercios de su longitud. Dorso oscuro con dos bandas doradas o cobrizas brillantes y ojos grandes y saltones.",
+  "facts": [
+   "Es muy rápida y, como las lagartijas, puede soltar la cola.",
+   "Captura presas proyectando la lengua."
+  ],
+  "keywords": [
+   "salamandra",
+   "pequeno",
+   "esbelto",
+   "cola muy larga",
+   "bandas doradas",
+   "cobrizo",
+   "ojos saltones",
+   "arroyo",
+   "bosque humedo",
+   "noroeste",
+   "rapido"
+  ]
+ },
+ {
+  "id": "trucha_comun",
+  "number": 136,
+  "commonName": "Trucha común",
+  "scientificName": "Salmo trutta",
+  "category": "pez",
+  "family": "Salmonidae",
+  "habitat": "Ríos y arroyos de aguas frías, limpias y bien oxigenadas",
+  "conservation": "LC",
+  "description": "Pez de cuerpo fusiforme, pardo verdoso en el dorso y más claro en los flancos, salpicados de motas negras y rojas rodeadas de un halo claro. Tiene una pequeña aleta adiposa cerca de la cola.",
+  "facts": [
+   "Remonta los ríos para desovar en fondos de grava.",
+   "Las poblaciones autóctonas se ven afectadas por las repoblaciones con truchas de otras procedencias."
+  ],
+  "keywords": [
+   "mediano",
+   "alargado",
+   "marron verdoso",
+   "moteado",
+   "motas rojas y negras",
+   "rio de montana",
+   "agua fria",
+   "corriente",
+   "salta"
+  ]
+ },
+ {
+  "id": "anguila_europea",
+  "number": 137,
+  "commonName": "Anguila europea",
+  "scientificName": "Anguilla anguilla",
+  "category": "pez",
+  "family": "Anguillidae",
+  "habitat": "Ríos, estuarios, albuferas y lagunas costeras",
+  "conservation": "CR",
+  "description": "Pez de cuerpo muy alargado y cilíndrico, con aspecto de serpiente, piel viscosa y una aleta continua que recorre dorso, cola y vientre. Es de hábitos nocturnos.",
+  "facts": [
+   "Nace en el mar de los Sargazos y cruza el Atlántico como larva antes de entrar en los ríos.",
+   "Sus juveniles, las angulas, son transparentes."
+  ],
+  "keywords": [
+   "largo",
+   "parecido a serpiente",
+   "cilindrico",
+   "oscuro",
+   "verdoso",
+   "piel resbaladiza",
+   "rio",
+   "estuario",
+   "fondo",
+   "nocturno"
+  ]
+ },
+ {
+  "id": "jarabugo",
+  "number": 138,
+  "commonName": "Jarabugo",
+  "scientificName": "Anaecypris hispanica",
+  "category": "pez",
+  "family": "Leuciscidae",
+  "habitat": "Arroyos pequeños de la cuenca del Guadiana, con vegetación acuática",
+  "conservation": "EN",
+  "description": "Pez diminuto y endémico de la península, de cuerpo estilizado, color pardo plateado con pequeñas manchas oscuras, boca orientada hacia arriba y escamas muy pequeñas.",
+  "facts": [
+   "Rara vez supera los 7 cm.",
+   "Sobrevive al verano en pozas aisladas cuando los arroyos dejan de correr."
+  ],
+  "keywords": [
+   "diminuto",
+   "muy pequeno",
+   "plateado",
+   "pequenas manchas",
+   "arroyo",
+   "poza",
+   "banco",
+   "boca hacia arriba"
+  ]
+ },
+ {
+  "id": "barbo_comun",
+  "number": 139,
+  "commonName": "Barbo común ibérico",
+  "scientificName": "Luciobarbus bocagei",
+  "category": "pez",
+  "family": "Cyprinidae",
+  "habitat": "Tramos medios de ríos de las cuencas del Duero y del Tajo",
+  "conservation": "LC",
+  "description": "Pez robusto de dorso pardo verdoso y vientre claro, con labios gruesos y cuatro barbillones alrededor de la boca, que usa para buscar alimento en el fondo.",
+  "facts": [
+   "En primavera remonta los ríos en grupo para frezar en zonas de grava.",
+   "Es endémico de la península ibérica."
+  ],
+  "keywords": [
+   "grande",
+   "robusto",
+   "marron verdoso",
+   "bigotes",
+   "barbillones",
+   "labios gruesos",
+   "rio",
+   "fondo",
+   "banco"
+  ]
+ },
+ {
+  "id": "salmon_atlantico",
+  "number": 140,
+  "commonName": "Salmón atlántico",
+  "scientificName": "Salmo salar",
+  "category": "pez",
+  "family": "Salmonidae",
+  "habitat": "Ríos cantábricos y gallegos; fase adulta en el océano Atlántico",
+  "conservation": "NT",
+  "description": "Pez grande y potente, plateado con pequeñas motas negras en forma de aspa sobre la línea lateral. Nace en el río, crece en el mar y regresa a su río natal para reproducirse.",
+  "facts": [
+   "Supera saltos de agua de varios metros en su remonte.",
+   "Los ríos del norte de la península marcan el límite sur de su distribución en Europa."
+  ],
+  "keywords": [
+   "grande",
+   "plateado",
+   "motas negras",
+   "salta",
+   "remonta el rio",
+   "rio",
+   "cascada",
+   "norte",
+   "mar"
+  ]
+ },
+ {
+  "id": "boga_del_tajo",
+  "number": 141,
+  "commonName": "Boga del Tajo",
+  "scientificName": "Pseudochondrostoma polylepis",
+  "category": "pez",
+  "family": "Leuciscidae",
+  "habitat": "Tramos medios de los ríos de la cuenca del Tajo",
+  "conservation": "LC",
+  "description": "Pez alargado y plateado, de boca recta situada en la parte inferior de la cabeza, con un labio córneo que usa para raspar algas de las piedras.",
+  "facts": [
+   "En primavera remonta los ríos en grandes bancos para desovar.",
+   "Es endémica de la península ibérica."
+  ],
+  "keywords": [
+   "mediano",
+   "alargado",
+   "plateado",
+   "boca inferior",
+   "rio",
+   "banco",
+   "corriente",
+   "piedras"
+  ]
+ },
+ {
+  "id": "bermejuela",
+  "number": 142,
+  "commonName": "Bermejuela",
+  "scientificName": "Achondrostoma arcasii",
+  "category": "pez",
+  "family": "Leuciscidae",
+  "habitat": "Arroyos, ríos de montaña y lagunas de aguas claras",
+  "conservation": "VU",
+  "description": "Pez pequeño de cuerpo plateado con una banda oscura a lo largo del costado y la base de las aletas de color rojizo o anaranjado.",
+  "facts": [
+   "Debe su nombre al color bermejo de la base de las aletas.",
+   "Es endémica de la península ibérica."
+  ],
+  "keywords": [
+   "pequeno",
+   "plateado",
+   "banda oscura lateral",
+   "aletas rojizas",
+   "arroyo",
+   "rio de montana",
+   "banco",
+   "agua clara"
+  ]
+ },
+ {
+  "id": "cacho",
+  "number": 143,
+  "commonName": "Cacho",
+  "scientificName": "Squalius pyrenaicus",
+  "category": "pez",
+  "family": "Leuciscidae",
+  "habitat": "Ríos y arroyos del centro y sur peninsular",
+  "conservation": "NT",
+  "description": "Pez de tamaño medio, cuerpo robusto, cabeza ancha, boca grande y escamas grandes con el borde oscuro que forman un dibujo de red.",
+  "facts": [
+   "Es omnívoro: come insectos, plantas y peces pequeños.",
+   "Es endémico de la península ibérica."
+  ],
+  "keywords": [
+   "mediano",
+   "robusto",
+   "plateado",
+   "escamas grandes",
+   "dibujo de red",
+   "cabeza ancha",
+   "boca grande",
+   "rio",
+   "arroyo",
+   "banco"
+  ]
+ },
+ {
+  "id": "calandino",
+  "number": 144,
+  "commonName": "Calandino",
+  "scientificName": "Squalius alburnoides",
+  "category": "pez",
+  "family": "Leuciscidae",
+  "habitat": "Arroyos y ríos pequeños del centro y suroeste peninsular",
+  "conservation": "VU",
+  "description": "Pez pequeño y esbelto, plateado, con una línea oscura a lo largo del costado y la boca orientada hacia arriba.",
+  "facts": [
+   "Tiene un sistema de reproducción muy inusual, de origen híbrido, con claro predominio de hembras.",
+   "Nada en bancos cerca de la superficie."
+  ],
+  "keywords": [
+   "pequeno",
+   "esbelto",
+   "plateado",
+   "linea oscura lateral",
+   "boca hacia arriba",
+   "arroyo",
+   "banco",
+   "superficie"
+  ]
+ },
+ {
+  "id": "tenca",
+  "number": 145,
+  "commonName": "Tenca",
+  "scientificName": "Tinca tinca",
+  "category": "pez",
+  "family": "Tincidae",
+  "habitat": "Charcas, lagunas y ríos lentos de fondo fangoso",
+  "conservation": "LC",
+  "description": "Pez rechoncho de color verde oliva con reflejos dorados, escamas diminutas, piel muy mucosa, aletas redondeadas y un pequeño barbillón a cada lado de la boca.",
+  "facts": [
+   "En Extremadura se cría desde hace siglos en charcas ganaderas.",
+   "Soporta aguas con muy poco oxígeno."
+  ],
+  "keywords": [
+   "mediano",
+   "rechoncho",
+   "verde oliva",
+   "dorado",
+   "piel resbaladiza",
+   "aletas redondeadas",
+   "charca",
+   "laguna",
+   "fondo",
+   "fango"
+  ]
+ },
+ {
+  "id": "colmilleja",
+  "number": 146,
+  "commonName": "Colmilleja",
+  "scientificName": "Cobitis paludica",
+  "category": "pez",
+  "family": "Cobitidae",
+  "habitat": "Fondos de arena y grava de ríos y arroyos tranquilos",
+  "conservation": "VU",
+  "description": "Pez pequeño y alargado, con forma de cinta, de color amarillento con hileras de manchas oscuras. Tiene tres pares de barbillones y una espina bajo cada ojo.",
+  "facts": [
+   "Se entierra en la arena dejando fuera solo la cabeza.",
+   "Es endémica de la península ibérica."
+  ],
+  "keywords": [
+   "pequeno",
+   "alargado",
+   "amarillento",
+   "hileras de manchas",
+   "bigotes",
+   "barbillones",
+   "fondo",
+   "arena",
+   "se entierra",
+   "rio",
+   "arroyo"
+  ]
+ },
+ {
+  "id": "fartet",
+  "number": 147,
+  "commonName": "Fartet",
+  "scientificName": "Aphanius iberus",
+  "category": "pez",
+  "family": "Cyprinodontidae",
+  "habitat": "Lagunas litorales, salinas y acequias de la costa mediterránea",
+  "conservation": "EN",
+  "description": "Pez diminuto de cuerpo rechoncho. El macho presenta barras verticales azuladas y plateadas y la cola listada; la hembra es parda con pequeñas manchas oscuras.",
+  "facts": [
+   "Tolera salinidades muy superiores a la del mar.",
+   "Es endémico del litoral mediterráneo español."
+  ],
+  "keywords": [
+   "diminuto",
+   "muy pequeno",
+   "rechoncho",
+   "barras azuladas",
+   "rayas",
+   "laguna costera",
+   "salina",
+   "acequia",
+   "agua salobre"
+  ]
+ },
+ {
+  "id": "samaruc",
+  "number": 148,
+  "commonName": "Samaruc",
+  "scientificName": "Valencia hispanica",
+  "category": "pez",
+  "family": "Valenciidae",
+  "habitat": "Ullals y marjales de aguas limpias del litoral valenciano y el sur de Cataluña",
+  "conservation": "CR",
+  "description": "Pez diminuto de cuerpo alargado y color pardo amarillento, con las aletas amarillentas o anaranjadas en los machos y una pequeña mancha oscura tras la cabeza.",
+  "facts": [
+   "Es uno de los peces de agua dulce más amenazados de Europa.",
+   "Vive entre la vegetación densa de manantiales costeros."
+  ],
+  "keywords": [
+   "diminuto",
+   "muy pequeno",
+   "alargado",
+   "amarillento",
+   "aletas naranjas",
+   "marjal",
+   "manantial",
+   "vegetacion acuatica",
+   "costa"
+  ]
+ },
+ {
+  "id": "espinoso",
+  "number": 149,
+  "commonName": "Espinoso",
+  "scientificName": "Gasterosteus aculeatus",
+  "category": "pez",
+  "family": "Gasterosteidae",
+  "habitat": "Arroyos, acequias y lagunas de aguas limpias con vegetación",
+  "conservation": "LC",
+  "description": "Pez pequeño sin escamas, con tres espinas libres en el dorso. En época de cría el macho tiene la garganta y el vientre rojos y los ojos azules.",
+  "facts": [
+   "El macho construye un nido con restos vegetales y cuida de los huevos y los alevines.",
+   "En la península ibérica sus poblaciones están en declive."
+  ],
+  "keywords": [
+   "pequeno",
+   "tres espinas en la espalda",
+   "vientre rojo",
+   "ojos azules",
+   "sin escamas",
+   "arroyo",
+   "acequia",
+   "nido",
+   "vegetacion acuatica"
+  ]
+ },
+ {
+  "id": "lamprea_marina",
+  "number": 150,
+  "commonName": "Lamprea marina",
+  "scientificName": "Petromyzon marinus",
+  "category": "pez",
+  "family": "Petromyzontidae",
+  "habitat": "Mar y tramos bajos de los ríos atlánticos, a los que entra para reproducirse",
+  "conservation": "LC",
+  "description": "Pez primitivo sin mandíbulas, de cuerpo cilíndrico parecido al de una anguila y piel jaspeada. Tiene una boca circular en ventosa llena de dientes y siete orificios branquiales a cada lado.",
+  "facts": [
+   "En el mar vive adherida a otros peces, de cuya sangre se alimenta.",
+   "Su linaje es anterior a los dinosaurios."
+  ],
+  "keywords": [
+   "largo",
+   "parecido a serpiente",
+   "cilindrico",
+   "jaspeado",
+   "boca en ventosa",
+   "sin mandibula",
+   "siete agujeros",
+   "rio",
+   "mar",
+   "remonta el rio"
+  ]
+ },
+ {
+  "id": "sabalo",
+  "number": 151,
+  "commonName": "Sábalo",
+  "scientificName": "Alosa alosa",
+  "category": "pez",
+  "family": "Clupeidae",
+  "habitat": "Mar y grandes ríos atlánticos, que remonta en primavera",
+  "conservation": "LC",
+  "description": "Pez grande emparentado con la sardina, de cuerpo alto y comprimido, plateado, con el dorso azulado y una mancha oscura detrás del opérculo.",
+  "facts": [
+   "Las presas le han cerrado el paso a muchas de sus antiguas zonas de freza.",
+   "Desova de noche, con ruidosos chapoteos en la superficie."
+  ],
+  "keywords": [
+   "grande",
+   "plateado",
+   "espalda azulada",
+   "cuerpo alto",
+   "mancha oscura",
+   "rio",
+   "mar",
+   "remonta el rio",
+   "primavera",
+   "banco"
+  ]
+ },
+ {
+  "id": "esturion",
+  "number": 152,
+  "commonName": "Esturión europeo",
+  "scientificName": "Acipenser sturio",
+  "category": "pez",
+  "family": "Acipenseridae",
+  "habitat": "Mar y grandes ríos; históricamente Guadalquivir, Ebro y Duero",
+  "conservation": "CR",
+  "description": "Pez muy grande y de aspecto primitivo, con hocico alargado, cuatro barbillones, cinco hileras de placas óseas a lo largo del cuerpo y cola asimétrica.",
+  "facts": [
+   "Se considera prácticamente desaparecido de los ríos ibéricos.",
+   "Puede superar los tres metros de longitud."
+  ],
+  "keywords": [
+   "enorme",
+   "muy grande",
+   "alargado",
+   "hocico largo",
+   "placas oseas",
+   "barbillones",
+   "bigotes",
+   "rio grande",
+   "mar",
+   "fondo"
+  ]
+ },
+ {
+  "id": "barbo_gitano",
+  "number": 153,
+  "commonName": "Barbo gitano",
+  "scientificName": "Luciobarbus sclateri",
+  "category": "pez",
+  "family": "Cyprinidae",
+  "habitat": "Ríos y embalses del sur peninsular: Guadalquivir, Segura y cuencas cercanas",
+  "conservation": "LC",
+  "description": "Barbo robusto de dorso oscuro y flancos dorados, con cuatro barbillones y labios gruesos. Soporta bien los ríos que se reducen a pozas en verano.",
+  "facts": [
+   "Es endémico del sur de la península ibérica.",
+   "Los machos en celo desarrollan pequeños tubérculos en el hocico."
+  ],
+  "keywords": [
+   "grande",
+   "robusto",
+   "dorado",
+   "oscuro",
+   "bigotes",
+   "barbillones",
+   "labios gruesos",
+   "rio",
+   "embalse",
+   "fondo",
+   "sur"
+  ]
+ },
+ {
+  "id": "piscardo",
+  "number": 154,
+  "commonName": "Piscardo",
+  "scientificName": "Phoxinus bigerri",
+  "category": "pez",
+  "family": "Leuciscidae",
+  "habitat": "Ríos y arroyos frescos y oxigenados del norte peninsular",
+  "conservation": "LC",
+  "description": "Pececillo de cuerpo cilíndrico, dorso pardo oliváceo con manchas oscuras y flancos dorados. En celo los machos tienen el vientre rojo y la garganta negra.",
+  "facts": [
+   "Forma bancos muy numerosos en aguas someras.",
+   "Es alimento habitual de truchas y martines pescadores."
+  ],
+  "keywords": [
+   "diminuto",
+   "muy pequeno",
+   "marron",
+   "manchas oscuras",
+   "dorado",
+   "vientre rojo",
+   "banco",
+   "rio de montana",
+   "arroyo",
+   "norte",
+   "agua fria"
+  ]
+ },
+ {
+  "id": "carpa",
+  "number": 155,
+  "commonName": "Carpa común",
+  "scientificName": "Cyprinus carpio",
+  "category": "pez",
+  "family": "Cyprinidae",
+  "habitat": "Embalses, lagunas y tramos lentos de ríos",
+  "conservation": "VU",
+  "description": "Pez grande y robusto, de escamas grandes de color dorado o bronceado, aleta dorsal larga y cuatro barbillones cortos en la boca.",
+  "facts": [
+   "Fue introducida en la península hace siglos y hoy está en casi todas las cuencas.",
+   "La categoría de amenaza se refiere a las poblaciones silvestres de su área de origen."
+  ],
+  "keywords": [
+   "grande",
+   "robusto",
+   "dorado",
+   "bronce",
+   "escamas grandes",
+   "bigotes",
+   "barbillones",
+   "embalse",
+   "laguna",
+   "fondo",
+   "fango"
+  ]
+ },
+ {
+  "id": "lubina",
+  "number": 156,
+  "commonName": "Lubina",
+  "scientificName": "Dicentrarchus labrax",
+  "category": "pez",
+  "family": "Moronidae",
+  "habitat": "Costas, estuarios, rías y desembocaduras de ríos",
+  "conservation": "LC",
+  "description": "Pez marino esbelto y plateado, de dorso gris azulado, con dos aletas dorsales separadas, la primera espinosa, y una mancha oscura difusa en el opérculo.",
+  "facts": [
+   "Entra con frecuencia en estuarios y remonta los tramos bajos de los ríos.",
+   "En el Cantábrico se la conoce también como róbalo."
+  ],
+  "keywords": [
+   "grande",
+   "esbelto",
+   "plateado",
+   "gris",
+   "dos aletas en la espalda",
+   "mar",
+   "estuario",
+   "ria",
+   "costa",
+   "desembocadura"
+  ]
+ },
+ {
+  "id": "mujol",
+  "number": 157,
+  "commonName": "Mújol",
+  "scientificName": "Mugil cephalus",
+  "category": "pez",
+  "family": "Mugilidae",
+  "habitat": "Estuarios, puertos, lagunas costeras y tramos bajos de ríos",
+  "conservation": "LC",
+  "description": "Pez de cuerpo alargado y cilíndrico, cabeza ancha y aplanada, dorso gris y flancos plateados con líneas longitudinales oscuras.",
+  "facts": [
+   "Nada en bancos cerca de la superficie y a menudo salta fuera del agua.",
+   "Se alimenta filtrando algas y detritos del fondo."
+  ],
+  "keywords": [
+   "mediano",
+   "grande",
+   "alargado",
+   "gris",
+   "plateado",
+   "rayas longitudinales",
+   "cabeza ancha",
+   "salta",
+   "banco",
+   "puerto",
+   "estuario",
+   "costa"
+  ]
+ }
 ]

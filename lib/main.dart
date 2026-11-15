@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import 'screens/home_screen.dart';
 import 'state/dex_state.dart';
+import 'theme.dart';
 
 void main() {
   runApp(
@@ -18,18 +19,10 @@ class IbericoDexApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const seed = Color(0xFFC62828);
     return MaterialApp(
       title: 'IbéricoDex',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: seed),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: seed,
-          foregroundColor: Colors.white,
-        ),
-      ),
+      theme: buildDexTheme(),
       home: const HomeScreen(),
     );
   }

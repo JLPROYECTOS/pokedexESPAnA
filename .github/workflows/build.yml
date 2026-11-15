@@ -1,0 +1,98 @@
+name: Compilar y publicar
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  photos:
+    name: Fotos de especies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Descargar las fotos que falten
+        run: python3 scripts/fetch_photos.py
+
+      - name: Guardar las fotos en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
+            echo "Sin fotos nuevas"
+          else
+            git commit -m "Añadir fotos de especies"
+            git push
+          fi
+
+  web:
+    name: Web
+    needs: photos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Generar carpeta web
+        run: |
+          flutter create . --project-name ibericodex --platforms web
+          rm -f test/widget_test.dart
+          sed -i 's#<title>.*</title>#<title>IbéricoDex</title>#' web/index.html
+
+      - run: flutter pub get
+
+      - name: Compilar web
+        run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+      - name: Publicar en la rama gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/web
+
+  apk:
+    name: APK
+    needs: photos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Generar carpeta android
+        run: |
+          flutter create . --project-name ibericodex --platforms android
+          rm -f test/widget_test.dart
+          sed -i 's/android:label="[^"]*"/android:label="IbéricoDex"/' android/app/src/main/AndroidManifest.xml
+
+      - run: flutter pub get
+
+      - run: flutter build apk --release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ibericodex-apk
+          path: build/app/outputs/flutter-apk/app-release.apk

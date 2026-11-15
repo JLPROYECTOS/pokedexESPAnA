@@ -1,17 +1,37 @@
 /// Categorias del catalogo. La clave coincide con el campo "category" del JSON.
 enum AnimalCategory {
-  mamifero('mamifero', 'Mamíferos'),
-  ave('ave', 'Aves'),
-  reptil('reptil', 'Reptiles'),
-  anfibio('anfibio', 'Anfibios'),
-  pez('pez', 'Peces');
+  mamifero('mamifero', 'Mamíferos', 'Mamífero'),
+  ave('ave', 'Aves', 'Ave'),
+  reptil('reptil', 'Reptiles', 'Reptil'),
+  anfibio('anfibio', 'Anfibios', 'Anfibio'),
+  pez('pez', 'Peces', 'Pez');
 
-  const AnimalCategory(this.key, this.label);
+  const AnimalCategory(this.key, this.label, this.singular);
   final String key;
   final String label;
+  final String singular;
 
   static AnimalCategory fromKey(String key) =>
       AnimalCategory.values.firstWhere((c) => c.key == key);
+}
+
+/// Autor y licencia de la fotografia (Wikimedia Commons).
+class PhotoCredit {
+  const PhotoCredit({
+    required this.author,
+    required this.license,
+    required this.source,
+  });
+
+  final String author;
+  final String license;
+  final String source;
+
+  factory PhotoCredit.fromJson(Map<String, dynamic> json) => PhotoCredit(
+        author: (json['author'] ?? '') as String,
+        license: (json['license'] ?? '') as String,
+        source: (json['source'] ?? '') as String,
+      );
 }
 
 class Animal {
@@ -28,6 +48,7 @@ class Animal {
     required this.facts,
     required this.keywords,
     required this.image,
+    this.credit,
   });
 
   final String id;
@@ -50,6 +71,8 @@ class Animal {
   /// Ruta del asset, p. ej. assets/images/lince_iberico.jpg
   final String image;
 
+  final PhotoCredit? credit;
+
   String get numberLabel => '#${number.toString().padLeft(3, '0')}';
 
   static const _conservationLabels = {
@@ -60,10 +83,12 @@ class Animal {
     'CR': 'En peligro crítico',
   };
 
-  String get conservationLabel =>
-      '${_conservationLabels[conservation] ?? conservation} ($conservation)';
+  String get conservationName =>
+      _conservationLabels[conservation] ?? conservation;
 
-  factory Animal.fromJson(Map<String, dynamic> json) {
+  String get conservationLabel => '$conservationName ($conservation)';
+
+  factory Animal.fromJson(Map<String, dynamic> json, {PhotoCredit? credit}) {
     return Animal(
       id: json['id'] as String,
       number: json['number'] as int,
@@ -77,6 +102,7 @@ class Animal {
       facts: (json['facts'] as List).cast<String>(),
       keywords: (json['keywords'] as List).cast<String>(),
       image: 'assets/images/${json['id']}.jpg',
+      credit: credit,
     );
   }
 }

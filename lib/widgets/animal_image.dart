@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 
 import '../models/animal.dart';
+import '../theme.dart';
 
 /// Foto del animal. En gris y atenuada si aun no se ha registrado.
-/// Si falta el archivo de imagen muestra un marcador, asi la app
-/// funciona antes de anadir las fotos.
+/// Si falta el archivo de imagen muestra un icono de su grupo.
 class AnimalImage extends StatelessWidget {
-  const AnimalImage({super.key, required this.animal, required this.seen});
+  const AnimalImage({
+    super.key,
+    required this.animal,
+    required this.seen,
+    this.cacheWidth,
+  });
 
   final Animal animal;
   final bool seen;
+
+  /// Ancho de decodificacion para miniaturas (ahorra memoria en la cuadricula).
+  final int? cacheWidth;
 
   static const _greyscale = ColorFilter.matrix(<double>[
     0.2126, 0.7152, 0.0722, 0, 0,
@@ -20,20 +28,25 @@ class AnimalImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
+    final color = DexColors.category(animal.category);
     final image = Image.asset(
       animal.image,
       fit: BoxFit.cover,
+      cacheWidth: cacheWidth,
       errorBuilder: (_, __, ___) => Container(
-        color: scheme.primaryContainer,
+        color: DexColors.panelLight,
         alignment: Alignment.center,
-        child: Icon(Icons.pets, size: 40, color: scheme.onPrimaryContainer),
+        child: Icon(
+          DexColors.categoryIcon(animal.category),
+          size: 40,
+          color: color,
+        ),
       ),
     );
     if (seen) return image;
     return ColorFiltered(
       colorFilter: _greyscale,
-      child: Opacity(opacity: 0.55, child: image),
+      child: Opacity(opacity: 0.45, child: image),
     );
   }
 }

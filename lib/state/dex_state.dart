@@ -20,13 +20,26 @@ class DexState extends ChangeNotifier {
   List<Animal> animals = const [];
   bool loading = true;
 
-  int get seenCount => _sightings.length;
+  int get seenCount => animals.where((a) => isSeen(a.id)).length;
 
   bool isSeen(String animalId) => _sightings.containsKey(animalId);
 
   Sighting? sightingOf(String animalId) => _sightings[animalId];
 
   Animal byId(String id) => animals.firstWhere((a) => a.id == id);
+
+  int totalIn(AnimalCategory c) => animals.where((a) => a.category == c).length;
+
+  int seenIn(AnimalCategory c) =>
+      animals.where((a) => a.category == c && isSeen(a.id)).length;
+
+  /// Avistamientos de animales del catalogo, del mas reciente al mas antiguo.
+  List<Sighting> get recentSightings {
+    final ids = animals.map((a) => a.id).toSet();
+    final list = _sightings.values.where((s) => ids.contains(s.animalId)).toList()
+      ..sort((a, b) => b.date.compareTo(a.date));
+    return list;
+  }
 
   Future<void> load() async {
     animals = await _repository.loadAll();

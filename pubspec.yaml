@@ -1,7 +1,7 @@
 name: ibericodex
 description: Guia de campo de la fauna de la peninsula iberica con registro de avistamientos.
 publish_to: "none"
-version: 0.1.0+1
+version: 0.2.0+2
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
@@ -20,5 +20,5 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/data/animals.json
+    - assets/data/
     - assets/images/
